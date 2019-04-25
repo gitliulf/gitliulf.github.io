@@ -430,19 +430,334 @@
 
     <div id="barba-wrapper">
       <div class="barba-container"  data-namespace="post">
-        <div class="theme-404 mdui-valign">
-  <div class="mdui-center">
-    <i class="mdui-icon material-icons mdui-center theme-404__error">&#xe001;</i>
-    <div class="theme-404__button">
-      <a href="/" class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-center">
-        404 - 返回首页
-      </a>
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>编写时间：</span>
+        <span style="float: right">4月 25, 2019</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        文章二维码
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACaklEQVR42u3aS3KDQAwFQO5/6eQALsZPmo+J06xSNjFqFox4muvnq48LDw8PDw8PDw/vYbwrPm5/7uWc5Pzk815teHh4eGd4bx61NxfOi3s957a4+DbdXhcPDw/vIO/ugds7p/q4H5eeXBcPDw/v+bzeApOA8fDw8P4DLym3GmHg4eHhPZ+XvPCPL5Ng8kXlA1kLHh4eXszLh0zn/z4638PDw8MLeOUtTXFrm5ebN+tRhXh4eHibefmDeFX0kG8XaNaDh4eHt5mXDKh6AW4OqI7Zmi01Hh4e3gbeeBBV3RyQNNxjZLKAld8Y8PDw8KZ5eTSQsHshbH71qH3Hw8PDO8JbFTTk0UPedpcXJzw8PLzNvMJL/sToq9dYN0NhPDw8vM28pKlNgtekxHzxSG7csjcGPDw8vBZv7SA/aZrzBaA8hMPDw8PbzJuJdPOwNWf0og08PDy8k7z8n/OR1czGrJyKh4eH91neVAs7PeLKm++pMAIPDw9vA29VcfnnhQ0BeRSCh4eHt5lXjQN64675TwpV4eHh4W3mVcPWZDyWD7eqtyNqx/Hw8PCO8Ko/Ub01VVIeGZfDCDw8PLwjvMUDquK2rfK3eHh4eAd5vUi3F79WNygUasPDw8PbzKsevaF+vnhUW3w8PDy887wrPnrLSTWkSBhvfg0PDw/vCC9fDKoBwXyLnNeAh4eHd56XP6BnHuL5cCs5Ew8PD+/v8hJkNfytXhEPDw/vybw8nK2eX92ssGVhwMPDw1saRoxD2OoyMI4e8iADDw8P7zxvQQQQRwy9MdhUGIGHh4e3lPd9Bx4eHh4eHh4e3gOOX26RXcnJoyFtAAAAAElFTkSuQmCC" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=developer&title=&summary=&pics=http://zone.lfmax.cn/images/favicon.png&url=http://zone.lfmax.cn/2019/04/25/app-rest-desig/index.html" target="_blank" class="mdui-ripple">
+                分享到QQ
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://service.weibo.com/share.php?appkey=&title=&url=http://zone.lfmax.cn//2019/04/25/app-rest-desig/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+                分享到微博
+            </a>
+        </li>
+      
+
+    </ul>
+  </div>
+
+
     </div>
   </div>
+  <div class="theme-post__warpper
+    
+      theme-post__warpper--center
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          这篇文章最后修改于
+          <span id="content-warning"></span>
+          天之前。
+          本页内容可能已经过时！
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/20.png">
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <p>title: app-reset-design<br>date: 2019-04-25 03:38:28<br>tags:</p>
+<ul>
+<li>node</li>
+<li>restify</li>
+</ul>
+<p>categories:</p>
+<ul>
+<li>技术文章</li>
+</ul>
+<p>根据resetfull API 规范定义一个自己的 api规范</p>
+<p>定义格式如下</p>
+<blockquote>
+<p>/app/userid/resname</p>
+</blockquote>
+<p>所有请求使用http中动作表示其目的</p>
+<p>url只定义资源的路径</p>
+<p>包含一下几个动作类型</p>
+<blockquote>
+<p>GET、POST、PUT和DELETE</p>
+</blockquote>
+<p>资源服务器提供登录验证</p>
+<p>资源服务器提供版本支持和不同格式的请求</p>
+<p>第一个版本只提供json的格式请求</p>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+	    刘龙飞--string <br>
+	    <a href="mailto:liulf_pc@126.com">email:liulf_pc@126.com</a><br>
+	    本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利.  <br>
+            <span>本文永久链接：<a href="http://zone.lfmax.cn/2019/04/25/app-rest-desig/">http://zone.lfmax.cn/2019/04/25/app-rest-desig/</a></span>
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: '打赏', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-spacer mdui-hidden-xs"></div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      <a href="/2019/04/25/node-restify/" class="theme-post__pagination__next__content mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          node-restify
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog .mdui-ripple" id="donateDialog">
+      <div class="mdui-dialog-title">打赏</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/images/wechat.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>不要</button>
+      </div>
+    </div>
+  
 </div>
 <script type="text/javascript">
-  document.title = '404 - developer'
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
+    }
+  }
 </script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1556172648466
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>string</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
+
 
       </div>
     </div>
