@@ -18,7 +18,7 @@ categories:
  > GET、POST、PUT和DELETE
 
 
-所有请求使用http中动作表示其目的
+所有请求使用http中请求类型表示其目的
 url只定义资源的路径
 包含一下几个动作类型
 资源服务器提供登录验证
