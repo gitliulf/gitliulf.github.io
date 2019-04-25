@@ -525,14 +525,14 @@
         
         
           <section class="mdui-card-media">
-            <img src="/images/random/40.png">
+            <img src="/images/random/33.png">
           </section>
         
         <section class="mdui-typo theme-post__card__content">
           <p>定义apiResultFull api</p>
 <h1 id="根据resetfull-API-规范定义一个自己的-api规范"><a href="#根据resetfull-API-规范定义一个自己的-api规范" class="headerlink" title="根据resetfull API 规范定义一个自己的 api规范"></a>根据resetfull API 规范定义一个自己的 api规范</h1><p>定义格式如下</p>
 <blockquote>
-<p>/app/userid/resname<br>GET、POST、PUT和DELETE</p>
+<p>/app/userid/resname<br>GET    查询<br>POST   新增<br>PUT    修改<br>DELETE 删除</p>
 </blockquote>
 <p>所有请求使用http中请求类型表示其目的<br>url只定义资源的路径<br>包含一下几个动作类型<br>资源服务器提供登录验证<br>资源服务器提供版本支持和不同格式的请求<br>第一个版本只提供json的格式请求</p>
 
@@ -744,7 +744,7 @@
 
 <script type="text/javascript">
   (function() {
-    var postLastModifiedDate = 1556172927454
+    var postLastModifiedDate = 1556187030346
     var today = (new Date()).getTime()
     var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
     if (difference >= 100) {

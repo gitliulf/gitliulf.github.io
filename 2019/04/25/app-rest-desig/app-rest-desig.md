@@ -15,8 +15,10 @@ categories:
 # 根据resetfull API 规范定义一个自己的 api规范
 定义格式如下
  > /app/userid/resname
- > GET、POST、PUT和DELETE
-
+ > GET    查询
+ > POST   新增
+ > PUT    修改
+ > DELETE 删除
 
 所有请求使用http中请求类型表示其目的
 url只定义资源的路径
