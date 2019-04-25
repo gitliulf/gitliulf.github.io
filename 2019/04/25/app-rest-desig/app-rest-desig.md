@@ -1,13 +1,14 @@
+---
 title: app-reset-design
 date: 2019-04-25 03:38:28
 tags:
-
 - node
 - restify
 
 categories:
-
 - 技术文章
+
+---
 
 
 根据resetfull API 规范定义一个自己的 api规范
