@@ -9,8 +9,10 @@ categories:
 -  flutter
 
 ---
-## flutter 安装
 
+flutter 安装
+
+#
 在windows参考下面设置两个环境变量
 在linux下输入下面命令
 ```
