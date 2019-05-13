@@ -12,7 +12,7 @@ categories:
 
 flutter 安装
 
-#设置环境变量
+# 设置环境变量
 ## windows 
 在windows参考下面设置两个环境变量
 
