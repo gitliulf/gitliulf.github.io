@@ -2,7 +2,11 @@
 title: npm 使用国内源 
 date: 2019-04-30 01:23:37
 tags: 
-- nodejs
+- node
+
+categories:
+- 技术文章
+
 ---
 
 切换npm使用的源地址
