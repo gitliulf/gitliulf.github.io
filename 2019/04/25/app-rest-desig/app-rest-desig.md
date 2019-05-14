@@ -2,7 +2,6 @@
 title: app-reset-design
 date: 2019-04-25 03:38:28
 tags:
-- node
 - restify
 
 categories:
