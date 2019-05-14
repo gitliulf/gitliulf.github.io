@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>node-restify - developer</title>
+  <title>crontab-定时使用 - developer</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -48,7 +48,7 @@
 
   <meta name="author" content="string">
   
-  <meta name="keywords" content="blog, hexo, mdui,node,restify">
+  <meta name="keywords" content="blog, hexo, mdui,cmmi,软件管理">
 
   <!--iOS -->
   <meta name="apple-mobile-web-app-title" content="developer">
@@ -63,14 +63,14 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://zone.lfmax.cn">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="node-restify - developer | developer">
+  <meta property="og:title" content="crontab-定时使用 - developer | developer">
   <meta property="og:image" content="/images/favicon.png">
   
 
   
-    <meta property="og:article:tag" content="node">
+    <meta property="og:article:tag" content="cmmi">
   
-    <meta property="og:article:tag" content="restify">
+    <meta property="og:article:tag" content="软件管理">
   
 
   
@@ -496,13 +496,17 @@
   <div class="theme-post__background mdui-color-theme"></div>
   <div class="theme-post__header mdui-color-theme">
     <div class="theme-post__header__title mdui-text-truncate">
-      node-restify
+      crontab-定时使用
     </div>
     <div class="theme-spacer"></div>
     <div class="theme-post__header__actions mdui-valign">
       <div>
         <span>编写时间：</span>
-        <span style="float: right">4月 25, 2019</span>
+        <span style="float: right">4月 22, 2019</span>
+        
+        <br>
+          <span>最后修改时间：</span>
+          <span>5月 14, 2019</span>
         
       </div>
       
@@ -514,7 +518,7 @@
       <li class="mdui-list-item" style="cursor: auto">
         文章二维码
       </li>
-        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACV0lEQVR42u3aQXKDMBAEQP//08kDXCYzK0smruZEYQrUHFbrkR4/X3088PDw8PDw8PDwbsZ7xEfxgsv7X/36fH02Njw8PLwzvJXhJoN7vqc9L96Lh4eHd5D3quC+d4j5xNOODQ8PD+/OvFeDTop4/mQ8PDy8b+Il50nRx8PDw/vvvOQPf46/bqNnwe72rAUPDw8v5uWLTOfPj67v4eHh4QW89kha4bxln4Uaf4wQDw8PbzMvL8QJeKWlvv5wxXjw8PDwNvP++GMfbzzNy307heRLaHh4eHgnee3WqPX7Z7CoicfDw8M7yFuJGGYhbD55DLcO4OHh4R3hJSU+L9z5FDLbboWHh4f3WV5dgkfFfXdjjYeHh3eGl2wXaBvxlXK/EnDg4eHhneGtLErNpo22+U7GgIeHh3cHXj4B5AFH+xHrz4qHh4e3mVe0qpefoL0nYeRX8PDw8M7z2sZ6uKhfNsfD5h4PDw9vM2+2BNVuV11/S7F5Cw8PD+8Ib4bZd2Ul0sXDw8PbzWujh9lW1DbkbZF4eHh4n+W1wW6CWXly/SseHh7ecd4sTm2b72RKaN+Fh4eHd56XRKXX57Mm+xEfUWyBh4eHt5nXHivbC5LGun0+Hh4e3nnerCivTC15NNx+Ajw8PLyTvPUAYtYut9HtlhgXDw8Pb4GXF+g8/F2PcZNR4eHh4d2ftx5AvGuZbSmlxsPDwzvIm22cap9zPW3UYQQeHh7eBl7bFs+WymbLaYdiXDw8PLwNC2BtaFsU9HZzVR5G4OHh4b2V930HHh4eHh4eHh7eDY5f2RxT74X9tfQAAAAASUVORK5CYII=" style="cursor: auto">
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB4UlEQVR42u3aSXLDMAwEQP//08kDHLMGIJVEQuvk8iKxLzC219cjrhcGBgYGBgYGxr9hvOLrhxu9ffrpm++/2j8DBgbGNMbOg5MDrZ/VPAMGBsZIRvL4NSBH7pwBAwMDI2H0wmVyTwwMDIwrGEkSmb+DgYGBsV/ErlPAvIg90KTDwMAYxsib8te9/tX5BgYGxq0Y5RWH9a03mm6/ujOCgYFxK0Ye+PKjJKPNPOhjYGBg7Bwov0M1KdwqYjEwMB7KqC5DJA27s2thzf8NDAyMRzDy5KzakssTwR4SAwMDI/80X8LIG23lIhYDA2MAo/fIpKC9YkSKgYExjVEtYvPxZD7srBa9GBgYMxnVJto6BCcBPR8MREUsBgbGAEae8J1KGaPWf+9/AwMD49GMJDkrt++L6WM+NsDAwJjJqI4qTxWl1QVZDAwMjF56lzf3T5XNGBgYMxlJu7/ZxN9IBz+eCgMDYwyjelUbbdX7FIagGBgYYxjVILgOhXm520sfMTAwJjNOrUfkqxg5EgMDAyMJdgnj7He2Ai4GBgZGK1DurIVtdQ0xMDAwiuG196utESYGBsbjGHkTf/1OdZyZr2tgYGBMZvQWIHrBNF//unC+gYGBcSvGfS8MDAwMDAwMjD+9vgERYHiViZkwKwAAAABJRU5ErkJggg==" style="cursor: auto">
     </ul>
   </div>
 
@@ -535,7 +539,7 @@
 
       
         <li class="mdui-menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=developer&title=node-restify&summary=&pics=http://zone.lfmax.cn/images/favicon.png&url=http://zone.lfmax.cn/2019/04/25/node-restify/index.html" target="_blank" class="mdui-ripple">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=developer&title=crontab-定时使用&summary=&pics=http://zone.lfmax.cn/images/favicon.png&url=http://zone.lfmax.cn/2019/04/22/cmmi/index.html" target="_blank" class="mdui-ripple">
                 分享到QQ
             </a>
         </li>
@@ -547,7 +551,7 @@
 
       
         <li class="mdui-menu-item">
-            <a href="http://service.weibo.com/share.php?appkey=&title=node-restify&url=http://zone.lfmax.cn//2019/04/25/node-restify/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+            <a href="http://service.weibo.com/share.php?appkey=&title=crontab-定时使用&url=http://zone.lfmax.cn//2019/04/22/cmmi/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
                 分享到微博
             </a>
         </li>
@@ -561,8 +565,6 @@
   </div>
   <div class="theme-post__warpper
     
-      theme-post__warpper--center
-    
   ">
     <div class="theme-post__warpper__container">
       <article class="mdui-card theme-post__card mdui-hoverable">
@@ -575,11 +577,17 @@
         
         
           <section class="mdui-card-media">
-            <img src="/images/random/27.png">
+            <img src="/images/random/33.png">
           </section>
         
         <section class="mdui-typo theme-post__card__content">
-          <p>A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth.</p>
+          <p>CMMI</p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>  CMMI是英文Capability Maturity Model Integration的缩写。CMMI认证简称软件能力成熟度集成模型，是鉴定企业在开发流程化和质量管理上的国际通行标准，全球软件生产标准大都以此为基点，并都努力争取成为CMMI认证队伍中的一分子。<br>对一个软件企业来说，达到CMMI2就基本上进入了规模开发，基本具备了一个现代化软件企业的基本架构和方法，具备了承接外包项目的能力。CMMI3评估则需要对大软件集成的把握，包括整体架构的整合。一般来说，通过CMMI认证的级别越高，其越容易获得用户的信任，在国内、国际市场上的竞争力也就越强。<br>CMMI一共分为五个等级：</p>
+<h2 id="第一级：-初始级"><a href="#第一级：-初始级" class="headerlink" title="第一级： 初始级"></a>第一级： 初始级</h2><p>软件过程是无序的，有时甚至是混乱的，对过程几乎没有定义，成功取决于个人努力。管理是反应式的。</p>
+<h2 id="第二级：可管理级"><a href="#第二级：可管理级" class="headerlink" title="第二级：可管理级"></a>第二级：可管理级</h2><p>建立了基本的项目管理过程来跟踪费用、进度和功能特性。制定了必要的过程纪律，能重复早先类似应用项目取得的成功经验。</p>
+<h2 id="第三级：-已定义级"><a href="#第三级：-已定义级" class="headerlink" title="第三级： 已定义级"></a>第三级： 已定义级</h2><p>已将软件管理和工程两方面的过程文档化、标准化，并综合成该组织的标准软件过程。所有项目均使用经批准、剪裁的标准来开发和维护软件，软件产品的生产在整个软件过程是可见的。</p>
+<h2 id="第四级：量化管理级"><a href="#第四级：量化管理级" class="headerlink" title="第四级：量化管理级"></a>第四级：量化管理级</h2><p>分析对软件过程和产品质量的详细度量数据，对软件过程和产品都有定量的理解与控制。管理有一个作出结论的客观依据，管理能够在定量的范围内预测性能。</p>
+<h2 id="第五级：优化管理级"><a href="#第五级：优化管理级" class="headerlink" title="第五级：优化管理级"></a>第五级：优化管理级</h2><p>过程的量化反馈和先进的新思想、新技术促使过程持续不断改进。  </p>
 
         </section>
 
@@ -588,7 +596,7 @@
 	    刘龙飞--string <br>
 	    <a href="mailto:liulf_pc@126.com">email:liulf_pc@126.com</a><br>
 	    本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利.  <br>
-            <span>本文永久链接：<a href="http://zone.lfmax.cn/2019/04/25/node-restify/">http://zone.lfmax.cn/2019/04/25/node-restify/</a></span>
+            <span>本文永久链接：<a href="http://zone.lfmax.cn/2019/04/22/cmmi/">http://zone.lfmax.cn/2019/04/22/cmmi/</a></span>
           </section>
         
 
@@ -606,8 +614,8 @@
               </div>
               <div class="mdui-typo">
                 
-                  <a href="/categories/技术文章/">
-                    <span>技术文章</span>
+                  <a href="/categories/认证/">
+                    <span>认证</span>
                   </a>
                 
               </div>
@@ -618,12 +626,12 @@
               </div>
               <div class="mdui-typo">
                 
-                  <a href="/tags/node/">
-                    <span>node</span>
+                  <a href="/tags/cmmi/">
+                    <span>cmmi</span>
                   </a>
                 
-                  <a href="/tags/restify/">
-                    <span>restify</span>
+                  <a href="/tags/软件管理/">
+                    <span>软件管理</span>
                   </a>
                 
               </div>
@@ -642,10 +650,24 @@
         
       </article>
       
+        <div class="mdui-color-theme theme-post__toc">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B80;&#x4ECB;" data-href="#&#x7B80;&#x4ECB;"><span class="toc-number"></span> <span class="toc-text">1. &#x7B80;&#x4ECB;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E00;&#x7EA7;&#xFF1A;-&#x521D;&#x59CB;&#x7EA7;" data-href="#&#x7B2C;&#x4E00;&#x7EA7;&#xFF1A;-&#x521D;&#x59CB;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.1. &#x7B2C;&#x4E00;&#x7EA7;&#xFF1A; &#x521D;&#x59CB;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E8C;&#x7EA7;&#xFF1A;&#x53EF;&#x7BA1;&#x7406;&#x7EA7;" data-href="#&#x7B2C;&#x4E8C;&#x7EA7;&#xFF1A;&#x53EF;&#x7BA1;&#x7406;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.2. &#x7B2C;&#x4E8C;&#x7EA7;&#xFF1A;&#x53EF;&#x7BA1;&#x7406;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E09;&#x7EA7;&#xFF1A;-&#x5DF2;&#x5B9A;&#x4E49;&#x7EA7;" data-href="#&#x7B2C;&#x4E09;&#x7EA7;&#xFF1A;-&#x5DF2;&#x5B9A;&#x4E49;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.3. &#x7B2C;&#x4E09;&#x7EA7;&#xFF1A; &#x5DF2;&#x5B9A;&#x4E49;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x56DB;&#x7EA7;&#xFF1A;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;" data-href="#&#x7B2C;&#x56DB;&#x7EA7;&#xFF1A;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.4. &#x7B2C;&#x56DB;&#x7EA7;&#xFF1A;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E94;&#x7EA7;&#xFF1A;&#x4F18;&#x5316;&#x7BA1;&#x7406;&#x7EA7;" data-href="#&#x7B2C;&#x4E94;&#x7EA7;&#xFF1A;&#x4F18;&#x5316;&#x7BA1;&#x7406;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.5. &#x7B2C;&#x4E94;&#x7EA7;&#xFF1A;&#x4F18;&#x5316;&#x7BA1;&#x7406;&#x7EA7;</span></a></li></ol></li></ol>
+        </div>
+      
     </div>
   </div>
 
   <div class="theme-spacer"></div>
+
+  
+    <div class="mdui-color-theme theme-post__toc-fab">
+  <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" mdui-menu="{target: '#toc-fab-menu', fixed: true}" id="toc-fab">
+    <i class="mdui-icon material-icons">&#xe242;</i>
+  </button>
+  <ul class="mdui-menu mdui-typo theme-post__toc-fab__menu" id="toc-fab-menu" style="padding: 8px;max-height: 80%">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B80;&#x4ECB;" data-href="#&#x7B80;&#x4ECB;"><span class="toc-number"></span> <span class="toc-text">1. &#x7B80;&#x4ECB;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E00;&#x7EA7;&#xFF1A;-&#x521D;&#x59CB;&#x7EA7;" data-href="#&#x7B2C;&#x4E00;&#x7EA7;&#xFF1A;-&#x521D;&#x59CB;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.1. &#x7B2C;&#x4E00;&#x7EA7;&#xFF1A; &#x521D;&#x59CB;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E8C;&#x7EA7;&#xFF1A;&#x53EF;&#x7BA1;&#x7406;&#x7EA7;" data-href="#&#x7B2C;&#x4E8C;&#x7EA7;&#xFF1A;&#x53EF;&#x7BA1;&#x7406;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.2. &#x7B2C;&#x4E8C;&#x7EA7;&#xFF1A;&#x53EF;&#x7BA1;&#x7406;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E09;&#x7EA7;&#xFF1A;-&#x5DF2;&#x5B9A;&#x4E49;&#x7EA7;" data-href="#&#x7B2C;&#x4E09;&#x7EA7;&#xFF1A;-&#x5DF2;&#x5B9A;&#x4E49;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.3. &#x7B2C;&#x4E09;&#x7EA7;&#xFF1A; &#x5DF2;&#x5B9A;&#x4E49;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x56DB;&#x7EA7;&#xFF1A;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;" data-href="#&#x7B2C;&#x56DB;&#x7EA7;&#xFF1A;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.4. &#x7B2C;&#x56DB;&#x7EA7;&#xFF1A;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x7B2C;&#x4E94;&#x7EA7;&#xFF1A;&#x4F18;&#x5316;&#x7BA1;&#x7406;&#x7EA7;" data-href="#&#x7B2C;&#x4E94;&#x7EA7;&#xFF1A;&#x4F18;&#x5316;&#x7BA1;&#x7406;&#x7EA7;"><span class="toc-number"></span> <span class="toc-text">1.5. &#x7B2C;&#x4E94;&#x7EA7;&#xFF1A;&#x4F18;&#x5316;&#x7BA1;&#x7406;&#x7EA7;</span></a></li></ol></li></ol>
+  </ul>
+</div>
 
   
 
@@ -653,13 +675,13 @@
     <div class="theme-post__pagination mdui-color-theme">
   
     <div class="theme-post__pagination__prev mdui-ripple mdui-valign">
-      <a href="/2019/04/25/app-rest-desig/" class="theme-post__pagination__prev__content mdui-text-left">
+      <a href="/2019/04/22/hexo/" class="theme-post__pagination__prev__content mdui-text-left">
         <div>
           <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
           <span class="mdui-typo-body-2-opacity mdui-text-center">新的文章</span>
         </div>
         <div class="mdui-typo-title mdui-text-truncate">
-          app-reset-design
+          Hello
         </div>
       </a>
     </div>
@@ -667,13 +689,13 @@
 
   
     <div class="theme-post__pagination__next mdui-ripple mdui-valign">
-      <a href="/2019/04/25/http-method-definitions/" class="theme-post__pagination__next__content mdui-text-right">
+      <a href="/2019/04/22/linux-user/" class="theme-post__pagination__next__content mdui-text-right">
         <div>
           <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
           <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
         </div>
         <div class="mdui-typo-title mdui-text-truncate">
-          http-method-definitions
+          user-linux
         </div>
       </a>
     </div>
@@ -785,7 +807,7 @@
 
 <script type="text/javascript">
   (function() {
-    var postLastModifiedDate = 1556167807211
+    var postLastModifiedDate = 1557798767769
     var today = (new Date()).getTime()
     var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
     if (difference >= 100) {
