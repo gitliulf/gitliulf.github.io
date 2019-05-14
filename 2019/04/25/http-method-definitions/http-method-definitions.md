@@ -12,7 +12,7 @@ categories:
 介绍http中method的定义
 
 
-9 Method Definitions
+# Method Definitions
 The set of common methods for HTTP/1.1 is defined below. Although this set can be expanded, additional methods cannot be assumed to share the same semantics for separately extended clients and servers.
 
 The Host request-header field (section 14.23) MUST accompany all HTTP/1.1 requests.
