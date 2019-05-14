@@ -1,9 +1,8 @@
 ---
-title: app-reset-design
+title: android-build 
 date: 2019-04-25 03:38:28
 tags:
 - Android
-- version
 
 categories:
 - 技术文章
