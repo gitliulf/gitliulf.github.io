@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <script>
+    window.themeRuntime = {
+      root: "/",
+      scriptsMap: {},
+      init: {
+        status: false
+      },
+      commentRest: {
+        status: false
+      },
+      versions: {
+        theme: "2.0.3",
+        mdui: "0.4.0",
+        fetch: "3.0.0",
+        es6promise: "4.2.5+7f2b526d",
+        lightgallery: "1.0.1",
+        smoothscroll: "15.2.0"
+      }
+      
+    };
+    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        -->
+
+  <meta charset="UTF-8">
+  <title>huawei-compatible - developer</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
+  <link rel="icon" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="theme-color" content="#fff">
+
+  <meta name="author" content="string">
+  
+  <meta name="keywords" content="blog, hexo, mdui,huawei-iot">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="developer">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="http://zone.lfmax.cn">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="huawei-compatible - developer | developer">
+  <meta property="og:image" content="/images/favicon.png">
+  
+
+  
+    <meta property="og:article:tag" content="huawei-iot">
+  
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/mdui.css">
+  
+
+  
+
+</head>
+
+
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+  <style>
+    #spinner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+    main {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      display: none;
+    }
+  </style>
+  <div id="spinner">
+    <style>
+      .spinner {
+
+      -webkit-animation: rotator 1.4s linear infinite;
+              animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      @keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @-webkit-keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+
+      @keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+    </style>
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+  <main>
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
+  <div class="mdui-toolbar theme-toolbar-top">
+    
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+    
+  </div>
+  <div class="mdui-toolbar theme-toolbar-bottom">
+    <span class="theme-toolbar-bottom__title">developer</span>
+    
+      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
+        <i class="mdui-icon material-icons">&#xe8b6;</i>
+      </a>
+    
+  </div>
+  <div class="mdui-progress theme-appbar__progress" id="progressBar">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
+  <!-- header -->
+  <div class="theme-drawer__header">
+  <div class="theme-drawer__header__layer-1">
+    <div class="mdui-toolbar theme-toolbar-top">
+      
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </a>
+      
+    </div>
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">developer</span>
+    </div>
+  </div>
+  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <div class="theme-drawer__header__layer-2__user__info">
+      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
+        string
+      </div>
+      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
+        用心享受
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="theme-drawer__warpper">
+    <!-- content -->
+    <div class="theme-drawer__warpper__content">
+  <ul class="mdui-list">
+    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+      <div class="mdui-list-item-content">首页</div>
+    </a>
+    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe1db;</i>
+      <div class="mdui-list-item-content">归档</div>
+    </a>
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe3c7;</i>
+            <div class="mdui-list-item-content">分类</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/技术文章/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                技术文章
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>10</span>
+              </a>
+            
+              <a href="/categories/认证/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                认证
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>4</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">标签</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/flutter/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                flutter
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/cmmi/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                cmmi
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/restify/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                restify
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Android
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/huawei-iot/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                huawei-iot
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/linux/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                linux
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/node/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                node
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+          <div class="mdui-list-item-content">年份</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          
+          
+            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
+              2019
+            </a>
+          
+        </div>
+      </div>
+    </ul>
+  </ul>
+  
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+      
+        
+          
+            <a href="/about" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe84e;</i>
+              
+              
+              <div class="mdui-list-item-content">About</div>
+            </a>
+        
+      
+    </ul>
+  
+</div>
+
+    <div class="theme-spacer"></div>
+    <!-- footer -->
+    <div class="theme-drawer__warpper__footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
+    <br>
+    <span>
+      Copyright ©
+      <span year></span>
+      string
+    </span>
+    
+      <br>
+      <span onclick="window.open('http://www.miitbeian.gov.cn/', '_blank');">true</span>
+    
+    
+      <br>
+      <span>
+        最后更新于: 5月 14, 2019
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    copyrightSince = true;
+    if (copyrightSince === copyrightNow) {
+      textContent.textContent = copyrightNow
+    } else {
+      textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+  
+</script>
+
+  </div>
+</div>
+
+    <div id="top"></div>
+
+    <script src="/js/lightgallery.min.js"></script>
+
+    <div id="barba-wrapper">
+      <div class="barba-container"  data-namespace="post">
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      huawei-compatible
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>编写时间：</span>
+        <span style="float: right">5月 14, 2019</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        文章二维码
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACX0lEQVR42u3aQXLCMBAEQP7/6eQBVMjMyhKGap9cYCK3DtJmVo+fr74eeHh4eHh4eHh4N+M94uv5V3/dt88/3y+9Gx4eHt4R3j9LbfBM8kKvn0zAybvh4eHhneS1Q84Yr59feTc8PDy8T+GtFMptIY6Hh4f36by62I1DCjw8PLxP4eWl7UoIm0/ZG7IWPDw8vJiXRwbn74/29/Dw8PACXn2kKS6U25K6LdmjQ1d4eHh4G3j5Qpw3qJJv85K9bpvh4eHhbeYlC/pV4UIePbQHEfDw8PBO8h7lNZuOWTk+3Gbw8PDwNvPa0CE/Zjo7wHrB6Hh4eHibeW0QUJS2ZbybjzU8GYGHh4e3mZe/4mwRXxmrDiPw8PDwNvBeD9YGE208kcfB0Sh4eHh4m3kJJt8Y8m/buHYpa8HDw8Pbduhq1sJP4uA8UEg2j2EYgYeHh7eNd9XA7caz8gkeHh7eSV7bmmqPauWh7WyCiv8Y8PDw8Dbw2iB1pXH1GtlOKB4eHt5JXh4QJBHDesG9UoLj4eHhneTlw8yaZO3fT7aNOmvBw8PD28ZrS+GrDhmshCN4eHh47+K1i37bmmoPEwyjEDw8PLyDvKvC3Lwx1rbTomgDDw8PbzOvvaKiNjjIlU9lPfV4eHh4m3mz5XilJZaX1+0U4OHh4Z3k5a39ZNGfhR35ZoOHh4d3H17b7mrDgvyA12ybwcPDw/tc3uy11sF4eHh4d+bli357wKs9KLBlY8DDw8O7NIxom1iz6Vgq3PHw8PCO8NqCOP+83TZWmnB4eHh4Z3jfd+Hh4eHh4eHh4d3g+gUutR/rNQ/oVgAAAABJRU5ErkJggg==" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=developer&title=huawei-compatible&summary=&pics=http://zone.lfmax.cn/images/favicon.png&url=http://zone.lfmax.cn/2019/05/14/huawei-compatible/index.html" target="_blank" class="mdui-ripple">
+                分享到QQ
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://service.weibo.com/share.php?appkey=&title=huawei-compatible&url=http://zone.lfmax.cn//2019/05/14/huawei-compatible/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+                分享到微博
+            </a>
+        </li>
+      
+
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+  <div class="theme-post__warpper
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          这篇文章最后修改于
+          <span id="content-warning"></span>
+          天之前。
+          本页内容可能已经过时！
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/42.png">
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <h1 id="1-设备接入和删除"><a href="#1-设备接入和删除" class="headerlink" title="1. 设备接入和删除"></a><strong>1.</strong> <strong>设备接入和删除</strong></h1><h2 id="1-1-AgentLite-认证-接入和删除-001"><a href="#1-1-AgentLite-认证-接入和删除-001" class="headerlink" title="1.1 AgentLite_认证_接入和删除_001"></a>1.1 AgentLite_认证_接入和删除_001</h2><p> 测试方法：在平台上注册设备后，进行绑定操作，在平台上从离线变为在线状态</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>测试步骤2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果3的截图，离线在线状态图各一张，deviceid一致</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-2-AgentLite-认证-接入和删除-002"><a href="#1-2-AgentLite-认证-接入和删除-002" class="headerlink" title="1.2 AgentLite_认证_接入和删除_002"></a>1.2 AgentLite_认证_接入和删除_002</h2><p> 测试方法：将已在线的设备删除</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>测试步骤2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2，3的截图，平台上用deviceid查询此设备时结果为空</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-3-AgentLite-认证-接入和删除-003"><a href="#1-3-AgentLite-认证-接入和删除-003" class="headerlink" title="1.3 AgentLite_认证_接入和删除_003"></a>1.3 AgentLite_认证_接入和删除_003</h2><p>测试方法：设备在线后，下电离线后再删除</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>测试步骤2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2，3的截图，平台上用deviceid查询此设备时结果为空</td>
+</tr>
+</tbody>
+</table></div>
+<p># </p>
+<h1 id="2-设备数据上报"><a href="#2-设备数据上报" class="headerlink" title="2 设备数据上报"></a><strong>2</strong> <strong>设备数据上报</strong></h1><h2 id="2-1-AgentLite-认证-数据上报-001"><a href="#2-1-AgentLite-认证-数据上报-001" class="headerlink" title="2.1 AgentLite_认证_数据上报_001"></a>2.1 AgentLite_认证_数据上报_001</h2><p>测试方法：设备电池供电，上报电量</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4的截图</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-2-AgentLite-认证-数据上报-002"><a href="#2-2-AgentLite-认证-数据上报-002" class="headerlink" title="2.2 AgentLite_认证_数据上报_002"></a>2.2 AgentLite_认证_数据上报_002</h2><p>测试方法： 电池供电，低电量时，上报低电量告警</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4的截图</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-3-AgentLite-认证-数据上报-003（可选）"><a href="#2-3-AgentLite-认证-数据上报-003（可选）" class="headerlink" title="2.3 AgentLite_认证_数据上报_003（可选）"></a>2.3 AgentLite_认证_数据上报_003（可选）</h2><p>测试方法： 绑定设备成功后，电量也上报到平台，非手动触发上报</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4的截图</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-4-AgentLite-认证-数据上报-004"><a href="#2-4-AgentLite-认证-数据上报-004" class="headerlink" title="2.4 AgentLite_认证_数据上报_004"></a>2.4 AgentLite_认证_数据上报_004</h2><p>测试方法： 设备触发基本数据上报，比如温度，湿度等。</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期截图结果2的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2的截图</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-5-AgentLite-认证-数据上报-005"><a href="#2-5-AgentLite-认证-数据上报-005" class="headerlink" title="2.5 AgentLite_认证_数据上报_005"></a>2.5 AgentLite_认证_数据上报_005</h2><p>测试方法： 设备离线状态上报</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2的截图</td>
+</tr>
+</tbody>
+</table></div>
+<h1 id="3-初始化（可-选）"><a href="#3-初始化（可-选）" class="headerlink" title="3 初始化（可**选）**"></a><strong>3</strong> <strong>初始化（可**</strong>选）**</h1><h2 id="3-1-AgentLit-认证-初始化-001"><a href="#3-1-AgentLit-认证-初始化-001" class="headerlink" title="3.1 AgentLit_认证_初始化_001"></a>3.1 AgentLit_认证_初始化_001</h2><p>测试方法：初始化设备到出厂设置</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果截图</td>
+</tr>
+</tbody>
+</table></div>
+<h1 id="4-可靠性"><a href="#4-可靠性" class="headerlink" title="4 可靠性"></a><strong>4</strong> <strong>可靠性</strong></h1><h2 id="4-1-AgentLite-认证-可靠性-001"><a href="#4-1-AgentLite-认证-可靠性-001" class="headerlink" title="4.1 AgentLite_认证_可靠性_001"></a>4.1 AgentLite_认证_可靠性_001</h2><p>测试方法：电池供电，插拔传感器电池，10次</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4截图，每次上线下线，上报数据的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4截图，每次上线下线，上报数据的截图</td>
+</tr>
+</tbody>
+</table></div>
+<h1 id="5-稳定性"><a href="#5-稳定性" class="headerlink" title="5 稳定性"></a><strong>5</strong> <strong>稳定性</strong></h1><h2 id="5-1-AgentLite-认证-稳定性-001（可选）"><a href="#5-1-AgentLite-认证-稳定性-001（可选）" class="headerlink" title="5.1 AgentLite_认证_稳定性_001（可选）"></a>5.1 AgentLite_认证_稳定性_001（可选）</h2><p>测试方法：传感器信号干扰测试</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果1截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果1截图</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-2-AgentLite-认证-稳定性-002"><a href="#5-2-AgentLite-认证-稳定性-002" class="headerlink" title="5.2 AgentLite_认证_稳定性_002"></a>5.2 AgentLite_认证_稳定性_002</h2><p>测试方法：设备运行72小时，不断电，稳定上报数据</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果2截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2截图</td>
+</tr>
+</tbody>
+</table></div>
+<h1 id="6-固件升级与回退（可-选）"><a href="#6-固件升级与回退（可-选）" class="headerlink" title="6 固件升级与回退（可**选）**"></a><strong>6</strong> <strong>固件升级与回退（可**</strong>选）**</h1><h2 id="6-1-AgentLite-认证-升级-001"><a href="#6-1-AgentLite-认证-升级-001" class="headerlink" title="6.1 AgentLite_认证_升级_001"></a>6.1 AgentLite_认证_升级_001</h2><p>测试方法：在平台上传升级包，创建升级任务，下发升级任务给设备。</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>平台截图</th>
+<th>预期结果6，7，8，9截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-2-AgentLite-认证-回退-002"><a href="#6-2-AgentLite-认证-回退-002" class="headerlink" title="6.2 AgentLite_认证_回退_002"></a>6.2 AgentLite_认证_回退_002</h2><p>测试方法：在平台创建回退任务，下发回退任务给设备。</p>
+<p>测试数据：</p>
+<div class="mdui-table-fluid theme-post__card__table--flat"><table class="mdui-table mdui-table-hoverable ">
+<thead>
+<tr>
+<th>平台截图</th>
+<th>预期结果6，7，8，9截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+	    刘龙飞--string <br>
+	    <a href="mailto:liulf_pc@126.com">email:liulf_pc@126.com</a><br>
+	    本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利.  <br>
+            <span>本文永久链接：<a href="http://zone.lfmax.cn/2019/05/14/huawei-compatible/">http://zone.lfmax.cn/2019/05/14/huawei-compatible/</a></span>
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: '打赏', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe1db;</i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/categories/认证/">
+                    <span>认证</span>
+                  </a>
+                
+              </div>
+            
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/tags/huawei-iot/">
+                    <span>huawei-iot</span>
+                  </a>
+                
+              </div>
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+        <div class="mdui-color-theme theme-post__toc">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-&#x8BBE;&#x5907;&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;" data-href="#1-&#x8BBE;&#x5907;&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;"><span class="toc-number"></span> <span class="toc-text">1. 1. &#x8BBE;&#x5907;&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-1-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-001" data-href="#1-1-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-001"><span class="toc-number"></span> <span class="toc-text">1.1. 1.1 AgentLite_&#x8BA4;&#x8BC1;_&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;_001</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-2-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-002" data-href="#1-2-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-002"><span class="toc-number"></span> <span class="toc-text">1.2. 1.2 AgentLite_&#x8BA4;&#x8BC1;_&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;_002</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-3-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-003" data-href="#1-3-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-003"><span class="toc-number"></span> <span class="toc-text">1.3. 1.3 AgentLite_&#x8BA4;&#x8BC1;_&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;_003</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-&#x8BBE;&#x5907;&#x6570;&#x636E;&#x4E0A;&#x62A5;" data-href="#2-&#x8BBE;&#x5907;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><span class="toc-number"></span> <span class="toc-text">2. 2 &#x8BBE;&#x5907;&#x6570;&#x636E;&#x4E0A;&#x62A5;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-1-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-001" data-href="#2-1-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-001"><span class="toc-number"></span> <span class="toc-text">2.1. 2.1 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_001</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-2-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-002" data-href="#2-2-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-002"><span class="toc-number"></span> <span class="toc-text">2.2. 2.2 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_002</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-3-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-003&#xFF08;&#x53EF;&#x9009;&#xFF09;" data-href="#2-3-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-003&#xFF08;&#x53EF;&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">2.3. 2.3 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_003&#xFF08;&#x53EF;&#x9009;&#xFF09;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-4-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-004" data-href="#2-4-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-004"><span class="toc-number"></span> <span class="toc-text">2.4. 2.4 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_004</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-5-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-005" data-href="#2-5-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-005"><span class="toc-number"></span> <span class="toc-text">2.5. 2.5 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_005</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#3-&#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;-&#x9009;&#xFF09;" data-href="#3-&#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;-&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">3. 3 &#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;**&#x9009;&#xFF09;**</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#3-1-AgentLit-&#x8BA4;&#x8BC1;-&#x521D;&#x59CB;&#x5316;-001" data-href="#3-1-AgentLit-&#x8BA4;&#x8BC1;-&#x521D;&#x59CB;&#x5316;-001"><span class="toc-number"></span> <span class="toc-text">3.1. 3.1 AgentLit_&#x8BA4;&#x8BC1;_&#x521D;&#x59CB;&#x5316;_001</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#4-&#x53EF;&#x9760;&#x6027;" data-href="#4-&#x53EF;&#x9760;&#x6027;"><span class="toc-number"></span> <span class="toc-text">4. 4 &#x53EF;&#x9760;&#x6027;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#4-1-AgentLite-&#x8BA4;&#x8BC1;-&#x53EF;&#x9760;&#x6027;-001" data-href="#4-1-AgentLite-&#x8BA4;&#x8BC1;-&#x53EF;&#x9760;&#x6027;-001"><span class="toc-number"></span> <span class="toc-text">4.1. 4.1 AgentLite_&#x8BA4;&#x8BC1;_&#x53EF;&#x9760;&#x6027;_001</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#5-&#x7A33;&#x5B9A;&#x6027;" data-href="#5-&#x7A33;&#x5B9A;&#x6027;"><span class="toc-number"></span> <span class="toc-text">5. 5 &#x7A33;&#x5B9A;&#x6027;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#5-1-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-001&#xFF08;&#x53EF;&#x9009;&#xFF09;" data-href="#5-1-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-001&#xFF08;&#x53EF;&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">5.1. 5.1 AgentLite_&#x8BA4;&#x8BC1;_&#x7A33;&#x5B9A;&#x6027;_001&#xFF08;&#x53EF;&#x9009;&#xFF09;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#5-2-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-002" data-href="#5-2-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-002"><span class="toc-number"></span> <span class="toc-text">5.2. 5.2 AgentLite_&#x8BA4;&#x8BC1;_&#x7A33;&#x5B9A;&#x6027;_002</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#6-&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E0E;&#x56DE;&#x9000;&#xFF08;&#x53EF;-&#x9009;&#xFF09;" data-href="#6-&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E0E;&#x56DE;&#x9000;&#xFF08;&#x53EF;-&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">6. 6 &#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E0E;&#x56DE;&#x9000;&#xFF08;&#x53EF;**&#x9009;&#xFF09;**</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#6-1-AgentLite-&#x8BA4;&#x8BC1;-&#x5347;&#x7EA7;-001" data-href="#6-1-AgentLite-&#x8BA4;&#x8BC1;-&#x5347;&#x7EA7;-001"><span class="toc-number"></span> <span class="toc-text">6.1. 6.1 AgentLite_&#x8BA4;&#x8BC1;_&#x5347;&#x7EA7;_001</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#6-2-AgentLite-&#x8BA4;&#x8BC1;-&#x56DE;&#x9000;-002" data-href="#6-2-AgentLite-&#x8BA4;&#x8BC1;-&#x56DE;&#x9000;-002"><span class="toc-number"></span> <span class="toc-text">6.2. 6.2 AgentLite_&#x8BA4;&#x8BC1;_&#x56DE;&#x9000;_002</span></a></li></ol></li></ol>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
+  
+    <div class="mdui-color-theme theme-post__toc-fab">
+  <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" mdui-menu="{target: '#toc-fab-menu', fixed: true}" id="toc-fab">
+    <i class="mdui-icon material-icons">&#xe242;</i>
+  </button>
+  <ul class="mdui-menu mdui-typo theme-post__toc-fab__menu" id="toc-fab-menu" style="padding: 8px;max-height: 80%">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-&#x8BBE;&#x5907;&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;" data-href="#1-&#x8BBE;&#x5907;&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;"><span class="toc-number"></span> <span class="toc-text">1. 1. &#x8BBE;&#x5907;&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-1-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-001" data-href="#1-1-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-001"><span class="toc-number"></span> <span class="toc-text">1.1. 1.1 AgentLite_&#x8BA4;&#x8BC1;_&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;_001</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-2-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-002" data-href="#1-2-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-002"><span class="toc-number"></span> <span class="toc-text">1.2. 1.2 AgentLite_&#x8BA4;&#x8BC1;_&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;_002</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#1-3-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-003" data-href="#1-3-AgentLite-&#x8BA4;&#x8BC1;-&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;-003"><span class="toc-number"></span> <span class="toc-text">1.3. 1.3 AgentLite_&#x8BA4;&#x8BC1;_&#x63A5;&#x5165;&#x548C;&#x5220;&#x9664;_003</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-&#x8BBE;&#x5907;&#x6570;&#x636E;&#x4E0A;&#x62A5;" data-href="#2-&#x8BBE;&#x5907;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><span class="toc-number"></span> <span class="toc-text">2. 2 &#x8BBE;&#x5907;&#x6570;&#x636E;&#x4E0A;&#x62A5;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-1-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-001" data-href="#2-1-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-001"><span class="toc-number"></span> <span class="toc-text">2.1. 2.1 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_001</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-2-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-002" data-href="#2-2-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-002"><span class="toc-number"></span> <span class="toc-text">2.2. 2.2 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_002</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-3-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-003&#xFF08;&#x53EF;&#x9009;&#xFF09;" data-href="#2-3-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-003&#xFF08;&#x53EF;&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">2.3. 2.3 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_003&#xFF08;&#x53EF;&#x9009;&#xFF09;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-4-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-004" data-href="#2-4-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-004"><span class="toc-number"></span> <span class="toc-text">2.4. 2.4 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_004</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#2-5-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-005" data-href="#2-5-AgentLite-&#x8BA4;&#x8BC1;-&#x6570;&#x636E;&#x4E0A;&#x62A5;-005"><span class="toc-number"></span> <span class="toc-text">2.5. 2.5 AgentLite_&#x8BA4;&#x8BC1;_&#x6570;&#x636E;&#x4E0A;&#x62A5;_005</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#3-&#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;-&#x9009;&#xFF09;" data-href="#3-&#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;-&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">3. 3 &#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;**&#x9009;&#xFF09;**</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#3-1-AgentLit-&#x8BA4;&#x8BC1;-&#x521D;&#x59CB;&#x5316;-001" data-href="#3-1-AgentLit-&#x8BA4;&#x8BC1;-&#x521D;&#x59CB;&#x5316;-001"><span class="toc-number"></span> <span class="toc-text">3.1. 3.1 AgentLit_&#x8BA4;&#x8BC1;_&#x521D;&#x59CB;&#x5316;_001</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#4-&#x53EF;&#x9760;&#x6027;" data-href="#4-&#x53EF;&#x9760;&#x6027;"><span class="toc-number"></span> <span class="toc-text">4. 4 &#x53EF;&#x9760;&#x6027;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#4-1-AgentLite-&#x8BA4;&#x8BC1;-&#x53EF;&#x9760;&#x6027;-001" data-href="#4-1-AgentLite-&#x8BA4;&#x8BC1;-&#x53EF;&#x9760;&#x6027;-001"><span class="toc-number"></span> <span class="toc-text">4.1. 4.1 AgentLite_&#x8BA4;&#x8BC1;_&#x53EF;&#x9760;&#x6027;_001</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#5-&#x7A33;&#x5B9A;&#x6027;" data-href="#5-&#x7A33;&#x5B9A;&#x6027;"><span class="toc-number"></span> <span class="toc-text">5. 5 &#x7A33;&#x5B9A;&#x6027;</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#5-1-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-001&#xFF08;&#x53EF;&#x9009;&#xFF09;" data-href="#5-1-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-001&#xFF08;&#x53EF;&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">5.1. 5.1 AgentLite_&#x8BA4;&#x8BC1;_&#x7A33;&#x5B9A;&#x6027;_001&#xFF08;&#x53EF;&#x9009;&#xFF09;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#5-2-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-002" data-href="#5-2-AgentLite-&#x8BA4;&#x8BC1;-&#x7A33;&#x5B9A;&#x6027;-002"><span class="toc-number"></span> <span class="toc-text">5.2. 5.2 AgentLite_&#x8BA4;&#x8BC1;_&#x7A33;&#x5B9A;&#x6027;_002</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#6-&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E0E;&#x56DE;&#x9000;&#xFF08;&#x53EF;-&#x9009;&#xFF09;" data-href="#6-&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E0E;&#x56DE;&#x9000;&#xFF08;&#x53EF;-&#x9009;&#xFF09;"><span class="toc-number"></span> <span class="toc-text">6. 6 &#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E0E;&#x56DE;&#x9000;&#xFF08;&#x53EF;**&#x9009;&#xFF09;**</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#6-1-AgentLite-&#x8BA4;&#x8BC1;-&#x5347;&#x7EA7;-001" data-href="#6-1-AgentLite-&#x8BA4;&#x8BC1;-&#x5347;&#x7EA7;-001"><span class="toc-number"></span> <span class="toc-text">6.1. 6.1 AgentLite_&#x8BA4;&#x8BC1;_&#x5347;&#x7EA7;_001</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#6-2-AgentLite-&#x8BA4;&#x8BC1;-&#x56DE;&#x9000;-002" data-href="#6-2-AgentLite-&#x8BA4;&#x8BC1;-&#x56DE;&#x9000;-002"><span class="toc-number"></span> <span class="toc-text">6.2. 6.2 AgentLite_&#x8BA4;&#x8BC1;_&#x56DE;&#x9000;_002</span></a></li></ol></li></ol>
+  </ul>
+</div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-spacer mdui-hidden-xs"></div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      <a href="/2019/05/14/cmmi-compnny/" class="theme-post__pagination__next__content mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          cmmi-compnny
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog .mdui-ripple" id="donateDialog">
+      <div class="mdui-dialog-title">打赏</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/images/wechat.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>不要</button>
+      </div>
+    </div>
+  
+</div>
+<script type="text/javascript">
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1557820186609
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>string</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <div id="outdated" style="z-index: 9999;">
+    <h6>你的浏览器已经过气辣！</h6>
+    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
+  </div>
+  <!-- import js -->
+
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+
+  
+    <script src="/js/js.barba.min.js"></script>
+    <script type="text/javascript">
+      Barba.Utils.errorPageUrl = '/404.html';
+    </script>
+  
+
+
+<!-- theme js -->
+<script type="text/javascript">
+  (function() {
+    var appbarTopFlag = false;
+    var appbarEl = document.querySelector('.theme-appbar');
+    function appbarShadow() {
+      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (bodyScrolled > 0 && !appbarTopFlag) {
+        appbarEl.classList.add('theme-appbar--shadow');
+        appbarTopFlag = true;
+      } else if (bodyScrolled === 0 && appbarTopFlag) {
+        appbarEl.classList.remove('theme-appbar--shadow');
+        appbarTopFlag = false;
+      }
+    }
+    appbarShadow()
+    window.addEventListener('scroll', appbarShadow);
+  })();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('body').classList.add('theme-loaded')
+</script>
+
+
+
+</body>
+</html>
