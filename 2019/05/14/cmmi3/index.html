@@ -1,0 +1,999 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <script>
+    window.themeRuntime = {
+      root: "/",
+      scriptsMap: {},
+      init: {
+        status: false
+      },
+      commentRest: {
+        status: false
+      },
+      versions: {
+        theme: "2.0.3",
+        mdui: "0.4.0",
+        fetch: "3.0.0",
+        es6promise: "4.2.5+7f2b526d",
+        lightgallery: "1.0.1",
+        smoothscroll: "15.2.0"
+      }
+      
+    };
+    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        -->
+
+  <meta charset="UTF-8">
+  <title>cmmi3 - developer</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
+  <link rel="icon" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <meta name="theme-color" content="#fff">
+
+  <meta name="author" content="string">
+  
+  <meta name="keywords" content="blog, hexo, mdui">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="developer">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="http://zone.lfmax.cn">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="cmmi3 - developer | developer">
+  <meta property="og:image" content="/images/favicon.png">
+  
+
+  
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/mdui.css">
+  
+
+  
+
+</head>
+
+
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+  <style>
+    #spinner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+    }
+    main {
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
+      display: none;
+    }
+  </style>
+  <div id="spinner">
+    <style>
+      .spinner {
+
+      -webkit-animation: rotator 1.4s linear infinite;
+              animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      @keyframes rotator {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+      }
+
+      .path {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @keyframes colors {
+      0% {
+        stroke: #4285F4;
+      }
+      25% {
+        stroke: #DE3E35;
+      }
+      50% {
+        stroke: #F7C223;
+      }
+      75% {
+        stroke: #1B9A59;
+      }
+      100% {
+        stroke: #4285F4;
+      }
+      }
+
+      @-webkit-keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+
+      @keyframes dash {
+      0% {
+        stroke-dashoffset: 187;
+      }
+      50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+      100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+                transform: rotate(450deg);
+      }
+      }
+    </style>
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+  <main>
+    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
+  <div class="mdui-toolbar theme-toolbar-top">
+    
+      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+    
+  </div>
+  <div class="mdui-toolbar theme-toolbar-bottom">
+    <span class="theme-toolbar-bottom__title">developer</span>
+    
+      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
+        <i class="mdui-icon material-icons">&#xe8b6;</i>
+      </a>
+    
+  </div>
+  <div class="mdui-progress theme-appbar__progress" id="progressBar">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
+  <!-- header -->
+  <div class="theme-drawer__header">
+  <div class="theme-drawer__header__layer-1">
+    <div class="mdui-toolbar theme-toolbar-top">
+      
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </a>
+      
+    </div>
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">developer</span>
+    </div>
+  </div>
+  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
+    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
+    <div class="theme-drawer__header__layer-2__user__info">
+      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
+        string
+      </div>
+      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
+        用心享受
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="theme-drawer__warpper">
+    <!-- content -->
+    <div class="theme-drawer__warpper__content">
+  <ul class="mdui-list">
+    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+      <div class="mdui-list-item-content">首页</div>
+    </a>
+    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
+      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe1db;</i>
+      <div class="mdui-list-item-content">归档</div>
+    </a>
+    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe3c7;</i>
+            <div class="mdui-list-item-content">分类</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/技术文章/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                技术文章
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>9</span>
+              </a>
+            
+              <a href="/categories/认证/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                认证
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>2</span>
+              </a>
+            
+              <a href="/categories/技术文章/flutter/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                flutter
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">标签</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/flutter/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                flutter
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                Android
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/version/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                version
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/node/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                node
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/restify/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                restify
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/cmmi/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                cmmi
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/软件管理/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                软件管理
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/linux/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                linux
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/shell/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                shell
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
+              </a>
+            
+              <a href="/tags/hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+              <a href="/tags/nodejs/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
+                nodejs
+                <div style="flex-grow: 1;"></div>
+                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
+              </a>
+            
+          </div>
+        </div>
+      
+      <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
+          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+          <div class="mdui-list-item-content">年份</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          
+          
+            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
+              2019
+            </a>
+          
+        </div>
+      </div>
+    </ul>
+  </ul>
+  
+    <div class="mdui-divider"></div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+      
+        
+          
+            <a href="/about" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
+          
+              
+              
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe84e;</i>
+              
+              
+              <div class="mdui-list-item-content">About</div>
+            </a>
+        
+      
+    </ul>
+  
+</div>
+
+    <div class="theme-spacer"></div>
+    <!-- footer -->
+    <div class="theme-drawer__warpper__footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
+    <br>
+    <span>
+      Copyright ©
+      <span year></span>
+      string
+    </span>
+    
+      <br>
+      <span onclick="window.open('http://www.miitbeian.gov.cn/', '_blank');">true</span>
+    
+    
+      <br>
+      <span>
+        最后更新于: 5月 14, 2019
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    copyrightSince = true;
+    if (copyrightSince === copyrightNow) {
+      textContent.textContent = copyrightNow
+    } else {
+      textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+  
+</script>
+
+  </div>
+</div>
+
+    <div id="top"></div>
+
+    <script src="/js/lightgallery.min.js"></script>
+
+    <div id="barba-wrapper">
+      <div class="barba-container"  data-namespace="post">
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      cmmi3
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>编写时间：</span>
+        <span style="float: right">5月 14, 2019</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        文章二维码
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB70lEQVR42u3aQW7DMAwEwPz/0+21QGt3V4qTWBqdAsNVNDmwJMXH1xLrgYGBgYGBgYHxMYxHvI7+6ueT35//+PrT3YozYGBgbMb4J7QdfHECS3iDZ8DAwNiScRTgzt9JAMnz/AwYGBgYY2nf0RHbVBIDAwPjuoDbJpEf+n8DAwPj4xlJAZm00trA/YZaHAMD44aMvCl/3eeX3m9gYGDcilGPOMRpXNt0e+nMCAYGxq0YbdN/7Cj5budvYmBgYCSNsLYcnWneTQ1bYGBgLMpoAW3QnBkLKwIuBgbGcoy6HR+EzvP08VlIDAwMjPy4OT4vfesiFgMDY2nGWEidabQ9ayADAwNjN8Z88dkG2bYxFwVcDAyMRRlXJHz5Pvl1KQYGxs6MfLSrHjAtS9/2wgADAwMjCZpj6d3YT1MXsRgYGMsx6lZXOXLRXlI+bYAVAwNjOUabnLXgwWI1L2IxMDA2Y+TF6tglQZ4OHrIxMDC2YbRrrOgtwmjezsPAwNiGMdP0H0srk1GwwSIWAwNjaUZbpuZP6tI02B8DA2NnRpL2jTX3Z4Y5Bu83MDAwtmckh2tTybxgxsDAwJhhzL+T/CgYGBg7M/LGWX6IsauFaB8MDIzNGO0AxMw1ZFsGX3K/gYGBcSvGfRcGBgYGBgYGxlvXN2fWMN181tFpAAAAAElFTkSuQmCC" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=developer&title=cmmi3&summary=&pics=http://zone.lfmax.cn/images/favicon.png&url=http://zone.lfmax.cn/2019/05/14/cmmi3/index.html" target="_blank" class="mdui-ripple">
+                分享到QQ
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://service.weibo.com/share.php?appkey=&title=cmmi3&url=http://zone.lfmax.cn//2019/05/14/cmmi3/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+                分享到微博
+            </a>
+        </li>
+      
+
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+  <div class="theme-post__warpper
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          这篇文章最后修改于
+          <span id="content-warning"></span>
+          天之前。
+          本页内容可能已经过时！
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/19.png">
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <h2 id="CMMI3证书是什么-CMMI认证"><a href="#CMMI3证书是什么-CMMI认证" class="headerlink" title="CMMI3证书是什么/CMMI认证"></a>CMMI3证书是什么/CMMI认证</h2><p>CMMI认证是由美国软件工程学会(software engineering institue,简称SEI)制定的一套专门针对软件产品的质量管理和质量保证标准. CMMI 的全称为：Capability Maturity Model Integration，即能力成熟度模型集成。<br>近年来，很多软件企业纷纷实施CMMI管理模式，不少企业如：东软，托普，华为等企业通过了三级或四级评估。这一方面反映了我国企业在进入WTO后的危机意识，以及与世界接轨的迫切愿望。另一方面则反映出我国软件企业在改进管理方法上所作的努力。但是CMMI到底能够为我们做什么呢？实际上这个问题对不同的人有不同的答案。对采购部门的人员来说，掌握了CMMI技术可以有目的地考察项目实施人员或公司的实施能力，从而保证所采购的项目能够顺利完成。对于项目经理来说，掌握CMMI技术能够提高自己的项目管理能力，从而能够使项目高质量，低成本，按期限地完成。对于企业老总来说，CMMI技术不仅能够提升企业的管理水平，还能够引入科学的管理理念，提升企业的整体管理水平。</p>
+<h2 id="CMMI的五个台阶（五个等级）："><a href="#CMMI的五个台阶（五个等级）：" class="headerlink" title="CMMI的五个台阶（五个等级）："></a>CMMI的五个台阶（五个等级）：</h2><h3 id="台阶一：CMMI一级，完成级。"><a href="#台阶一：CMMI一级，完成级。" class="headerlink" title="台阶一：CMMI一级，完成级。"></a>台阶一：CMMI一级，完成级。</h3><p>在完成级水平上，企业对项目的目标与要做的努力很清晰，项目的目标得以实现。但是由于任务的完成带有很大的偶然性，企业无法保证在实施同类项目的时候仍然能够完成任务。企业在一级上的项目实施对实施人员有很大的依赖性。</p>
+<h3 id="台阶二：CMMI二级，管理级。"><a href="#台阶二：CMMI二级，管理级。" class="headerlink" title="台阶二：CMMI二级，管理级。"></a>台阶二：CMMI二级，管理级。</h3><p>在管理级水平上，企业在项目实施上能够遵守既定的计划与流程，有资源准备，权责到人，对相关的项目实施人员有相应的培训，对整个流程有监测与控制，并与上级单位对项目与流程进行审查。企业在二级水平上体现了对项目的一系列的管理程序。这一系列的管理手段排除了企业在一级时完成任务的随机性，保证了企业的所有项目实施都会得到成功。</p>
+<h3 id="台阶三：CMMI三级，定义级。"><a href="#台阶三：CMMI三级，定义级。" class="headerlink" title="台阶三：CMMI三级，定义级。"></a>台阶三：CMMI三级，定义级。</h3><p>在定义级水平上，企业不仅能够对项目的实施有一整套的管理措施，并保障项目的完成；而且，企业能够根据自身的特殊情况以及自己的标准流程，将这套管理体系与流程予以制度化这样，企业不仅能够在同类的项目上生到成功的实施，在不同类的项目上一样能够得到成功的实施。科学的管理成为企业的一种文化，企业的组织财富。</p>
+<h3 id="台阶四：CMMI四级，量化管理级。"><a href="#台阶四：CMMI四级，量化管理级。" class="headerlink" title="台阶四：CMMI四级，量化管理级。"></a>台阶四：CMMI四级，量化管理级。</h3><p>在量化管理级水平上，企业的项目管理不仅形成了一种制度，而且要实现数字化的管理。对管理流程要做到量化与数字化。通过量化技术来实现流程的稳定性，实现管理的精度，降低项目实施在质量上的波动。</p>
+<h3 id="台阶五：CMMI五级，优化级。"><a href="#台阶五：CMMI五级，优化级。" class="headerlink" title="台阶五：CMMI五级，优化级。"></a>台阶五：CMMI五级，优化级。</h3><p>在优化级水平上，企业的项目管理达到了最高的境界。企业不仅能够通过信息手段与数字化手段来实现对项目的管理，而且能够充分利用信息资料，对企业在项目实施的过程中可能出现的次品予以预防。能够主动地改善流程，运用新技术，实现流程的优化。</p>
+<blockquote>
+<p>由上述的五个台阶我们可以看出，每一个台阶都是上面一阶台阶的基石。要上高层台阶必须首先踏上较低一层台阶。企业在实施CMMI的时候，路要一步一步地走。一般地讲，应该先从二级入手。在管理上下功夫。争取最终实现CMMI的第五级。<br><strong>CMMI3认证就是台阶3，通过相应的CMMI3级能力评估后，就能获得3级的证书。</strong></p>
+</blockquote>
+<h2 id="CMMI3的证书的周期和费用：-CMMI认证"><a href="#CMMI3的证书的周期和费用：-CMMI认证" class="headerlink" title="CMMI3的证书的周期和费用：/CMMI认证"></a>CMMI3的证书的周期和费用：/CMMI认证</h2><p>首先是费用问题，因为CMMI不像国内一些认证，花点钱，走个流程就可以<br>首先要给认证公司一笔前期的培训和辅导费用，一般来说在15W左右。然后最后的评估阶段，大概也需要15W左右，这个主要是付给主任评估师的费用，如果是老外还需要支付翻译的费用，很贵，老外一般一天至少1万多，最后初评和最终评估加起来估计要10来天。<br>CMMI的认证过程，一般需要前期培训、标准过程导入、几个项目实施标准过程、最后进行评估等几个阶段，正常点的话，半年到1年是至少需要的，这里我们来谈谈哪些过程可以缩短甚至跳过。</p>
+<blockquote>
+<ol>
+<li>前期培训，这个是可以大幅度缩短的，让辅导老师过来花个2、3天讲课，突击培训一下，让大家了解CMMI的体系。 </li>
+<li>标准化导入，这个也是可以缩短的，让认证公司提供一套模板，根据公司实际情况，安排人员突击完成，然后辅导老师提出意见，然后再修改，再审核，来回2、3次，算半个月时间好了。 </li>
+<li>几个项目实施标准过程，这个就要看公司人力资源配合度了，首先让认证公司，提供一个项目完整的所有的材料模板，公司组织人员根据公司研发项目，安排4个（最少的要求了）对照模板进行编制（这里为了省时间，全部是编造，所以时间点一定要注意，省的后面麻烦），如果人力资源配备充足，那么4个项目，我想半个多月时间可以完成（4个项目全部弄完，文档起码有6000多个，工作量很大） </li>
+<li>最后的评估阶段，要安排主任评估师的日程，因为最后需要一个初评和最终评估，按照要求，初评3天左右时间，中间隔1个星期给你进行修改，最终评估一般要7天，所以保守估计，评估阶段，也是需要半个多月。 </li>
+<li>最后关键的来了，评估完成后，主任评估师，需要再SIE网站上，去整个评估过程，公司信息等进行注册，然后提交评估材料给SEI进行审核，等待SEI的最终评审，通过后，会在SEI网站上进行公布。这里要注意了，SEI本身是不给你发证的，这个证书是由认证公司给你发的，只是上面会写明你的评估通过时间和等级，以及主任评估师等信息，到底真实性如何，SEI的网站信息为准，所以，中间这段等待的时间，大概要1个月，就要算进去，只有SEI网站信息公布了，认证公司才可以给你发证。</li>
+</ol>
+</blockquote>
+<h2 id="通过CMMI3级评估之后还需升级-CMMI认证"><a href="#通过CMMI3级评估之后还需升级-CMMI认证" class="headerlink" title="通过CMMI3级评估之后还需升级 /CMMI认证"></a>通过CMMI3级评估之后还需升级 /CMMI认证</h2><p>因为美国SEI对于CMMI各级别（2-5）以及模型的评估是有时限要求的（3年），而且伴随着CMMI以产品化方式发布地进行（主要是模型与评估方法的升级），所以从企业CMMI证书与ATM人员资格两方面都需要进行CMMI升级或CMMI复评。<br>CMMI升级作为企业研发过程管理能力提升的一项里程碑活动，其作为从CMMI3级的组织级研发过程管理状态程度提升到以cmmi4级量化数据管理（或CMMI5级持续化自主过程改进）的状态程度，是企业“内功”沉淀的优化方式与途径。</p>
+<h3 id="公司下面的某一个部门实施CMMI认证：-CMMI认证"><a href="#公司下面的某一个部门实施CMMI认证：-CMMI认证" class="headerlink" title="公司下面的某一个部门实施CMMI认证：/CMMI认证"></a>公司下面的某一个部门实施CMMI认证：/CMMI认证</h3><p>我们可不可以只在公司下面的某一个部门实施CMMI，以便减少实施的难度？<br>A：可以，因为CMMI 中反复使用的是“组织”一词，它既可以代表一家完整的公司，也可以代表一家公司下面的一个或多个部门。因此，即使在评估CMMI 5 级的时候，也可以只对某家公司的某一个部门进行。CMMI 2级是面向项目级别的，实施的时候这方面灵活性更大。不过在主任评估师向SEI 提交评估结果时会明确写明评估的时候是在企业的什么范围内进行的（多少个部门纳入了评估的范围，大约参与的软件开发人员和管理人员的数量等）。现在很多企业向媒体宣传的时候，有意无意的掩盖了这一点，只是泛泛地说：XXX 公司已经达到了CMMI 2 级的要求，久而久之造成了很多错误的认识。不过，如果企业希望通过过 程改进真正获益的话，最好还是能够在整个企业中所有与软件活动有关的的部门都实施过程改进。虽然2 级是面向项目级别的，但我们非常欢迎和支持在整个公司的范围内实施CMMI 2级，无论这些部门的软件项目是开发类的、实施或维护类的，也不论这些项目是面向客户的工程类的、还是面向市场的产品类的。这样，公司积累大量不同类型项目的宝贵经验，在将来向3 级迈进的时候，充分利用这些经验可以把3 级的实施落在实处，得到更加广泛的认同。我个人认为，如果一家公司希望能够成为CMMI 3 级的公司的话，如果在2 级的阶段投入比较多，实施的效果比较好，那么3 级的实施难度会下降很多；反之，如果2 级阶段投入较少，实施范围小、效果不是很好的话，3 级的实施难度会增加；因此可以说，一个公司在从1 级到3 级这个过程中所投入的资源（人员、时间、资金等）总数基本上是一个固定值。既然如此，为什么不早一点把工作做到实处，早一点获得成效呢？</p>
+<h3 id="不同国籍的CMMI主任评估师资质：-CMMI认证"><a href="#不同国籍的CMMI主任评估师资质：-CMMI认证" class="headerlink" title="不同国籍的CMMI主任评估师资质：/CMMI认证"></a>不同国籍的CMMI主任评估师资质：/CMMI认证</h3><p>A：据不完全统计，目前在全球范围内SEI 授权的主任评估师有300 多位，不过不同的CMMI主任评估师在资质上面并不是全都相同。这要从如何成为主任评估师说起：如果要成为主任评估师，除了自身要有相当丰富的软件工程、项目管理等相关知识背景外，还要参加大量的SEI 组织的CMMI 相关知识的官方培训。在正式成为主任评估师以前，必须亲自主持一次正式评估工作，由已经得到授权资格的主任评估师进行考察，如果这次评估工作经过考察没有出现严重的问题和错误，SEI 将颁发主任评估师的授权认证。这样的证书在2 年内是有效的，有效期内主任评估师可以主持正式评估，其结果SEI 认可，也可以监控其他主任评估师候选人主持正式评估的工作。本来这样的做法可以使成为主任评估师的“门槛”很高，但是还是存在一定的漏洞：如果一个人有个好朋友是主任评估师，他也想成为主任评估师，而他的朋友又不能很好的坚守原则，这样就很容易“混入”主任评估师的队伍。另外，目前很多主任评估师在给客户作评估之前，往往还提供一些相关的咨询服务，这种“既当教练又当裁判”的情况也难免会使一些主任评估师在作评估的时候放松尺度，使得进行过程改进的企业所有的过程改进工作变成了“花钱买认证”，而没有真正从中获益。基于上述情况，目前国内一些比较有实力的咨询公司为了保证自己的服务质量，也为了能使国内的软件企业在进行基于CMMI 的过程改进的时候达到真正的效果，在主任评估师的选择上坚持高标准和严要求。他们去请在欧美国家知名度很高、信誉很好的主任评估师来国内主持正式评估工作。这些主任评估师中很多都是SEI 首批授权的主任评估师，有些人甚至就是参与制定CMMI 的人员。这些主任评估师经验丰富，对于CMMI 的理解非常深刻，而且坚持原则，虽然这对国内的企业来说实施难度也增加了一些，但能够在这样的要求下达到CMMI2级以上的评价才是货真价实的。还有一点，目前很多国内的软件企业也希望和印度的软件企业一样，通过实施CMMI 提高自身过程的能力成熟度，以便在海外市场上获得更多的外包订单。这个时候不同的主任评估师也会产生不同的效果。比如，当一家国内的软件企业在和一家美国的企业洽谈外包业务时，告知对方我们已经于某个时间达到了CMMI2级以上的成熟度，对方很可能要了解是由哪位主任评估师来做的评估，如果对方在美国知名度很高，对方可能对这家企业“刮目相看”，后面的洽谈可能就会容易很多。这就像在日常生活中，同样是硕士学位，但知名度高的导师带出来了学生更容易被人接受是一样的道理。</p>
+<h3 id="咨询公司对实施CMMI-有什么帮助-CMMI认证"><a href="#咨询公司对实施CMMI-有什么帮助-CMMI认证" class="headerlink" title="咨询公司对实施CMMI 有什么帮助 /CMMI认证"></a>咨询公司对实施CMMI 有什么帮助 /CMMI认证</h3><p>A：目前有不少的软件企业希望通过自身的努力进行过程改进，然后进行正式评估，这是很常见的一种做法。不过，如果希望在实施 的过程中困难少一点儿，时间短一点儿的话，最好还是与经验丰富的咨询公司合作。主要的原因在于：★ CMMI 作为一个模型，具有高度的抽象性。因此CMMI 中并没有提出一家软件组织必须如何去做才算是达到了要求，它提出的只是 “做什么”。举个日常生活中的例子来说，CMMI 提出的要求就好像一家公司要求地面要保持清洁，至于是用扫把扫还是用吸尘器吸 并不重要。同样对于CMMI 中的要求，可以有很多种不同的实践来满足。可是，到底什么实践在自己的企业中实施起来既比较有效， 还能达到CMMI的要求，对于刚开始实施CMMI 的软件企业来说，这种判断和选择是很难把握的。而经验丰富的咨询公司结合了大量国 内软件公司的实践、业内的最佳实践以及主任评估师推荐的实践，帮助企业达到CMMI 的要求，而且还比较简单易行，实施效果已经 经过了很多次的证明，自然能够达到“事半功倍”的效果。★ 咨询公司对于企业在实施过程中出现的问题经验丰富，可以有效的减少做错事情的可能性。比如高层经理对过程改进不够重视或 者有一些误解，特别是资源方面的问题，咨询公司都可以及时发现，并协助参与实施的人员减少随之带来的负面影响。★ 如果有些企业希望在一个既定的时间目标下达到某个成熟度级别，咨询公司可以帮助实施企业监控进度，对于发现进度落后的情 况，根据咨询师的经验也可以及时发现，及时采取纠正措施跟上进度。★ 如果企业自己实施CMMI，还需要自己联系主任评估师，这样在费用上可能会开销很大，咨询公司如果提供评估服务，他们可以根 据企业的需求（包括资质和成本等多方面）帮助企业联系到合适的主任评估师，减少了企业自己联系的麻烦和额外的成本。</p>
+<h3 id="CMMI评估的预备工作都有哪些-CMMI认证"><a href="#CMMI评估的预备工作都有哪些-CMMI认证" class="headerlink" title="CMMI评估的预备工作都有哪些 /CMMI认证"></a>CMMI评估的预备工作都有哪些 /CMMI认证</h3><p>评估实践证明：在进行CMMI评估之前，制定一个正确的评估计划并将其文档化，确保有一个富有经验的、受过培训且具有适当资格的小组能被用来评估，为执行评估过程做准备，是十分必要的。</p>
+<p>我们所说的文档化评估计划的结果，包括：要求，协定，估价，风险，剪裁方法，以及与评估相关的实际考虑（例如：日程安排，后勤，组织的背景信息）。此外，还应当获取并记录发起方对于评估计划的正式批准。在制定评估计划之前，应对评估输入中反映出来的协议文档化，该协议将有助于评估目标和关键评估计划参数的共同理解。在对驱动计划过程的关键参数达成共同理解的基础上，评估发起方和scampi主任评估师应就评估计划达成一致；发起者和评估小组领导应就已计划的评估中技术和非技术细节达成一致。这个计划在执行其他的计划和准备阶段活动中需要进一步细化。<br>而通过评估小组的准备工作，将产生一支富有经验的、受过培训的且定位准确的小组准备执行评估任务。该小组的成员都应当获得了完成他们各自的任务所必备的知识，或者他们之前所拥有的知识被证实足以完成相关任务。评估小组领导者已经给每一个人提供了为完成他们各自的任务所需的对技能进行实践的机会，或者证实这些技能在过去已经得到了示范。小组成员相互了解，同时开始计划他们如何协调一致的工作。还应该做到：准备好的小组是为评估目标而服务的，小组的成员已提供培训且培训结果被记录，在必要的时候，对他们所做的因知识或技能不足的补救工作已经完成。我们认为，无论评估小组领导者是从头培训一支全新的评估小组，还是通过从富有经验的小组成员中选择来组建一个小组，确保他们与评估小组领导者能组成一个成功的集体是其责任。<br>为便于说明我们的观点，下面按照实际操作的顺序列出了与CMMI评估相关的预备工作。 </p>
+<h4 id="一-进行恰当的剪裁"><a href="#一-进行恰当的剪裁" class="headerlink" title="一.进行恰当的剪裁"></a>一.进行恰当的剪裁</h4><p>由于SCAMPI是设计用于满足大范围的评估应用，所以剪裁是一个值得仔细的全程关注的活动。SCAMPI的剪裁方法包括：对所要求实践中的机会进行选择，设置参数和限制评估过程中可以改变的参数，以及包含可选实践。<br>在剪裁过程中，需要注意： </p>
+<ol>
+<li>在每一个活动的必需实践中评估和选择裁剪部分； </li>
+<li>当预期变更发生时，在可接受的界限内评估和设置参数； </li>
+<li>评估和选择适当的任意实践； </li>
+<li>确保裁剪的结果是首尾一致的，并且根据评估目标和约束是恰当的； </li>
+<li>生成裁剪结果文档。 </li>
+</ol>
+<p>MDD的结构阐明了SCAMPI具有的特征，要么被看作ARC需求的一个直接派生，要么被看作SCAMPI需求。参数和限制区在这些方法需求内详细说明了可承认的变更。裁剪向导和执行向导被用来帮助调整方法以适应评估发起者目标和评估约束。裁剪方法和执行部分必须在某种程度上保证没有违背SCAMPI的必需实践。 </p>
+<h4 id="二-对评估所需要的资源进行标识"><a href="#二-对评估所需要的资源进行标识" class="headerlink" title="二.对评估所需要的资源进行标识"></a>二.对评估所需要的资源进行标识</h4><p>本活动是与执行评估所需资源的鉴定和评估相关的。评估所需的资源包括人员、设备、工具以及有权使用的信息。具体的行为有： </p>
+<ol>
+<li>确定评估组成员； </li>
+<li>确定评估参与者； </li>
+<li>确定设备和工具； </li>
+<li>确定所需的其他评估资源； </li>
+<li>文档化在评估计划中的资源决议。 </li>
+</ol>
+<p>此外，在鉴定过程中所需资源的详细程度必须足够支持评估计划的实施。例如，确定评估组的领导人，参与接见的候选人姓名和拥有评估组成员资格者的姓名，这些人在组织上和项目上的从属关系，被评估组使用的地点、座位容量和房屋外形，所需要的特殊设备(如：高摄投影仪、膝上形电脑放映机、视频会议)。 </p>
+<h4 id="三-确定评估所需的费用以及日程安排"><a href="#三-确定评估所需的费用以及日程安排" class="headerlink" title="三.确定评估所需的费用以及日程安排"></a>三.确定评估所需的费用以及日程安排</h4><p>本活动是在评估计划中包含并列出最高费用的明细表以及进度表。具体的行为包括： </p>
+<ol>
+<li>估计关键事件持续时间，并以此作为制订全面进度表的基础； </li>
+<li>估计参与评估的人员所需的努力； </li>
+<li>恰当地估计使用工具和设备的相关费用； </li>
+<li>适当地估计伴随事件的费用(如：出差、住宿、吃饭)； </li>
+<li>在评估计划中文档化详细的估计进度； </li>
+<li>在评估计划中文档化详细的估计费用。 </li>
+</ol>
+<p>评估成果的取得不仅取决于评估组，还取决于整个组织单位内的预期参与者(如：被访问者、管理设备的相应人员、简报的出席者、支持者)。因此，我们必须对评估过程的每一天进行计划。 </p>
+<h4 id="四-对后勤计划进行管理"><a href="#四-对后勤计划进行管理" class="headerlink" title="四.对后勤计划进行管理"></a>四.对后勤计划进行管理</h4><p>本活动强调评估过程中的每一个相应部分的后勤保障细节应该在协商后取得一致并文档化。评估组领导要取得组织单位协调者的支持，对文档中的计划任务进行管理并与后勤保障计划进行协调。检查制度和行动条款跟踪机制是用于管理这些任务非常有用的组织结构。具体的行为包括： </p>
+<ol>
+<li>文档化后勤保障计划，增强其可靠性； </li>
+<li>保持与供应状况的沟通渠道； </li>
+<li>指定跟踪后勤保障问题的职责。 </li>
+</ol>
+<p>我们知道，有效的计划取决于对评估中可能发生的后勤保障问题变更的预见性。这些有时被忽略的问题包括： </p>
+<ol>
+<li>确定在评估中所住的旅馆； </li>
+<li>提供工作站支持； </li>
+<li>对吃饭进行管理； </li>
+<li>在某个时刻设备的相互影响； </li>
+<li>会议的安全/分级需求； </li>
+<li>为得到的有限设备的护送提供证章或者管理。 <h4 id="五-对风险进行管理并将其文档化"><a href="#五-对风险进行管理并将其文档化" class="headerlink" title="五.对风险进行管理并将其文档化"></a>五.对风险进行管理并将其文档化</h4>由于任何项目都取决于事件、人物和其他资源，风险管理是其成功的一个重要因素。评估组领导有责任在发起者和评估组成员之间沟通风险和相关的减缓风险计划，并生成文档。具体的行为包括： </li>
+<li>确定评估风险； </li>
+<li>对评估过程中的关键风险提出减缓计划并在必要时执行这些计划； </li>
+<li>记录风险评估发起者和其他风险产生者在风险评估中的地位。 </li>
+</ol>
+<p>通过对活动的管理而确定的风险因素及减缓计划是评估计划的必需元素。在评估计划中大部分领导评估者应当拥有风险管理的头衔，专注于风险管理活动的努力水平是评估组领导必需调整以适应即将到来的情况所需要的。 </p>
+<h4 id="六-获得评估计划的许可"><a href="#六-获得评估计划的许可" class="headerlink" title="六.获得评估计划的许可"></a>六.获得评估计划的许可</h4><p>评估计划应获取正式发起者的许诺。由于这个协议的正式性是如此至关重要，评估计划需要在评估发起者和评估组领导之间签订一个合同。具体的行为包括： </p>
+<ol>
+<li>文档化评估计划； </li>
+<li>和评估发起者一起重新审查评估计划，并获得发起者的正式批准； </li>
+<li>为相关的风险产生者提供评估计划以便重新审查。 </li>
+</ol>
+<p>评估计划的必需内容至少包括如下几项： </p>
+<ol>
+<li>评估输入； </li>
+<li>在风险管理中所执行的活动； </li>
+<li>风险管理所需的资源； </li>
+<li>用于完成评估所需的费用和进度估计； </li>
+<li>评估的后勤保障； </li>
+<li>与实施评估相关的风险因素和减缓计划； </li>
+<li>如果评估发起者要求满足ISO/IEC 15504需求时的检验标准。 </li>
+</ol>
+<p>此外，我们必须为评估组领导和发起者提供一个签名区，以指出他们在评估计划中各自所承担的义务。当然，如果评估计划还有其他次要的补充资料，并无须重新签名，除非一个或更多的评估输入元素被更改。至少，评估组成员应考虑过相关的风险产生者，并应得到一个获得批准的评估计划的复件。 </p>
+<h4 id="七-选择评估小组领导"><a href="#七-选择评估小组领导" class="headerlink" title="七.选择评估小组领导"></a>七.选择评估小组领导</h4><p>评估发起者有责任选择一个评估小组的领导者，这个人应该拥有足够的经验、知识、技术来负责和领导评估活动。一个评估小组领导者必须是由SEI评估程序授权的SCAMPI主任评估师，同时必须以良好的状态作为评估过程的一名成员。在SEI网站上有SEI评估程序的详细描述。评估小组领导者有责任保证评估是根据SCAMPI的要求进行的，所做的裁剪必须满足在该方法定义下的允许范围内的评估目标和约束。具体的行为包括： </p>
+<ol>
+<li>选择一个经SCAMPI授权的主任评估师担任评估小组领导者； </li>
+<li>检验评估小组领导者的资格(经验、知识和技术)。 </li>
+</ol>
+<p>评估小组领导者必须是一名状态良好的经SEI授权的SCAMPI主任评估师。这一要求必须通过网络或与SEI CMMI办事机构直接联系得到确认。在任何已进行的评估中只能有唯一一名正式的评估小组领导者。他是唯一能判断给评估小组成员委派何种重要任务的人，但是他不能赋予其成员有关评估活动是否成功完成的领导职责和最终职责。特定评估小组中多重领导评估者对该评估小组的领导具有很重要的作用。但是，唯一指定的评估小组领导者必须履行其领导和管理评估过程的职责。 </p>
+<h4 id="八-选择评估小组成员"><a href="#八-选择评估小组成员" class="headerlink" title="八.选择评估小组成员"></a>八.选择评估小组成员</h4><p>本活动包括识别有用的职员、评定其资格和从中挑选人员作为评估小组成员。它可以发生在评估发起者作出管理评估活动的许诺之后，并能为评估计划保证提供输入。具体的行为包括： </p>
+<blockquote>
+<ol>
+<li>保证评估小组成员满足个人的最低标准； </li>
+<li>保证评估小组作为一个整体满足的最低标准； </li>
+<li>文档化在评估输入中小组成员的职责和资格。 </li>
+</ol>
+</blockquote>
+<p>SCAMPI评估可接受的评估小组最小规模是4个成员(包括小组领导者)。推荐的最大规模是9个成员。所有小组成员之前必须完成获得SEI推荐的并由SEI认可的权威授课者所教授的CMMI课程。小组成员必须接受有关评估方法的培训。关于工程领域的经验，评估小组(作为一个整体)平均至少要有6年以上的经验，且小组总的经验要不少于25年，这些规定都隐藏在评估活动中。关于管理经验，评估小组(作为一个整体)总的经验不能少于10年，且至少有1名成员拥有6年以上的管理经验。<br>总的来说，评估小组应该在评估组织内部所使用的生命周期里具有有代表性的经验。在任何特定的生命周期阶段，评估小组至少应有两名成员具有从事这方面工作的经验。此外，必须保证，小组成员不应该成为任何特定项目的管理者或者成为任何预定被访问者的直接管理链中的一个。 </p>
+<h4 id="九-准备评估小组"><a href="#九-准备评估小组" class="headerlink" title="九.准备评估小组"></a>九.准备评估小组</h4><p>评估小组领导者有责任确保评估小组成员为执行计划的评估活动完成充分的准备。这包括熟悉在评估过程中将使用的参考模型、SCAMPI、评估计划、组织数据和特征、工具和技术以及为评估任务分配任务和职责。小组建立练习通常被用来实践简单的技能和在理解小组目标及如何取得满意上达成一致。所有的小组成员被要求遵守严格规则以保证机密性、保护所有者或敏感数据以及项目参与者未知的信息。私下陈述通常被用来达成这些谅解。具体的行为包括： </p>
+<blockquote>
+<ol>
+<li>保证评估小组成员已接受参考模型培训； </li>
+<li>为评估小组成员提供评估方法培训或确保他们已掌握此方法； </li>
+<li>为评估小组和小组规范的建立提供服务； </li>
+<li>为评估小组成员提供关于评估目标、计划和他们自身分配的职责和任务的定位。 </li>
+</ol>
+</blockquote>
+<p>模型培训必须利用CMMI课程的权威标准来提供，并由CMMI办事机构权威认证的授课者讲授。方法培训可能通过下面两种方法之一进行： </p>
+<blockquote>
+<ol>
+<li>针对即将到来的评估作明确性的方法培训； </li>
+<li>对大量的目前并没有从事任何评估工作的潜在的小组成员进行方法培训。 </li>
+</ol>
+</blockquote>
+<p>对一个完全重新组建的小组进行方法培训至少持续两天，且必须强调那些小组成员在评估过程很可能遇到的情况。本培训在SCAMPI的应用中没有必要包含所有的变量。针对潜在的将来的小组成员所进行的团体式方法培训必须包含方法上剪裁部分的所有内容和允许的变更以应付一系列在将来的评估中他们很可能会遇到的情况。SEI评估程序为那些目前不是评估小组成员的人们所得到的培训指定了额外的要求。那些在以前的评估小组中作为成员已接受过培训的小组成员，如果并没有进行目前的方法培训，那么他们并不自动地具有参加当前评估的资格。在这样的案例中，评估小组领导者要求了解以前的培训的本质和为即将到来的评估开展的培训足够多的内容。这需要对以前的评估和计划的评估进行比较。例如，假如小组成员使用连续表示法参与了一个仅集中在软件工程领域的评估，而计划的评估是使用阶段表示法集中在SE/SW/IPPD领域，那么该小组成员需要许多重要的新概念来覆盖。作为一个整体，评估小组至少产生一个结果来说明如何为即将到来的评估展开工作，建立小组规范和操作决议的目的。 </p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>上面，我们按照评估过程中实际操作的顺序列出了与CMMI评估相关的预备工作。此外，在对CMMI评估进行的预备工作的过程中，我们还应当对模型剪裁的原则有所了解： </p>
+<blockquote>
+<ol>
+<li>在某些应用中，计划模板和例行的程序能够根据评估的需要进行调整，这和当地的过程所有权一样，有助于交流； </li>
+<li>一个结构化的计划工艺组有利于只有有限的评估经验的组织，这样一个工艺就像缓和策略样，对于发现风险是一个很有价值的机会； </li>
+<li>案例研究材料提供了各种各样的选择来扩充小组培训内容以增强那些更需要培训的重点； </li>
+<li>富有经验的评估小组领导者在没有案例分析的情况下，同样可以管理和模拟评估行为； </li>
+<li>在小组所有已获得培训成员的集合中，对小组的建立工作进行管理以确保其团队凝聚力是十分重要的，因此，很多的小组建立练习是可以利用的，小组的规模、技能、组成部分都是本方法的裁剪内容； </li>
+<li>所采用工具可以包括评估计划模板，样例，和计划模板中嵌入式的程序上的帮助，此外，为了估计评估约束的影响，估算工作表和方法也是很有用处的。 </li>
+</ol>
+</blockquote>
+<p> 总之，CMMI评估是一个十分复杂的过程，更由于其具有的不确定性，在评估的实践中，一定要做到有备无患。真理来自于实践，我们相信，随着越来越多的软件组织着手CMMI评估，越来越多的成功经验将为我们所利用和借鉴。</p>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+	    刘龙飞--string <br>
+	    <a href="mailto:liulf_pc@126.com">email:liulf_pc@126.com</a><br>
+	    本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利.  <br>
+            <span>本文永久链接：<a href="http://zone.lfmax.cn/2019/05/14/cmmi3/">http://zone.lfmax.cn/2019/05/14/cmmi3/</a></span>
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: '打赏', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe1db;</i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/categories/认证/">
+                    <span>认证</span>
+                  </a>
+                
+              </div>
+            
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+        <div class="mdui-color-theme theme-post__toc">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI3&#x8BC1;&#x4E66;&#x662F;&#x4EC0;&#x4E48;-CMMI&#x8BA4;&#x8BC1;" data-href="#CMMI3&#x8BC1;&#x4E66;&#x662F;&#x4EC0;&#x4E48;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">1. CMMI3&#x8BC1;&#x4E66;&#x662F;&#x4EC0;&#x4E48;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI&#x7684;&#x4E94;&#x4E2A;&#x53F0;&#x9636;&#xFF08;&#x4E94;&#x4E2A;&#x7B49;&#x7EA7;&#xFF09;&#xFF1A;" data-href="#CMMI&#x7684;&#x4E94;&#x4E2A;&#x53F0;&#x9636;&#xFF08;&#x4E94;&#x4E2A;&#x7B49;&#x7EA7;&#xFF09;&#xFF1A;"><span class="toc-number"></span> <span class="toc-text">2. CMMI&#x7684;&#x4E94;&#x4E2A;&#x53F0;&#x9636;&#xFF08;&#x4E94;&#x4E2A;&#x7B49;&#x7EA7;&#xFF09;&#xFF1A;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E00;&#xFF1A;CMMI&#x4E00;&#x7EA7;&#xFF0C;&#x5B8C;&#x6210;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E00;&#xFF1A;CMMI&#x4E00;&#x7EA7;&#xFF0C;&#x5B8C;&#x6210;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.1. &#x53F0;&#x9636;&#x4E00;&#xFF1A;CMMI&#x4E00;&#x7EA7;&#xFF0C;&#x5B8C;&#x6210;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E8C;&#xFF1A;CMMI&#x4E8C;&#x7EA7;&#xFF0C;&#x7BA1;&#x7406;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E8C;&#xFF1A;CMMI&#x4E8C;&#x7EA7;&#xFF0C;&#x7BA1;&#x7406;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.2. &#x53F0;&#x9636;&#x4E8C;&#xFF1A;CMMI&#x4E8C;&#x7EA7;&#xFF0C;&#x7BA1;&#x7406;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E09;&#xFF1A;CMMI&#x4E09;&#x7EA7;&#xFF0C;&#x5B9A;&#x4E49;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E09;&#xFF1A;CMMI&#x4E09;&#x7EA7;&#xFF0C;&#x5B9A;&#x4E49;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.3. &#x53F0;&#x9636;&#x4E09;&#xFF1A;CMMI&#x4E09;&#x7EA7;&#xFF0C;&#x5B9A;&#x4E49;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x56DB;&#xFF1A;CMMI&#x56DB;&#x7EA7;&#xFF0C;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x56DB;&#xFF1A;CMMI&#x56DB;&#x7EA7;&#xFF0C;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.4. &#x53F0;&#x9636;&#x56DB;&#xFF1A;CMMI&#x56DB;&#x7EA7;&#xFF0C;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E94;&#xFF1A;CMMI&#x4E94;&#x7EA7;&#xFF0C;&#x4F18;&#x5316;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E94;&#xFF1A;CMMI&#x4E94;&#x7EA7;&#xFF0C;&#x4F18;&#x5316;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.5. &#x53F0;&#x9636;&#x4E94;&#xFF1A;CMMI&#x4E94;&#x7EA7;&#xFF0C;&#x4F18;&#x5316;&#x7EA7;&#x3002;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI3&#x7684;&#x8BC1;&#x4E66;&#x7684;&#x5468;&#x671F;&#x548C;&#x8D39;&#x7528;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;" data-href="#CMMI3&#x7684;&#x8BC1;&#x4E66;&#x7684;&#x5468;&#x671F;&#x548C;&#x8D39;&#x7528;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">3. CMMI3&#x7684;&#x8BC1;&#x4E66;&#x7684;&#x5468;&#x671F;&#x548C;&#x8D39;&#x7528;&#xFF1A;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x901A;&#x8FC7;CMMI3&#x7EA7;&#x8BC4;&#x4F30;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x5347;&#x7EA7;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x901A;&#x8FC7;CMMI3&#x7EA7;&#x8BC4;&#x4F30;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x5347;&#x7EA7;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4. &#x901A;&#x8FC7;CMMI3&#x7EA7;&#x8BC4;&#x4F30;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x5347;&#x7EA7; /CMMI&#x8BA4;&#x8BC1;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x516C;&#x53F8;&#x4E0B;&#x9762;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x95E8;&#x5B9E;&#x65BD;CMMI&#x8BA4;&#x8BC1;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x516C;&#x53F8;&#x4E0B;&#x9762;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x95E8;&#x5B9E;&#x65BD;CMMI&#x8BA4;&#x8BC1;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.1. &#x516C;&#x53F8;&#x4E0B;&#x9762;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x95E8;&#x5B9E;&#x65BD;CMMI&#x8BA4;&#x8BC1;&#xFF1A;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E0D;&#x540C;&#x56FD;&#x7C4D;&#x7684;CMMI&#x4E3B;&#x4EFB;&#x8BC4;&#x4F30;&#x5E08;&#x8D44;&#x8D28;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x4E0D;&#x540C;&#x56FD;&#x7C4D;&#x7684;CMMI&#x4E3B;&#x4EFB;&#x8BC4;&#x4F30;&#x5E08;&#x8D44;&#x8D28;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.2. &#x4E0D;&#x540C;&#x56FD;&#x7C4D;&#x7684;CMMI&#x4E3B;&#x4EFB;&#x8BC4;&#x4F30;&#x5E08;&#x8D44;&#x8D28;&#xFF1A;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x54A8;&#x8BE2;&#x516C;&#x53F8;&#x5BF9;&#x5B9E;&#x65BD;CMMI-&#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x54A8;&#x8BE2;&#x516C;&#x53F8;&#x5BF9;&#x5B9E;&#x65BD;CMMI-&#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.3. &#x54A8;&#x8BE2;&#x516C;&#x53F8;&#x5BF9;&#x5B9E;&#x65BD;CMMI &#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9; /CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI&#x8BC4;&#x4F30;&#x7684;&#x9884;&#x5907;&#x5DE5;&#x4F5C;&#x90FD;&#x6709;&#x54EA;&#x4E9B;-CMMI&#x8BA4;&#x8BC1;" data-href="#CMMI&#x8BC4;&#x4F30;&#x7684;&#x9884;&#x5907;&#x5DE5;&#x4F5C;&#x90FD;&#x6709;&#x54EA;&#x4E9B;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.4. CMMI&#x8BC4;&#x4F30;&#x7684;&#x9884;&#x5907;&#x5DE5;&#x4F5C;&#x90FD;&#x6709;&#x54EA;&#x4E9B; /CMMI&#x8BA4;&#x8BC1;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E00;-&#x8FDB;&#x884C;&#x6070;&#x5F53;&#x7684;&#x526A;&#x88C1;" data-href="#&#x4E00;-&#x8FDB;&#x884C;&#x6070;&#x5F53;&#x7684;&#x526A;&#x88C1;"><span class="toc-number"></span> <span class="toc-text">4.4.1. &#x4E00;.&#x8FDB;&#x884C;&#x6070;&#x5F53;&#x7684;&#x526A;&#x88C1;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E8C;-&#x5BF9;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x6807;&#x8BC6;" data-href="#&#x4E8C;-&#x5BF9;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x6807;&#x8BC6;"><span class="toc-number"></span> <span class="toc-text">4.4.2. &#x4E8C;.&#x5BF9;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x6807;&#x8BC6;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E09;-&#x786E;&#x5B9A;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x8D39;&#x7528;&#x4EE5;&#x53CA;&#x65E5;&#x7A0B;&#x5B89;&#x6392;" data-href="#&#x4E09;-&#x786E;&#x5B9A;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x8D39;&#x7528;&#x4EE5;&#x53CA;&#x65E5;&#x7A0B;&#x5B89;&#x6392;"><span class="toc-number"></span> <span class="toc-text">4.4.3. &#x4E09;.&#x786E;&#x5B9A;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x8D39;&#x7528;&#x4EE5;&#x53CA;&#x65E5;&#x7A0B;&#x5B89;&#x6392;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x56DB;-&#x5BF9;&#x540E;&#x52E4;&#x8BA1;&#x5212;&#x8FDB;&#x884C;&#x7BA1;&#x7406;" data-href="#&#x56DB;-&#x5BF9;&#x540E;&#x52E4;&#x8BA1;&#x5212;&#x8FDB;&#x884C;&#x7BA1;&#x7406;"><span class="toc-number"></span> <span class="toc-text">4.4.4. &#x56DB;.&#x5BF9;&#x540E;&#x52E4;&#x8BA1;&#x5212;&#x8FDB;&#x884C;&#x7BA1;&#x7406;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E94;-&#x5BF9;&#x98CE;&#x9669;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x5E76;&#x5C06;&#x5176;&#x6587;&#x6863;&#x5316;" data-href="#&#x4E94;-&#x5BF9;&#x98CE;&#x9669;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x5E76;&#x5C06;&#x5176;&#x6587;&#x6863;&#x5316;"><span class="toc-number"></span> <span class="toc-text">4.4.5. &#x4E94;.&#x5BF9;&#x98CE;&#x9669;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x5E76;&#x5C06;&#x5176;&#x6587;&#x6863;&#x5316;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x516D;-&#x83B7;&#x5F97;&#x8BC4;&#x4F30;&#x8BA1;&#x5212;&#x7684;&#x8BB8;&#x53EF;" data-href="#&#x516D;-&#x83B7;&#x5F97;&#x8BC4;&#x4F30;&#x8BA1;&#x5212;&#x7684;&#x8BB8;&#x53EF;"><span class="toc-number"></span> <span class="toc-text">4.4.6. &#x516D;.&#x83B7;&#x5F97;&#x8BC4;&#x4F30;&#x8BA1;&#x5212;&#x7684;&#x8BB8;&#x53EF;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E03;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x9886;&#x5BFC;" data-href="#&#x4E03;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x9886;&#x5BFC;"><span class="toc-number"></span> <span class="toc-text">4.4.7. &#x4E03;.&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x9886;&#x5BFC;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x516B;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x6210;&#x5458;" data-href="#&#x516B;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x6210;&#x5458;"><span class="toc-number"></span> <span class="toc-text">4.4.8. &#x516B;.&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x6210;&#x5458;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E5D;-&#x51C6;&#x5907;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;" data-href="#&#x4E5D;-&#x51C6;&#x5907;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;"><span class="toc-number"></span> <span class="toc-text">4.4.9. &#x4E5D;.&#x51C6;&#x5907;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x5C0F;&#x7ED3;" data-href="#&#x5C0F;&#x7ED3;"><span class="toc-number"></span> <span class="toc-text">5. &#x5C0F;&#x7ED3;</span></a></li></ol>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
+  
+    <div class="mdui-color-theme theme-post__toc-fab">
+  <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" mdui-menu="{target: '#toc-fab-menu', fixed: true}" id="toc-fab">
+    <i class="mdui-icon material-icons">&#xe242;</i>
+  </button>
+  <ul class="mdui-menu mdui-typo theme-post__toc-fab__menu" id="toc-fab-menu" style="padding: 8px;max-height: 80%">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI3&#x8BC1;&#x4E66;&#x662F;&#x4EC0;&#x4E48;-CMMI&#x8BA4;&#x8BC1;" data-href="#CMMI3&#x8BC1;&#x4E66;&#x662F;&#x4EC0;&#x4E48;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">1. CMMI3&#x8BC1;&#x4E66;&#x662F;&#x4EC0;&#x4E48;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI&#x7684;&#x4E94;&#x4E2A;&#x53F0;&#x9636;&#xFF08;&#x4E94;&#x4E2A;&#x7B49;&#x7EA7;&#xFF09;&#xFF1A;" data-href="#CMMI&#x7684;&#x4E94;&#x4E2A;&#x53F0;&#x9636;&#xFF08;&#x4E94;&#x4E2A;&#x7B49;&#x7EA7;&#xFF09;&#xFF1A;"><span class="toc-number"></span> <span class="toc-text">2. CMMI&#x7684;&#x4E94;&#x4E2A;&#x53F0;&#x9636;&#xFF08;&#x4E94;&#x4E2A;&#x7B49;&#x7EA7;&#xFF09;&#xFF1A;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E00;&#xFF1A;CMMI&#x4E00;&#x7EA7;&#xFF0C;&#x5B8C;&#x6210;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E00;&#xFF1A;CMMI&#x4E00;&#x7EA7;&#xFF0C;&#x5B8C;&#x6210;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.1. &#x53F0;&#x9636;&#x4E00;&#xFF1A;CMMI&#x4E00;&#x7EA7;&#xFF0C;&#x5B8C;&#x6210;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E8C;&#xFF1A;CMMI&#x4E8C;&#x7EA7;&#xFF0C;&#x7BA1;&#x7406;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E8C;&#xFF1A;CMMI&#x4E8C;&#x7EA7;&#xFF0C;&#x7BA1;&#x7406;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.2. &#x53F0;&#x9636;&#x4E8C;&#xFF1A;CMMI&#x4E8C;&#x7EA7;&#xFF0C;&#x7BA1;&#x7406;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E09;&#xFF1A;CMMI&#x4E09;&#x7EA7;&#xFF0C;&#x5B9A;&#x4E49;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E09;&#xFF1A;CMMI&#x4E09;&#x7EA7;&#xFF0C;&#x5B9A;&#x4E49;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.3. &#x53F0;&#x9636;&#x4E09;&#xFF1A;CMMI&#x4E09;&#x7EA7;&#xFF0C;&#x5B9A;&#x4E49;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x56DB;&#xFF1A;CMMI&#x56DB;&#x7EA7;&#xFF0C;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x56DB;&#xFF1A;CMMI&#x56DB;&#x7EA7;&#xFF0C;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.4. &#x53F0;&#x9636;&#x56DB;&#xFF1A;CMMI&#x56DB;&#x7EA7;&#xFF0C;&#x91CF;&#x5316;&#x7BA1;&#x7406;&#x7EA7;&#x3002;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x53F0;&#x9636;&#x4E94;&#xFF1A;CMMI&#x4E94;&#x7EA7;&#xFF0C;&#x4F18;&#x5316;&#x7EA7;&#x3002;" data-href="#&#x53F0;&#x9636;&#x4E94;&#xFF1A;CMMI&#x4E94;&#x7EA7;&#xFF0C;&#x4F18;&#x5316;&#x7EA7;&#x3002;"><span class="toc-number"></span> <span class="toc-text">2.5. &#x53F0;&#x9636;&#x4E94;&#xFF1A;CMMI&#x4E94;&#x7EA7;&#xFF0C;&#x4F18;&#x5316;&#x7EA7;&#x3002;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI3&#x7684;&#x8BC1;&#x4E66;&#x7684;&#x5468;&#x671F;&#x548C;&#x8D39;&#x7528;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;" data-href="#CMMI3&#x7684;&#x8BC1;&#x4E66;&#x7684;&#x5468;&#x671F;&#x548C;&#x8D39;&#x7528;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">3. CMMI3&#x7684;&#x8BC1;&#x4E66;&#x7684;&#x5468;&#x671F;&#x548C;&#x8D39;&#x7528;&#xFF1A;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x901A;&#x8FC7;CMMI3&#x7EA7;&#x8BC4;&#x4F30;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x5347;&#x7EA7;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x901A;&#x8FC7;CMMI3&#x7EA7;&#x8BC4;&#x4F30;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x5347;&#x7EA7;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4. &#x901A;&#x8FC7;CMMI3&#x7EA7;&#x8BC4;&#x4F30;&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x5347;&#x7EA7; /CMMI&#x8BA4;&#x8BC1;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x516C;&#x53F8;&#x4E0B;&#x9762;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x95E8;&#x5B9E;&#x65BD;CMMI&#x8BA4;&#x8BC1;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x516C;&#x53F8;&#x4E0B;&#x9762;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x95E8;&#x5B9E;&#x65BD;CMMI&#x8BA4;&#x8BC1;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.1. &#x516C;&#x53F8;&#x4E0B;&#x9762;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x90E8;&#x95E8;&#x5B9E;&#x65BD;CMMI&#x8BA4;&#x8BC1;&#xFF1A;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E0D;&#x540C;&#x56FD;&#x7C4D;&#x7684;CMMI&#x4E3B;&#x4EFB;&#x8BC4;&#x4F30;&#x5E08;&#x8D44;&#x8D28;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x4E0D;&#x540C;&#x56FD;&#x7C4D;&#x7684;CMMI&#x4E3B;&#x4EFB;&#x8BC4;&#x4F30;&#x5E08;&#x8D44;&#x8D28;&#xFF1A;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.2. &#x4E0D;&#x540C;&#x56FD;&#x7C4D;&#x7684;CMMI&#x4E3B;&#x4EFB;&#x8BC4;&#x4F30;&#x5E08;&#x8D44;&#x8D28;&#xFF1A;/CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x54A8;&#x8BE2;&#x516C;&#x53F8;&#x5BF9;&#x5B9E;&#x65BD;CMMI-&#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9;-CMMI&#x8BA4;&#x8BC1;" data-href="#&#x54A8;&#x8BE2;&#x516C;&#x53F8;&#x5BF9;&#x5B9E;&#x65BD;CMMI-&#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.3. &#x54A8;&#x8BE2;&#x516C;&#x53F8;&#x5BF9;&#x5B9E;&#x65BD;CMMI &#x6709;&#x4EC0;&#x4E48;&#x5E2E;&#x52A9; /CMMI&#x8BA4;&#x8BC1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#CMMI&#x8BC4;&#x4F30;&#x7684;&#x9884;&#x5907;&#x5DE5;&#x4F5C;&#x90FD;&#x6709;&#x54EA;&#x4E9B;-CMMI&#x8BA4;&#x8BC1;" data-href="#CMMI&#x8BC4;&#x4F30;&#x7684;&#x9884;&#x5907;&#x5DE5;&#x4F5C;&#x90FD;&#x6709;&#x54EA;&#x4E9B;-CMMI&#x8BA4;&#x8BC1;"><span class="toc-number"></span> <span class="toc-text">4.4. CMMI&#x8BC4;&#x4F30;&#x7684;&#x9884;&#x5907;&#x5DE5;&#x4F5C;&#x90FD;&#x6709;&#x54EA;&#x4E9B; /CMMI&#x8BA4;&#x8BC1;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E00;-&#x8FDB;&#x884C;&#x6070;&#x5F53;&#x7684;&#x526A;&#x88C1;" data-href="#&#x4E00;-&#x8FDB;&#x884C;&#x6070;&#x5F53;&#x7684;&#x526A;&#x88C1;"><span class="toc-number"></span> <span class="toc-text">4.4.1. &#x4E00;.&#x8FDB;&#x884C;&#x6070;&#x5F53;&#x7684;&#x526A;&#x88C1;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E8C;-&#x5BF9;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x6807;&#x8BC6;" data-href="#&#x4E8C;-&#x5BF9;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x6807;&#x8BC6;"><span class="toc-number"></span> <span class="toc-text">4.4.2. &#x4E8C;.&#x5BF9;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x6807;&#x8BC6;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E09;-&#x786E;&#x5B9A;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x8D39;&#x7528;&#x4EE5;&#x53CA;&#x65E5;&#x7A0B;&#x5B89;&#x6392;" data-href="#&#x4E09;-&#x786E;&#x5B9A;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x8D39;&#x7528;&#x4EE5;&#x53CA;&#x65E5;&#x7A0B;&#x5B89;&#x6392;"><span class="toc-number"></span> <span class="toc-text">4.4.3. &#x4E09;.&#x786E;&#x5B9A;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x8D39;&#x7528;&#x4EE5;&#x53CA;&#x65E5;&#x7A0B;&#x5B89;&#x6392;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x56DB;-&#x5BF9;&#x540E;&#x52E4;&#x8BA1;&#x5212;&#x8FDB;&#x884C;&#x7BA1;&#x7406;" data-href="#&#x56DB;-&#x5BF9;&#x540E;&#x52E4;&#x8BA1;&#x5212;&#x8FDB;&#x884C;&#x7BA1;&#x7406;"><span class="toc-number"></span> <span class="toc-text">4.4.4. &#x56DB;.&#x5BF9;&#x540E;&#x52E4;&#x8BA1;&#x5212;&#x8FDB;&#x884C;&#x7BA1;&#x7406;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E94;-&#x5BF9;&#x98CE;&#x9669;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x5E76;&#x5C06;&#x5176;&#x6587;&#x6863;&#x5316;" data-href="#&#x4E94;-&#x5BF9;&#x98CE;&#x9669;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x5E76;&#x5C06;&#x5176;&#x6587;&#x6863;&#x5316;"><span class="toc-number"></span> <span class="toc-text">4.4.5. &#x4E94;.&#x5BF9;&#x98CE;&#x9669;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x5E76;&#x5C06;&#x5176;&#x6587;&#x6863;&#x5316;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x516D;-&#x83B7;&#x5F97;&#x8BC4;&#x4F30;&#x8BA1;&#x5212;&#x7684;&#x8BB8;&#x53EF;" data-href="#&#x516D;-&#x83B7;&#x5F97;&#x8BC4;&#x4F30;&#x8BA1;&#x5212;&#x7684;&#x8BB8;&#x53EF;"><span class="toc-number"></span> <span class="toc-text">4.4.6. &#x516D;.&#x83B7;&#x5F97;&#x8BC4;&#x4F30;&#x8BA1;&#x5212;&#x7684;&#x8BB8;&#x53EF;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E03;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x9886;&#x5BFC;" data-href="#&#x4E03;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x9886;&#x5BFC;"><span class="toc-number"></span> <span class="toc-text">4.4.7. &#x4E03;.&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x9886;&#x5BFC;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x516B;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x6210;&#x5458;" data-href="#&#x516B;-&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x6210;&#x5458;"><span class="toc-number"></span> <span class="toc-text">4.4.8. &#x516B;.&#x9009;&#x62E9;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;&#x6210;&#x5458;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x4E5D;-&#x51C6;&#x5907;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;" data-href="#&#x4E5D;-&#x51C6;&#x5907;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;"><span class="toc-number"></span> <span class="toc-text">4.4.9. &#x4E5D;.&#x51C6;&#x5907;&#x8BC4;&#x4F30;&#x5C0F;&#x7EC4;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#&#x5C0F;&#x7ED3;" data-href="#&#x5C0F;&#x7ED3;"><span class="toc-number"></span> <span class="toc-text">5. &#x5C0F;&#x7ED3;</span></a></li></ol>
+  </ul>
+</div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-spacer mdui-hidden-xs"></div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      <a href="/2019/05/13/Flutter-install/" class="theme-post__pagination__next__content mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          flutter-install
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog .mdui-ripple" id="donateDialog">
+      <div class="mdui-dialog-title">打赏</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/images/wechat.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>不要</button>
+      </div>
+    </div>
+  
+</div>
+<script type="text/javascript">
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1557801275623
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>string</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <div id="outdated" style="z-index: 9999;">
+    <h6>你的浏览器已经过气辣！</h6>
+    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
+  </div>
+  <!-- import js -->
+
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+
+  
+    <script src="/js/js.barba.min.js"></script>
+    <script type="text/javascript">
+      Barba.Utils.errorPageUrl = '/404.html';
+    </script>
+  
+
+
+<!-- theme js -->
+<script type="text/javascript">
+  (function() {
+    var appbarTopFlag = false;
+    var appbarEl = document.querySelector('.theme-appbar');
+    function appbarShadow() {
+      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      if (bodyScrolled > 0 && !appbarTopFlag) {
+        appbarEl.classList.add('theme-appbar--shadow');
+        appbarTopFlag = true;
+      } else if (bodyScrolled === 0 && appbarTopFlag) {
+        appbarEl.classList.remove('theme-appbar--shadow');
+        appbarTopFlag = false;
+      }
+    }
+    appbarShadow()
+    window.addEventListener('scroll', appbarShadow);
+  })();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  document.querySelector('body').classList.add('theme-loaded')
+</script>
+
+
+
+</body>
+</html>
