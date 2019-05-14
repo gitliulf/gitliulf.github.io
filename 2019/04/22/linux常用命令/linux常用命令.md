@@ -3,7 +3,7 @@ title: linux常用命令
 date: 2019-04-22 08:02:07
 tags: 
 - linux
-- shell
+
 categories:
 - 技术文章
 pinned: true
