@@ -3,7 +3,6 @@ title: cmmi简介
 date: 2019-04-22 08:02:07
 tags: 
 - cmmi 
-- 软件管理 
 
 categories:
 - 认证 
