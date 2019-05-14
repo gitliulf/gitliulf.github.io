@@ -9,6 +9,7 @@ categories:
 
 ---
 
+华为iot Agent lite 认证
 
 
 # **1.** **设备接入和删除**
