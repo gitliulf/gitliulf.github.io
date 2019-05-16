@@ -1,2319 +1,953 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>分类: 技术文章 - developer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="分类: 技术文章, developer">
+    <meta name="description" content="分类: 技术文章 | developer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>分类: 技术文章 | developer</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
 
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
 
-
-    <meta property="og:type" content="website">
-<meta property="og:title" content="developer">
-<meta property="og:url" content="http://zone.lfmax.cn/categories/技术文章/index.html">
-<meta property="og:site_name" content="developer">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://zone.lfmax.cn/images/og_image.png">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="developer">
-<meta name="twitter:image" content="http://zone.lfmax.cn/images/og_image.png">
-
-
-
-
-
-
-
-<link rel="icon" href="/images/favicon.svg">
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
-
-
-    
-    
-    
-    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
-    
-
-    
-    
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
-    
-
-    
-    
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
-
-
-    
-    
-    
-    
-
-<link rel="stylesheet" href="/css/back-to-top.css">
-
-
-    
-    
-
-    
-    
-
-    
-    
-<link rel="stylesheet" href="/css/progressbar.css">
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-
-    
-    
-    
-
-    
-    
-    
-
-
-<link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
 </head>
-<body class="is-3-column">
-    <nav class="navbar navbar-main">
-    <div class="container">
-        <div class="navbar-brand is-flex-center">
-            <a class="navbar-item navbar-logo" href="/">
-            
-                <img src="/images/logo.svg" alt="developer" height="28">
-            
-            </a>
-        </div>
-        <div class="navbar-menu">
-            
-            <div class="navbar-start">
-                
-                <a class="navbar-item" href="/">Home</a>
-                
-                <a class="navbar-item" href="/archives">Archives</a>
-                
-                <a class="navbar-item" href="/categories">Categories</a>
-                
-                <a class="navbar-item" href="/tags">Tags</a>
-                
-                <a class="navbar-item" href="/about">About</a>
-                
-            </div>
-            
-            <div class="navbar-end">
-                
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
                     
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
-                
-                
-                
-                <a class="navbar-item search" title="搜索" href="javascript:;">
-                    <i class="fas fa-search"></i>
+                    <span class="logo-span">developer</span>
                 </a>
-                
             </div>
-        </div>
-    </div>
-</nav>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
     
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/categories">分类</a></li>
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
             
-            <li class="is-active"><a href="#" aria-current="page">技术文章</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
     
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    40 分钟 读完 (大约 5988 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
             
-                <a class="has-link-black-ter" href="/2019/05/16/markdown/">markdown-apt</a>
+            <i class="fa fa-tags"></i>
             
-        </h1>
-        <div class="content">
-            <h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><h3 id="宗旨"><a href="#宗旨" class="headerlink" title="宗旨"></a>宗旨</h3><p>Markdown 的目标是实现「易读易写」。</p>
-<p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 <a href="http://docutils.sourceforge.net/mirror/setext.html" target="_blank" rel="noopener">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/" target="_blank" rel="noopener">atx</a>、<a href="http://textism.com/tools/textile/" target="_blank" rel="noopener">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html" target="_blank" rel="noopener">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html" target="_blank" rel="noopener">Grutatext</a> 和 <a href="http://ettext.taint.org/doc/" target="_blank" rel="noopener">EtText</a>，而最大灵感来源其实是纯文本电子邮件的格式。</p>
-<h3 id="兼容-HTML"><a href="#兼容-HTML" class="headerlink" title="兼容 HTML"></a>兼容 HTML</h3><p>Markdown 语法的目标是：成为一种适用于网络的书写语言。</p>
-<p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
-<p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
-<p>要制约的只有一些 HTML 区块元素――比如 <div>、<table>、<pre>、<p> 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 </p><p> 标签。</p>
-<p>例子如下，在 Markdown 文件里加上一段 HTML 表格：</p>
-<pre><code class="html">这是一个普通段落。
-
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Foo&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-这是另一个普通段落。
-</code></pre>
-<p>请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的<em>强调</em>会没有效果。</p>
-<p>HTML 的区段（行内）标签如 <span>、<cite>、<del> 可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的 <a> 或 <img> 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。</a></del></cite></span></p>
-<p>和处在 HTML 区块标签间不同，Markdown 语法在 HTML 区段标签间是有效的。</p>
-<h3 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="headerlink" title="特殊字符自动转换"></a>特殊字符自动转换</h3><p>在 HTML 文件中，有两个字符需要特殊处理： &lt; 和 &amp; 。 &lt; 符号用于起始标签，&amp; 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 &lt; 和 &amp;。</p>
-<p>&amp; 字符尤其让网络文档编写者受折磨，如果你要打「AT&amp;T」 ，你必须要写成「AT&amp;T」。而网址中的 &amp; 字符也要转换。比如你要链接到：</p>
-<p><a href="http://images.google.com/images?num=30&amp;q=larry+bird" target="_blank" rel="noopener">http://images.google.com/images?num=30&amp;q=larry+bird</a></p>
-<p>你必须要把网址转换写为：</p>
-<p><a href="http://images.google.com/images?num=30&amp;q=larry+bird" target="_blank" rel="noopener">http://images.google.com/images?num=30&amp;q=larry+bird</a></p>
-<p>才能放到链接标签的 href 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。</p>
-<p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 &amp; 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 &amp;。</p>
-<p>所以你如果要在文档中插入一个版权符号©，你可以这样写：</p>
-<pre><code class="html">&amp;copy;
-</code></pre>
-<p>Markdown 会保留它不动。而若你写：</p>
-<pre><code class="html">AT&amp;T
-</code></pre>
-<p>Markdown 就会将它转为：</p>
-<pre><code class="html">AT&amp;amp;T
-</code></pre>
-<p>类似的状况也会发生在 &lt; 符号上，因为 Markdown 允许 兼容 HTML ，如果你是把 &lt; 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：</p>
-<pre><code class="html">4 &lt; 5
-</code></pre>
-<p>Markdown 将会把它转换为：</p>
-<pre><code class="html">4 &amp;lt; 5
-</code></pre>
-<p>不过需要注意的是，code 范围内，不论是行内还是区块， &lt; 和 &amp; 两个符号都一定会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code （和 HTML 相对而言， HTML 语法中，你要把所有的 &lt; 和 &amp; 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。）</p>
-<h2 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h2><h3 id="段落和换行"><a href="#段落和换行" class="headerlink" title="段落和换行"></a>段落和换行</h3><p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
-<p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <br> 标签。</p>
-<p>如果你确实想要依赖 Markdown 来插入 <br> 标签的话，在插入处先按入两个以上的空格然后回车。</p>
-<p>的确，需要多费点事（多加空格）来产生 <br> ，但是简单地「每个换行都转换为 <br>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 区块引用 和多段落的 列表 在使用换行来排版的时候，不但更好用，还更方便阅读。</p>
-<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。</p>
-<p>类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如：</p>
-<pre><code class="html">This is an H1
-=============
-
-This is an H2
--------------
-</code></pre>
-<p>任何数量的 = 和 - 都可以有效果。</p>
-<p>类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：</p>
-<pre><code class="html"># 这是 H1
-
-## 这是 H2
-
-###### 这是 H6
-</code></pre>
-<p>你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 #，而行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：</p>
-<pre><code class="html"># 这是 H1 #
-
-## 这是 H2 ##
-
-### 这是 H3 ######
-</code></pre>
-<h3 id="区块引用Blockquotes"><a href="#区块引用Blockquotes" class="headerlink" title="区块引用Blockquotes"></a>区块引用Blockquotes</h3><p>Markdown 标记区块引用是使用类似 email 中用 &gt; 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 &gt; ：</p>
-<pre><code class="md">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&gt; 
-&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-&gt; id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt; ：</p>
-<pre><code class="md">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &gt; ：</p>
-<pre><code class="md"> This is the first level of quoting.
-&gt;
-&gt; &gt; This is nested blockquote.
-&gt;
-&gt; Back to the first level.
-</code></pre>
-<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
-<pre><code class="md">&gt; ## 这是一个标题。
-&gt; 
-&gt; 1.   这是第一行列表项。
-&gt; 2.   这是第二行列表项。
-&gt; 
-&gt; 给出一些例子代码：
-&gt; 
-&gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
-</code></pre>
-<p>任何像样的文本编辑器都能轻松地建立 email 型的引用。例如在 BBEdit 中，你可以选取文字后然后从选单中选择增加引用阶层。</p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>Markdown 支持有序列表和无序列表。</p>
-<p>无序列表使用星号、加号或是减号作为列表标记：</p>
-<pre><code class="md">*   Red
-*   Green
-*   Blue
-</code></pre>
-<p>等同于：</p>
-<pre><code class="md">+   Red
-+   Green
-+   Blue
-</code></pre>
-<p>也等同于：</p>
-<pre><code class="md">-   Red
--   Green
--   Blue
-</code></pre>
-<p>有序列表则使用数字接着一个英文句点：</p>
-<pre><code class="md">1.  Bird
-2.  McHale
-3.  Parish
-</code></pre>
-<p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：</p>
-<pre><code class="md">&lt;ol&gt;
-&lt;li&gt;Bird&lt;/li&gt;
-&lt;li&gt;McHale&lt;/li&gt;
-&lt;li&gt;Parish&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
-<p>如果你的列表标记写成：</p>
-<pre><code class="md">1.  Bird
-1.  McHale
-1.  Parish
-</code></pre>
-<p>或甚至是：</p>
-<pre><code class="md">3. Bird
-1. McHale
-8. Parish
-</code></pre>
-<p>你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。</p>
-<p>如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。</p>
-<p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</p>
-<p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p>
-<pre><code class="md">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>但是如果你懒，那也行：</p>
-<pre><code class="md">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 </p><p> 标签包起来，举例来说：</p>
-<pre><code class="md">*   Bird
-*   Magic
-</code></pre>
-<p>会被转换为：</p>
-<pre><code class="md">&lt;ul&gt;
-&lt;li&gt;Bird&lt;/li&gt;
-&lt;li&gt;Magic&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-<p>但是这个：</p>
-<pre><code class="md">*   Bird
-
-*   Magic
-</code></pre>
-<p>会被转换为：</p>
-<pre><code class="md">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-<p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</p>
-<pre><code class="md">1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
-
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
-
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre>
-<p>如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown 也允许：</p>
-<pre><code class="md">*   This is a list item with two paragraphs.
-
-    This is the second paragraph in the list item. You&#39;re
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
-
-*   Another item in the same list.
-</code></pre>
-<p>如果要在列表项目内放进引用，那 &gt; 就需要缩进：</p>
-<pre><code class="md">*   A list item with a blockquote:
-
-    &gt; This is a blockquote
-    &gt; inside a list item.
-</code></pre>
-<p>如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：</p>
-<pre><code class="md">*   一列表项包含一个列表区块：
-
-        &lt;代码写在这&gt;
-</code></pre>
-<p>当然，项目列表很可能会不小心产生，像是下面这样的写法</p>
-<pre><code class="md">1986. What a great season.
-</code></pre>
-<p>换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。</p>
-<pre><code class="md">1986\. What a great season.
-</code></pre>
-<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 <pre> 和 <code> 标签来把代码区块包起来。</code></pre></p>
-<p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：</p>
-<pre><code class="md">这是一个普通段落：
-
-    这是一个代码区块。
-</code></pre>
-<p>Markdown 会转换成：</p>
-<pre><code class="md">&lt;p&gt;这是一个普通段落：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;这是一个代码区块。
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-<p>这个每行一阶的缩进（4 个空格或是 1 个制表符），都会被移除，例如：</p>
-<pre><code class="md">Here is an example of AppleScript:
-
-    tell application &quot;Foo&quot;
-        beep
-    end tell
-</code></pre>
-<p>会被转换为：</p>
-<pre><code class="md">&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
-    beep
-end tell
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-<p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
-<p>在代码区块里面， &amp; 、 &lt; 和 &gt; 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，再加上缩进就可以了，剩下的 Markdown 都会帮你处理，例如：</p>
-<pre><code class="md">&lt;div class=&quot;footer&quot;&gt;
-  &amp;copy; 2004 Foo Corporation
-&lt;/div&gt;
-</code></pre>
-<p>会被转换为：</p>
-<pre><code class="md">&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
-    &amp;amp;copy; 2004 Foo Corporation
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-<p>代码区块中，一般的 Markdown 语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</p>
-<h3 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
-<pre><code class="md">* * *
-
-***
-
-*****
-
-- - -
-
----------------------------------------
-</code></pre>
-<h2 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h2><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。</p>
-<p>不管是哪一种，链接文字都是用 [方括号] 来标记。</p>
-<p>要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p>
-<pre><code class="md">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
-
-[This link](http://example.net/) has no title attribute.
-</code></pre>
-<p>会产生：</p>
-<pre><code class="md">&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
-an example&lt;/a&gt; inline link.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no
-title attribute.&lt;/p&gt;
-</code></pre>
-<p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p>
-<pre><code class="md">See my [About](/about/) page for details.
-</code></pre>
-<p>参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p>
-<pre><code class="md">This is [an example][id] reference-style link.
-</code></pre>
-<p>你也可以选择性地在两个方括号中间加上一个空格：</p>
-<pre><code class="md">This is [an example] [id] reference-style link.
-</code></pre>
-<p>接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</p>
-<pre><code class="md">[id]: http://example.com/  &quot;Optional Title Here&quot;
-</code></pre>
-<p>链接内容定义的形式为：</p>
-<ul>
-<li>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</li>
-<li>接着一个冒号</li>
-<li>接着一个以上的空格或制表符</li>
-<li>接着链接的网址</li>
-<li>选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</li>
-</ul>
-<p>下面这三种链接的定义都是相同：</p>
-<pre><code class="md">[foo]: http://example.com/  &quot;Optional Title Here&quot;
-[foo]: http://example.com/  &#39;Optional Title Here&#39;
-[foo]: http://example.com/  (Optional Title Here)
-</code></pre>
-<p><strong>请注意：</strong>有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。</p>
-<p>链接网址也可以用方括号包起来：</p>
-<pre><code class="md">[id]: &quot;Optional Title Here&quot;
-</code></pre>
-<p>你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：</p>
-<pre><code class="md">[id]: http://example.com/longish/path/to/resource/here
-    &quot;Optional Title Here&quot;
-</code></pre>
-<p>网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。</p>
-<p>链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写，因此下面两个链接是一样的：</p>
-<pre><code class="md">[link text][a]
-[link text][A]
-</code></pre>
-<p>隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 “Google” 链接到 google.com，你可以简化成：</p>
-<pre><code class="md">[Google][]
-</code></pre>
-<p>然后定义链接内容：</p>
-<pre><code class="md">[Google]: http://google.com/
-</code></pre>
-<p>由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：</p>
-<pre><code class="md">Visit [Daring Fireball][] for more information.
-</code></pre>
-<p>然后接着定义链接</p>
-<pre><code class="md">[Daring Fireball]: http://daringfireball.net/
-</code></pre>
-<p>链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。</p>
-<p>下面是一个参考式链接的范例：</p>
-<pre><code class="md">I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        &quot;Google&quot;
-  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
-  [3]: http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre>
-<p>如果改成用链接名称的方式写：</p>
-<pre><code class="md">I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        &quot;Google&quot;
-  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
-  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre>
-<p>上面两种写法都会产生下面的 HTML。</p>
-<pre><code class="md">&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
-title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
-&lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt;
-or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
-</code></pre>
-<p>下面是用行内式写的同样一段内容的 Markdown 文件，提供作为比较之用：</p>
-<pre><code class="md">I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
-than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
-[MSN](http://search.msn.com/ &quot;MSN Search&quot;).
-</code></pre>
-<p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的却会增加到 176 个字元，如果是用纯 HTML 格式来写，会有 234 个字元，在 HTML 格式中，标签比文本还要多。</p>
-<p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。</p>
-<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><p>Markdown 使用星号（<em>）和底线（_）作为标记强调字词的符号，被 </em> 或 _ 包围的字词会被转成用 <em> 标签包围，用两个 * 或 _ 包起来的话，则会被转成 <strong>，例如：</strong></em></p>
-<pre><code class="md">*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-</code></pre>
-<p>会转成：</p>
-<pre><code class="md">&lt;em&gt;single asterisks&lt;/em&gt;
-
-&lt;em&gt;single underscores&lt;/em&gt;
-
-&lt;strong&gt;double asterisks&lt;/strong&gt;
-
-&lt;strong&gt;double underscores&lt;/strong&gt;
-</code></pre>
-<p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。</p>
-<p>强调也可以直接插在文字中间：</p>
-<pre><code class="md">un*frigging*believable
-</code></pre>
-<p>但是<strong>如果你的 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号。</strong></p>
-<p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：</p>
-<pre><code class="md">\*this text is surrounded by literal asterisks\*
-</code></pre>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：</p>
-<pre><code class="md">Use the `printf()` function.
-</code></pre>
-<p>会产生：</p>
-<pre><code class="md">&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
-</code></pre>
-<p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：</p>
-<pre><code class="md">``There is a literal backtick (`) here.``
-</code></pre>
-<p>这段语法会产生：</p>
-<pre><code class="md">&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
-</code></pre>
-<p>代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：</p>
-<pre><code class="md">A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
-</code></pre>
-<p>会产生：</p>
-<pre><code class="md">&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
-</code></pre>
-<p>在代码区段内，&amp; 和方括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：</p>
-<pre><code class="md">Please don&#39;t use any `&lt;blink&gt;` tags.
-</code></pre>
-<p>转为：</p>
-<pre><code class="md">&lt;p&gt;Please don&#39;t use any &lt;code&gt;&lt;blink&gt;&lt;/code&gt; tags.&lt;/p&gt;
-</code></pre>
-<p>你也可以这样写：</p>
-<pre><code class="md">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
-</code></pre>
-<p>以产生：</p>
-<pre><code class="md">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
-equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
-</code></pre>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。</p>
-<p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。</p>
-<p>行内式的图片语法看起来像是：</p>
-<pre><code class="md">![Alt text](/path/to/img.jpg)
-
-![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-</code></pre>
-<p>详细叙述如下：</p>
-<ul>
-<li>一个惊叹号 !</li>
-<li>接着一个方括号，里面放上图片的替代文字</li>
-<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。</li>
-</ul>
-<p>参考式的图片语法则长得像这样：</p>
-<pre><code class="md">![Alt text][id]
-</code></pre>
-<p>「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：</p>
-<pre><code class="md">[id]: url/to/image  &quot;Optional title attribute&quot;
-</code></pre>
-<p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <img> 标签。</p>
-<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h3><p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 <em> 标签），你可以在星号的前面加上反斜杠：</em></p>
-<pre><code class="md">\*literal asterisks\*
-</code></pre>
-<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
-<pre><code class="md">\   反斜线
-`   反引号
-*   星号
-_   底线
-{}  花括号
-[]  方括号
-()  括弧
-#   井字号
-+   加号
--   减号
-.   英文句点
-!   惊叹号
-</code></pre>
-<h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
-<pre><code class="md">&lt;http://example.com/&gt;
-</code></pre>
-<p>Markdown 会转为：</p>
-<pre><code class="md">&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
-</code></pre>
-<p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：</p>
-<pre><code class="md">&lt;address@example.com&gt;
-</code></pre>
-<p>Markdown 会转成：</p>
-<pre><code class="md">&lt;a href=&quot;mailto:addre
-ss@example.co
-m&quot;&gt;address@exa
-mple.com&lt;/a&gt;
-</code></pre>
-<p>在浏览器里面，这段字串（其实是 <a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>）会变成一个可以点击的「<a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>」链接。</p>
-<p>（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）</p>
-<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>感谢<a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">http://daringfireball.net/projects/markdown/</a></p>
-<h2 id="Markdown-免费编辑器"><a href="#Markdown-免费编辑器" class="headerlink" title="Markdown 免费编辑器"></a>Markdown 免费编辑器</h2><p>Windows 平台</p>
-<ul>
-<li><a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a></li>
-<li><a href="http://code52.org/DownmarkerWPF/" target="_blank" rel="noopener">MarkPad</a></li>
-</ul>
-<p>Linux 平台</p>
-<ul>
-<li><a href="http://sourceforge.net/p/retext/home/ReText/" target="_blank" rel="noopener">ReText</a></li>
-</ul>
-<p>Mac 平台</p>
-<ul>
-<li><a href="http://mouapp.com/" target="_blank" rel="noopener">Mou</a></li>
-</ul>
-<p>在线编辑器</p>
-<ul>
-<li><a href="http://markable.in/" target="_blank" rel="noopener">Markable.in</a></li>
-<li><a href="http://dillinger.io/" target="_blank" rel="noopener">Dillinger.io</a></li>
-</ul>
-<p>浏览器插件</p>
-<ul>
-<li><a href="https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog" target="_blank" rel="noopener">MaDe</a> (Chrome)</li>
-<li></li>
-</ul>
-<p>高级应用(Sublime Text 2 + MarkdownEditing 教程)</p>
-<ul>
-<li><a href="http://www.sublimetext.com/2" target="_blank" rel="noopener">Sublime Text 2</a></li>
-<li><a href="http://ttscoff.github.com/MarkdownEditing/" target="_blank" rel="noopener">MarkdownEditing</a></li>
-<li><a href="http://lucifr.com/2012/07/12/markdownediting-for-sublime-text-2/" target="_blank" rel="noopener">教程</a></li>
-</ul>
-</pre></table></div></p>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
+            <span>标签</span>
+        </a>
+    </li>
     
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 分钟 读完 (大约 255 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
             
-                <a class="has-link-black-ter" href="/2019/05/16/ubuntu-apt/">ubuntu-apt</a>
+            <i class="fa fa-bookmark"></i>
             
-        </h1>
-        <div class="content">
-            <p>debian apt常见用法</p>
-<h1 id="apt-命令"><a href="#apt-命令" class="headerlink" title="apt 命令"></a>apt 命令</h1><p>在Ubuntu下，apt-get近乎是最常用的shell命令之一了，因为他是Ubuntu通过deb安装软件的常用工具命令。</p>
-<p>下面列举常用的 apt命令</p>
-<ul>
-<li>apt-cache search package 搜索软件包</li>
-<li>apt-cache show package  获取包的相关信息，如说明、大小、版本等</li>
-<li><strong>sudo apt-get install package 安装包</strong></li>
-<li>sudo apt-get install package –reinstall   重新安装包</li>
-<li>sudo apt-get -f install   修复安装</li>
-<li><strong>sudo apt-get remove package 删除包</strong></li>
-<li>sudo apt-get remove package –purge 删除包，包括配置文件等</li>
-<li><strong>sudo apt-get update  更新源</strong></li>
-<li><strong>sudo apt-get upgrade 更新已安装的包</strong></li>
-<li>sudo apt-get dist-upgrade 升级系统</li>
-<li>apt-cache depends package 了解使用该包依赖那些包</li>
-<li>apt-cache rdepends package 查看该包被哪些包依赖</li>
-<li>sudo apt-get build-dep package 安装相关的编译环境</li>
-<li><strong>apt-get source package  下载该包的源代码</strong></li>
-<li>sudo apt-get clean &amp;&amp; sudo apt-get autoclean 清理无用的包</li>
-<li>sudo apt-get check 检查是否有损坏的依赖</li>
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
 
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">developer</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
         </div>
-        
-        
-        
     </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-13T03:38:28.000Z">2019-05-13</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    几秒 读完 (大约 94 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/05/13/Flutter-install/">flutter-install</a>
-            
-        </h1>
-        <div class="content">
-            <p>flutter 安装</p>
-<h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><h2 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h2><p>在windows参考下面设置两个环境变量</p>
-<pre><code class="commandline">PUB_HOSTED_URL https://pub.flutter-io.cn
-FLUTTER_STORAGE_BASE_URL https://storage.flutter-io.cn
-</code></pre>
-<h2 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h2><p>在linux下输入下面命令</p>
-<pre><code class="commandline">export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
-</code></pre>
-<h1 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h1><p>flutter后解压执行 flutter doctor 等待更新完成</p>
-<pre><code class="commandline"> flutter doctor
-</code></pre>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-30T01:23:37.000Z">2019-04-30</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    几秒 读完 (大约 84 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/30/npm-to-ali-source/">npm 使用国内源</a>
-            
-        </h1>
-        <div class="content">
-            <p>切换npm使用的源地址</p>
-<h2 id="Node-的官方模块仓库网速太慢，模块仓库需要切换到阿里的源。"><a href="#Node-的官方模块仓库网速太慢，模块仓库需要切换到阿里的源。" class="headerlink" title="Node 的官方模块仓库网速太慢，模块仓库需要切换到阿里的源。"></a>Node 的官方模块仓库网速太慢，模块仓库需要切换到阿里的源。</h2><p>不安装 cnpm 只用淘宝镜像，设置 npm 的镜像：<br>$ npm config set registry <a href="https://registry.npm.taobao.org/" target="_blank" rel="noopener">https://registry.npm.taobao.org/</a><br>执行下面的命令，确认是否切换成功。<br>$ npm config get registry</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-25T03:38:28.000Z">2019-04-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    几秒 读完 (大约 39 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/25/node-restify/">node-restify</a>
-            
-        </h1>
-        <div class="content">
-            <p>A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth.</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-25T03:38:28.000Z">2019-04-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 分钟 读完 (大约 772 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/25/android-build/">android-build</a>
-            
-        </h1>
-        <div class="content">
-            <p>示例Android Build类</p>
-<h4 id="Android-Build类"><a href="#Android-Build类" class="headerlink" title="Android Build类"></a>Android Build类</h4><blockquote>
-<p>Build类提供了硬件厂商、编号、序列号、SDK版本等重要信息。<br>类名：android.os.Build</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th><strong>常量名</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BOARD</td>
-<td>底层板名称</td>
-</tr>
-<tr>
-<td>BOOTLOADER</td>
-<td>Bootloader版本号</td>
-</tr>
-<tr>
-<td>BRAND</td>
-<td>品牌</td>
-</tr>
-<tr>
-<td>CPU_ABI</td>
-<td>CPU指令集</td>
-</tr>
-<tr>
-<td>CPU_ABI2</td>
-<td>CPU第二指令集</td>
-</tr>
-<tr>
-<td>DEVICE</td>
-<td>工业设计名称</td>
-</tr>
-<tr>
-<td>DISPLAY</td>
-<td>显示给用户的构建ID字符串</td>
-</tr>
-<tr>
-<td>FINGERPRINT</td>
-<td>构建的唯一标识符</td>
-</tr>
-<tr>
-<td>HARDWARE</td>
-<td>硬件的名称 比如高通</td>
-</tr>
-<tr>
-<td>HOST</td>
-<td>主机</td>
-</tr>
-<tr>
-<td>ID</td>
-<td>ID标签</td>
-</tr>
-<tr>
-<td>MANUFACTURER</td>
-<td>产品生产商</td>
-</tr>
-<tr>
-<td>MODEL</td>
-<td>手机型号</td>
-</tr>
-<tr>
-<td>PRODUCT</td>
-<td>产品名称</td>
-</tr>
-<tr>
-<td>RADIO</td>
-<td>无线电固件版本号</td>
-</tr>
-<tr>
-<td>SERIAL</td>
-<td>硬件序列号（如果可用）</td>
-</tr>
-<tr>
-<td>TAGS</td>
-<td>逗号分隔标签描述构建，如”调试”</td>
-</tr>
-<tr>
-<td>TIME</td>
-<td>出场时间</td>
-</tr>
-<tr>
-<td>TYPE</td>
-<td>构建类型</td>
-</tr>
-<tr>
-<td>USER</td>
-<td>构建用户名称</td>
-</tr>
-</tbody>
-</table>
-<p>2.Build.VERSION类</p>
-<blockquote>
-<p>Build.VERSION类提供了开发代号、内部版本、SDK版本等信息<br>类名：android.os.Build.VEISION</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th><strong>常量名</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CODENAME</td>
-<td>当前的开发代号</td>
-</tr>
-<tr>
-<td>INCREMENTAL</td>
-<td>使用的内部值表示这个构建底层的源代码控制</td>
-</tr>
-<tr>
-<td>RELEASE</td>
-<td>用户可见版本字符串</td>
-</tr>
-<tr>
-<td>SDK_INT</td>
-<td>用户可见的SDK版本的框架</td>
-</tr>
-</tbody>
-</table>
-<p>3.Build.VERSION_CODES类</p>
-<blockquote>
-<p>android.os.Build.VERSION_CODES枚举当前已知的SDK版本代号</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th><strong>常量名</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BASE</td>
-<td>2008-10：第一个版本的android</td>
-</tr>
-<tr>
-<td>BASE_1_1</td>
-<td>2009-02：第一个安卓更新，官方称为1.1</td>
-</tr>
-<tr>
-<td>CUPCAKE</td>
-<td>2009-05：android1.5</td>
-</tr>
-<tr>
-<td>CUR_DEVELOPMENT</td>
-<td>发展过程中构建的版本，但是未正式发布</td>
-</tr>
-<tr>
-<td>DONUT</td>
-<td>2009-09：android1.6</td>
-</tr>
-<tr>
-<td>ECLAIR</td>
-<td>2009-11：android2.0</td>
-</tr>
-<tr>
-<td>ECLAIR_0_1</td>
-<td>2009-12：android2.0.1</td>
-</tr>
-<tr>
-<td>ECLAIR_MR1</td>
-<td>2010-01：android2.1</td>
-</tr>
-<tr>
-<td>FROYO</td>
-<td>2010-06：android2.2</td>
-</tr>
-<tr>
-<td>GINGERBREAD</td>
-<td>2010-11：android2.3</td>
-</tr>
-<tr>
-<td>GINGERBREAD_MR1</td>
-<td>2011-02：android2.3.3</td>
-</tr>
-<tr>
-<td>HONEYCOMB</td>
-<td>2011-02：android3.0</td>
-</tr>
-<tr>
-<td>HONEYCOMB_MR1</td>
-<td>2011-05：android3.1</td>
-</tr>
-<tr>
-<td>HONEYCOMB_MR2</td>
-<td>2011-06：android3.2</td>
-</tr>
-<tr>
-<td>ICE_CREAM_SANDWICH</td>
-<td>2011-10：android4.0</td>
-</tr>
-<tr>
-<td>ICE_CREAM_SANDWICH_MR1</td>
-<td>2011-12android4.0.3</td>
-</tr>
-<tr>
-<td>JELLY_BEAN</td>
-<td>2012-06：android4.1</td>
-</tr>
-<tr>
-<td>JELLY_BEAN_MR1</td>
-<td>android4.2</td>
-</tr>
-<tr>
-<td>JELLY_BEAN_MR2</td>
-<td>android4.3</td>
-</tr>
-<tr>
-<td>KITKAT</td>
-<td>android4.4</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="java">public void testDemo1(){
-    //Build类
-    System.out.println(&quot;Build:&quot;+Build.BOARD);
-    System.out.println(&quot;Build:&quot;+Build.BOOTLOADER);
-    System.out.println(&quot;Build:&quot;+Build.CPU_ABI);
-    System.out.println(&quot;Build:&quot;+Build.CPU_ABI2);
-    System.out.println(&quot;Build:&quot;+Build.DEVICE);
-    System.out.println(&quot;Build:&quot;+Build.DISPLAY);
-    System.out.println(&quot;Build:&quot;+Build.FINGERPRINT);
-    System.out.println(&quot;Build:&quot;+Build.HARDWARE);
-    System.out.println(&quot;Build:&quot;+Build.HOST);
-    System.out.println(&quot;Build:&quot;+Build.ID);
-    System.out.println(&quot;Build:&quot;+Build.MANUFACTURER);
-    System.out.println(&quot;Build:&quot;+Build.MODEL);
-    System.out.println(&quot;Build:&quot;+Build.PRODUCT);
-    System.out.println(&quot;Build:&quot;+Build.RADIO);
-    System.out.println(&quot;Build:&quot;+Build.SERIAL);
-    System.out.println(&quot;Build:&quot;+Build.TAGS);
-    System.out.println(&quot;Build:&quot;+Build.TIME);
-    System.out.println(&quot;Build:&quot;+Build.TYPE);
-    System.out.println(&quot;Build:&quot;+Build.USER);
-    System.out.println(&quot;Build:&quot;+Build.BOARD);
-    //Build.VERSION类
-    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.CODENAME);
-    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.INCREMENTAL);
-    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.RELEASE);
-    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.SDK_INT);
-    //Build.VERSION_CODES类
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.BASE);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.BASE_1_1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.CUPCAKE);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.CUR_DEVELOPMENT);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ECLAIR);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ECLAIR_0_1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ECLAIR_MR1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.FROYO);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.GINGERBREAD);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.GINGERBREAD_MR1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.HONEYCOMB);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.HONEYCOMB_MR1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.HONEYCOMB_MR2);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ICE_CREAM_SANDWICH);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.JELLY_BEAN);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.JELLY_BEAN_MR1);
-    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.JELLY_BEAN_MR2);
-}
-</code></pre>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-25T03:38:28.000Z">2019-04-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    16 分钟 读完 (大约 2356 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/25/http-method-definitions/">http-method-definitions</a>
-            
-        </h1>
-        <div class="content">
-            <p>介绍http中method的定义</p>
-<h1 id="Method-Definitions"><a href="#Method-Definitions" class="headerlink" title="Method Definitions"></a>Method Definitions</h1><p>The set of common methods for HTTP/1.1 is defined below. Although this set can be expanded, additional methods cannot be assumed to share the same semantics for separately extended clients and servers.</p>
-<p>The Host request-header field (section 14.23) MUST accompany all HTTP/1.1 requests.</p>
-<p>9.1 Safe and Idempotent Methods<br>9.1.1 Safe Methods<br>Implementors should be aware that the software represents the user in their interactions over the Internet, and should be careful to allow the user to be aware of any actions they might take which may have an unexpected significance to themselves or others.</p>
-<p>In particular, the convention has been established that the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval. These methods ought to be considered “safe”. This allows user agents to represent other methods, such as POST, PUT and DELETE, in a special way, so that the user is made aware of the fact that a possibly unsafe action is being requested.</p>
-<p>Naturally, it is not possible to ensure that the server does not generate side-effects as a result of performing a GET request; in fact, some dynamic resources consider that a feature. The important distinction here is that the user did not request the side-effects, so therefore cannot be held accountable for them.</p>
-<p>9.1.2 Idempotent Methods<br>Methods can also have the property of “idempotence” in that (aside from error or expiration issues) the side-effects of N &gt; 0 identical requests is the same as for a single request. The methods GET, HEAD, PUT and DELETE share this property. Also, the methods OPTIONS and TRACE SHOULD NOT have side effects, and so are inherently idempotent.</p>
-<p>However, it is possible that a sequence of several requests is non- idempotent, even if all of the methods executed in that sequence are idempotent. (A sequence is idempotent if a single execution of the entire sequence always yields a result that is not changed by a reexecution of all, or part, of that sequence.) For example, a sequence is non-idempotent if its result depends on a value that is later modified in the same sequence.</p>
-<p>A sequence that never has side effects is idempotent, by definition (provided that no concurrent operations are being executed on the same set of resources).</p>
-<p>9.2 OPTIONS<br>The OPTIONS method represents a request for information about the communication options available on the request/response chain identified by the Request-URI. This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval.</p>
-<p>Responses to this method are not cacheable.</p>
-<p>If the OPTIONS request includes an entity-body (as indicated by the presence of Content-Length or Transfer-Encoding), then the media type MUST be indicated by a Content-Type field. Although this specification does not define any use for such a body, future extensions to HTTP might use the OPTIONS body to make more detailed queries on the server. A server that does not support such an extension MAY discard the request body.</p>
-<p>If the Request-URI is an asterisk (“<em>“), the OPTIONS request is intended to apply to the server in general rather than to a specific resource. Since a server’s communication options typically depend on the resource, the “</em>“ request is only useful as a “ping” or “no-op” type of method; it does nothing beyond allowing the client to test the capabilities of the server. For example, this can be used to test a proxy for HTTP/1.1 compliance (or lack thereof).</p>
-<p>If the Request-URI is not an asterisk, the OPTIONS request applies only to the options that are available when communicating with that resource.</p>
-<p>A 200 response SHOULD include any header fields that indicate optional features implemented by the server and applicable to that resource (e.g., Allow), possibly including extensions not defined by this specification. The response body, if any, SHOULD also include information about the communication options. The format for such a</p>
-<p>body is not defined by this specification, but might be defined by future extensions to HTTP. Content negotiation MAY be used to select the appropriate response format. If no response body is included, the response MUST include a Content-Length field with a field-value of “0”.</p>
-<p>The Max-Forwards request-header field MAY be used to target a specific proxy in the request chain. When a proxy receives an OPTIONS request on an absoluteURI for which request forwarding is permitted, the proxy MUST check for a Max-Forwards field. If the Max-Forwards field-value is zero (“0”), the proxy MUST NOT forward the message; instead, the proxy SHOULD respond with its own communication options. If the Max-Forwards field-value is an integer greater than zero, the proxy MUST decrement the field-value when it forwards the request. If no Max-Forwards field is present in the request, then the forwarded request MUST NOT include a Max-Forwards field.</p>
-<p>9.3 GET<br>The GET method means retrieve whatever information (in the form of an entity) is identified by the Request-URI. If the Request-URI refers to a data-producing process, it is the produced data which shall be returned as the entity in the response and not the source text of the process, unless that text happens to be the output of the process.</p>
-<p>The semantics of the GET method change to a “conditional GET” if the request message includes an If-Modified-Since, If-Unmodified-Since, If-Match, If-None-Match, or If-Range header field. A conditional GET method requests that the entity be transferred only under the circumstances described by the conditional header field(s). The conditional GET method is intended to reduce unnecessary network usage by allowing cached entities to be refreshed without requiring multiple requests or transferring data already held by the client.</p>
-<p>The semantics of the GET method change to a “partial GET” if the request message includes a Range header field. A partial GET requests that only part of the entity be transferred, as described in section 14.35. The partial GET method is intended to reduce unnecessary network usage by allowing partially-retrieved entities to be completed without transferring data already held by the client.</p>
-<p>The response to a GET request is cacheable if and only if it meets the requirements for HTTP caching described in section 13.</p>
-<p>See section 15.1.3 for security considerations when used for forms.</p>
-<p>9.4 HEAD<br>The HEAD method is identical to GET except that the server MUST NOT return a message-body in the response. The metainformation contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request. This method can be used for obtaining metainformation about the entity implied by the request without transferring the entity-body itself. This method is often used for testing hypertext links for validity, accessibility, and recent modification.</p>
-<p>The response to a HEAD request MAY be cacheable in the sense that the information contained in the response MAY be used to update a previously cached entity from that resource. If the new field values indicate that the cached entity differs from the current entity (as would be indicated by a change in Content-Length, Content-MD5, ETag or Last-Modified), then the cache MUST treat the cache entry as stale.</p>
-<p>9.5 POST<br>The POST method is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. POST is designed to allow a uniform method to cover the following functions:</p>
-<pre><code>  - Annotation of existing resources;
-  - Posting a message to a bulletin board, newsgroup, mailing list,
-    or similar group of articles;
-  - Providing a block of data, such as the result of submitting a
-    form, to a data-handling process;
-  - Extending a database through an append operation.
-</code></pre><p>The actual function performed by the POST method is determined by the server and is usually dependent on the Request-URI. The posted entity is subordinate to that URI in the same way that a file is subordinate to a directory containing it, a news article is subordinate to a newsgroup to which it is posted, or a record is subordinate to a database.</p>
-<p>The action performed by the POST method might not result in a resource that can be identified by a URI. In this case, either 200 (OK) or 204 (No Content) is the appropriate response status, depending on whether or not the response includes an entity that describes the result.</p>
-<p>If a resource has been created on the origin server, the response SHOULD be 201 (Created) and contain an entity which describes the status of the request and refers to the new resource, and a Location header (see section 14.30).</p>
-<p>Responses to this method are not cacheable, unless the response includes appropriate Cache-Control or Expires header fields. However, the 303 (See Other) response can be used to direct the user agent to retrieve a cacheable resource.</p>
-<p>POST requests MUST obey the message transmission requirements set out in section 8.2.</p>
-<p>See section 15.1.3 for security considerations.</p>
-<p>9.6 PUT<br>The PUT method requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource, the enclosed entity SHOULD be considered as a modified version of the one residing on the origin server. If the Request-URI does not point to an existing resource, and that URI is capable of being defined as a new resource by the requesting user agent, the origin server can create the resource with that URI. If a new resource is created, the origin server MUST inform the user agent via the 201 (Created) response. If an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request. If the resource could not be created or modified with the Request-URI, an appropriate error response SHOULD be given that reflects the nature of the problem. The recipient of the entity MUST NOT ignore any Content-* (e.g. Content-Range) headers that it does not understand or implement and MUST return a 501 (Not Implemented) response in such cases.</p>
-<p>If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.</p>
-<p>The fundamental difference between the POST and PUT requests is reflected in the different meaning of the Request-URI. The URI in a POST request identifies the resource that will handle the enclosed entity. That resource might be a data-accepting process, a gateway to some other protocol, or a separate entity that accepts annotations. In contrast, the URI in a PUT request identifies the entity enclosed with the request – the user agent knows what URI is intended and the server MUST NOT attempt to apply the request to some other resource. If the server desires that the request be applied to a different URI,</p>
-<p>it MUST send a 301 (Moved Permanently) response; the user agent MAY then make its own decision regarding whether or not to redirect the request.</p>
-<p>A single resource MAY be identified by many different URIs. For example, an article might have a URI for identifying “the current version” which is separate from the URI identifying each particular version. In this case, a PUT request on a general URI might result in several other URIs being defined by the origin server.</p>
-<p>HTTP/1.1 does not define how a PUT method affects the state of an origin server.</p>
-<p>PUT requests MUST obey the message transmission requirements set out in section 8.2.</p>
-<p>Unless otherwise specified for a particular entity-header, the entity-headers in the PUT request SHOULD be applied to the resource created or modified by the PUT.</p>
-<p>9.7 DELETE<br>The DELETE method requests that the origin server delete the resource identified by the Request-URI. This method MAY be overridden by human intervention (or other means) on the origin server. The client cannot be guaranteed that the operation has been carried out, even if the status code returned from the origin server indicates that the action has been completed successfully. However, the server SHOULD NOT indicate success unless, at the time the response is given, it intends to delete the resource or move it to an inaccessible location.</p>
-<p>A successful response SHOULD be 200 (OK) if the response includes an entity describing the status, 202 (Accepted) if the action has not yet been enacted, or 204 (No Content) if the action has been enacted but the response does not include an entity.</p>
-<p>If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.</p>
-<p>9.8 TRACE<br>The TRACE method is used to invoke a remote, application-layer loop- back of the request message. The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response. The final recipient is either the</p>
-<p>origin server or the first proxy or gateway to receive a Max-Forwards value of zero (0) in the request (see section 14.31). A TRACE request MUST NOT include an entity.</p>
-<p>TRACE allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information. The value of the Via header field (section 14.45) is of particular interest, since it acts as a trace of the request chain. Use of the Max-Forwards header field allows the client to limit the length of the request chain, which is useful for testing a chain of proxies forwarding messages in an infinite loop.</p>
-<p>If the request is valid, the response SHOULD contain the entire request message in the entity-body, with a Content-Type of “message/http”. Responses to this method MUST NOT be cached.</p>
-<p>9.9 CONNECT<br>This specification reserves the method name CONNECT for use with a proxy that can dynamically switch to being a tunnel (e.g. SSL tunneling [44]).</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-25T03:38:28.000Z">2019-04-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1 分钟 读完 (大约 121 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/25/app-rest-desig/">app-reset-design</a>
-            
-        </h1>
-        <div class="content">
-            <p>定义apiResultFull api</p>
-<h1 id="根据resetfull-API-规范定义一个自己的-api规范"><a href="#根据resetfull-API-规范定义一个自己的-api规范" class="headerlink" title="根据resetfull API 规范定义一个自己的 api规范"></a>根据resetfull API 规范定义一个自己的 api规范</h1><p>定义格式如下</p>
-<blockquote>
-<p>/app/userid/resname<br>GET    查询<br>POST   新增<br>PUT    修改<br>DELETE 删除</p>
-</blockquote>
-<p>所有请求使用http中请求类型表示其目的<br>url只定义资源的路径<br>包含一下几个动作类型<br>资源服务器提供登录验证<br>资源服务器提供版本支持和不同格式的请求<br>第一个版本只提供json的格式请求</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-22T08:48:06.234Z">2019-04-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1 分钟 读完 (大约 121 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/22/hexo/">Hello</a>
-            
-        </h1>
-        <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 487 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/22/linux-user/">user-linux</a>
-            
-        </h1>
-        <div class="content">
-            <p>linux 下用户管理</p>
-<h1 id="如何添加或删除ubuntu用户和组"><a href="#如何添加或删除ubuntu用户和组" class="headerlink" title="如何添加或删除ubuntu用户和组"></a><a href="https://www.cnblogs.com/adolfmc/archive/2012/11/17/2774476.html" target="_blank" rel="noopener">如何添加或删除ubuntu用户和组</a></h1><p>在创建用户时，需要为新建用户指定一用户组，如果不指定其用户所属的工作组，自动会生成一个与用户名同名的工作组。创建用户user1的时候指定其所属工作组users，例：useradd –g users user1</p>
-<h2 id="一、创建用户："><a href="#一、创建用户：" class="headerlink" title="一、创建用户："></a>一、创建用户：</h2><ol>
-<li>使用命令 useradd<br>例：useradd user1——创建用户user1<pre><code>useradd –e 12/30/2009 user2——创建user2,指定有效期2009-12-30到期
-用户的缺省UID从500向后顺序增加，500以下作为系统保留账号，可以指定UID，
-</code></pre>例：useradd –u 600 user3  </li>
-<li>使用 passwd 命令为新建用户设置密码<br>例：passwd user1<br>注意：没有设置密码的用户不能使用。</li>
-<li>命令 usermod 修改用户账户<br>例：将用户 user1的登录名改为  u1，<br>usermod –l u1 user1<br>例：将用户 user1 加入到 users组中，<br>usermod –g users user1<br>例：将用户 user1 目录改为/users/us1</li>
-<li>使用命令 userdel 删除用户账户<br>例：删除用户user2<br>userdel user2<br>例：删除用户 user3，同时删除他的工作目录<br>userdel –r user3</li>
-<li>查看用户信息<br>id命令查看一个用户的UID和GID, 例：查看user4的id<br>id user4<br>finger命令 ——可以查看用户的主目录、启动shell、用户名、地址、电话等信息<br>例：finger user4</li>
-</ol>
-<h2 id="二、用户组："><a href="#二、用户组：" class="headerlink" title="二、用户组："></a>二、用户组：</h2><ol>
-<li>命令 groupadd创建用户组<br>groupadd –g 888 users<br>创建一个组users，其GID为888</li>
-<li>命令 gpasswd为组添加用户<br>只有root和组管理员能够改变组的成员：<br>例：把 user1加入users组<br>gpasswd –a user1 users<br>例：把 user1退出users组<br>gpasswd –d user1 users</li>
-<li>命令groupmod修改组<br>groupmod –n user users       修改组名user为users</li>
-<li>groupdel删除组<br>groupdel users    删除组users</li>
-</ol>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
-<div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/categories/技术文章/page/0/">上一页</a>
-        </div>
-        <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/categories/技术文章/page/2/">下一页</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link is-current" href="/categories/技术文章/">1</a></li>
-            
-            <li><a class="pagination-link has-text-black-ter" href="/categories/技术文章/page/2/">2</a></li>
-            
-        </ul>
-    </nav>
-</div>
-</div>
-                
 
-
-
-
-<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
-    
+    <ul class="menu-list mobile-menu-list">
         
-<div class="card widget">
-    <div class="card-content">
-        <nav class="level">
-            <div class="level-item has-text-centered">
-                <div>
-                    
-                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="liulf">
-                    
-                    
-                    <p class="is-size-4 is-block">
-                        liulf
-                    </p>
-                    
-                    
-                    
-                </div>
-            </div>
-        </nav>
-        <nav class="level is-mobile">
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        文章
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        16
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        分类
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        2
-                    </p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <div>
-                    <p class="heading">
-                        标签
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        11
-                    </p>
-                </div>
-            </div>
-        </nav>
-        <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://gitliulf.github.io/" target="_blank">
-                关注我</a>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://gitliulf.github.io/">
+        <li>
+            <a href="/" class="waves-effect waves-light">
                 
-                <i class="fab fa-github"></i>
+                <i class="fa fa-fw fa-home"></i>
                 
+                首页
             </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
                 
-                <i class="fas fa-rss"></i>
+                <i class="fa fa-fw fa-tags"></i>
                 
+                标签
             </a>
-            
-        </div>
+        </li>
         
-    </div>
-</div>
-    
-        
-    
-        
-
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            链接
-        </h3>
-        <ul class="menu-list">
-        
-            <li>
-                <a class="level is-mobile" href="https://gitliulf.github.io/" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">github</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">gitliulf.github.io</span>
-                    </span>
-                </a>
-            </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-
-
-    
-        
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
                 分类
-            </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/技术文章/">
-            <span class="level-start">
-                <span class="level-item">技术文章</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">12</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/认证/">
-            <span class="level-start">
-                <span class="level-item">认证</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">4</span>
-            </span>
-        </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            标签云
-        </h3>
-        <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/cmmi/" style="font-size: 16.67px;">cmmi</a> <a href="/tags/flutter/" style="font-size: 10px;">flutter</a> <a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/huawei-iot/" style="font-size: 10px;">huawei-iot</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/node/" style="font-size: 16.67px;">node</a> <a href="/tags/restify/" style="font-size: 16.67px;">restify</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a>
-    </div>
-</div>
-
-    
-    
-        <div class="column-right-shadow is-hidden-widescreen ">
-        
-            
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            最新文章
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/05/16/markdown/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="markdown-apt">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
-                    <a href="/2019/05/16/markdown/" class="has-link-black-ter is-size-6">markdown-apt</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/16/ubuntu-apt/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="ubuntu-apt">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
-                    <a href="/2019/05/16/ubuntu-apt/" class="has-link-black-ter is-size-6">ubuntu-apt</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/14/huawei-compatible/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="huawei-compatible">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/huawei-compatible/" class="has-link-black-ter is-size-6">huawei-compatible</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/14/cmmi-compnny/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi-compnny">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:04:15.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/cmmi-compnny/" class="has-link-black-ter is-size-6">cmmi-compnny</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/14/cmmi3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T02:08:57.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/cmmi3/" class="has-link-black-ter is-size-6">cmmi3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-
-        
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/05/">
-                <span class="level-start">
-                    <span class="level-item">五月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">6</span>
-                </span>
             </a>
         </li>
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/04/">
-                <span class="level-start">
-                    <span class="level-item">四月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">10</span>
-                </span>
-            </a>
-        </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-        
-            <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
+            <a href="/archives" class="waves-effect waves-light">
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Android/">
-                        <span class="tag">Android</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
+                <i class="fa fa-fw fa-archive"></i>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/apt/">
-                        <span class="tag">apt</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/cmmi/">
-                        <span class="tag">cmmi</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/flutter/">
-                        <span class="tag">flutter</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/huawei-iot/">
-                        <span class="tag">huawei-iot</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/linux/">
-                        <span class="tag">linux</span>
-                        <span class="tag is-grey">4</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/node/">
-                        <span class="tag">node</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/restify/">
-                        <span class="tag">restify</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/ubuntu/">
-                        <span class="tag">ubuntu</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-        
-        </div>
-    
-</div>
-
-                
-
-
-
-
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
-    
-        
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            最新文章
-        </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/05/16/markdown/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="markdown-apt">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
-                    <a href="/2019/05/16/markdown/" class="has-link-black-ter is-size-6">markdown-apt</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/16/ubuntu-apt/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="ubuntu-apt">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
-                    <a href="/2019/05/16/ubuntu-apt/" class="has-link-black-ter is-size-6">ubuntu-apt</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/14/huawei-compatible/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="huawei-compatible">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/huawei-compatible/" class="has-link-black-ter is-size-6">huawei-compatible</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/14/cmmi-compnny/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi-compnny">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:04:15.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/cmmi-compnny/" class="has-link-black-ter is-size-6">cmmi-compnny</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/14/cmmi3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T02:08:57.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/cmmi3/" class="has-link-black-ter is-size-6">cmmi3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-    </div>
-</div>
-
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            归档
-        </h3>
-        <ul class="menu-list">
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2019/05/">
-                <span class="level-start">
-                    <span class="level-item">五月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">6</span>
-                </span>
+                归档
             </a>
         </li>
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/04/">
-                <span class="level-start">
-                    <span class="level-item">四月 2019</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">10</span>
-                </span>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
             </a>
         </li>
         
-        </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Android/">
-                        <span class="tag">Android</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
+                <i class="fa fa-fw fa-address-book"></i>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/apt/">
-                        <span class="tag">apt</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/cmmi/">
-                        <span class="tag">cmmi</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/flutter/">
-                        <span class="tag">flutter</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/hexo/">
-                        <span class="tag">hexo</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/huawei-iot/">
-                        <span class="tag">huawei-iot</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/linux/">
-                        <span class="tag">linux</span>
-                        <span class="tag is-grey">4</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/node/">
-                        <span class="tag">node</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/restify/">
-                        <span class="tag">restify</span>
-                        <span class="tag is-grey">3</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/ubuntu/">
-                        <span class="tag">ubuntu</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-    
-    
+                友情链接
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
 </div>
 
-            </div>
         </div>
-    </section>
-    <footer class="footer">
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewbox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+<div class="bg-cover pd-header about-cover">
     <div class="container">
-        <div class="level">
-            <div class="level-start has-text-centered-mobile">
-                <a class="footer-logo is-block has-mb-6" href="/">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
                 
-                    <img src="/images/logo.svg" alt="developer" height="28">
+                    做一个快乐的程序员
                 
-                </a>
-                <p class="is-size-7">
-                &copy; 2019 string&nbsp;
-                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
-                
-                </p>
             </div>
-            <div class="level-end">
-            
-                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+
+            <div class="description center-align">
                 
+                    This is your root _config.yml 'description' value.
                 
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
-                        
-                        <i class="fab fa-creative-commons"></i>
-                        
-                    </a>
-                </p>
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
-                        
-                        <i class="fab fa-creative-commons-by"></i>
-                        
-                    </a>
-                </p>
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                </p>
-                
-                </div>
-            
             </div>
         </div>
+    </div>
+</div>
+<script>
+// 每天切换 banner 图.  Switch banner image every day.
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
+    </div>
+</div>
+
+<main class="content">
+
+    
+
+<div id="category-cloud" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
+            </div>
+            <div class="tag-chips">
+                
+                
+                
+                <a href="/categories/技术文章/" title="技术文章: 12">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active " style="background-color: #F9EBEA;">技术文章
+                        <span class="tag-length">12</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/认证/" title="认证: 4">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " style="background-color: #F5EEF8;">认证
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/05/16/ubuntu-apt/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="ubuntu-apt">
+                            
+                            <span class="card-title">ubuntu-apt</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                debian apt常见用法
+apt 命令在Ubuntu下，apt-get近乎是最常用的shell命令之一了，因为他是Ubuntu通过deb安装软件的常用工具命令。
+下面列举常用的 apt命令
+
+apt-cache search packa
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-16
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/linux/" target="_blank">
+                            <span class="chip bg-color">linux</span>
+                        </a>
+                        
+                        <a href="/tags/ubuntu/" target="_blank">
+                            <span class="chip bg-color">ubuntu</span>
+                        </a>
+                        
+                        <a href="/tags/apt/" target="_blank">
+                            <span class="chip bg-color">apt</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/05/16/markdown/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="markdown-apt">
+                            
+                            <span class="card-title">markdown-apt</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                概览宗旨Markdown 的目标是实现「易读易写」。
+可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 t
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-16
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/hexo/" target="_blank">
+                            <span class="chip bg-color">hexo</span>
+                        </a>
+                        
+                        <a href="/tags/markdown/" target="_blank">
+                            <span class="chip bg-color">markdown</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/05/13/Flutter-install/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="flutter-install">
+                            
+                            <span class="card-title">flutter-install</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                flutter 安装
+设置环境变量windows在windows参考下面设置两个环境变量
+PUB_HOSTED_URL https://pub.flutter-io.cn
+FLUTTER_STORAGE_BASE_URL https://s
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-13
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/flutter/" target="_blank">
+                            <span class="chip bg-color">flutter</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/30/npm-to-ali-source/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="npm 使用国内源">
+                            
+                            <span class="card-title">npm 使用国内源</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                切换npm使用的源地址
+Node 的官方模块仓库网速太慢，模块仓库需要切换到阿里的源。不安装 cnpm 只用淘宝镜像，设置 npm 的镜像：$ npm config set registry https://registry.npm.tao
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-30
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/node/" target="_blank">
+                            <span class="chip bg-color">node</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/25/http-method-definitions/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="http-method-definitions">
+                            
+                            <span class="card-title">http-method-definitions</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                介绍http中method的定义
+Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Although this set can be exp
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/restify/" target="_blank">
+                            <span class="chip bg-color">restify</span>
+                        </a>
+                        
+                        <a href="/tags/node/" target="_blank">
+                            <span class="chip bg-color">node</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/25/app-rest-desig/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="app-reset-design">
+                            
+                            <span class="card-title">app-reset-design</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                定义apiResultFull api
+根据resetfull API 规范定义一个自己的 api规范定义格式如下
+
+/app/userid/resnameGET    查询POST   新增PUT    修改DELETE 删除
+
+所有请求
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/restify/" target="_blank">
+                            <span class="chip bg-color">restify</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/25/android-build/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="android-build">
+                            
+                            <span class="card-title">android-build</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                示例Android Build类
+Android Build类
+Build类提供了硬件厂商、编号、序列号、SDK版本等重要信息。类名：android.os.Build
+
+
+
+
+常量名
+说明
+
+
+
+
+BOARD
+底层板名称
+
+
+BOOTLOA
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Android/" target="_blank">
+                            <span class="chip bg-color">Android</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/25/node-restify/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="node-restify">
+                            
+                            <span class="card-title">node-restify</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                A Node.js web service framework optimized for building semantically correct RESTful web services ready for production us
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/restify/" target="_blank">
+                            <span class="chip bg-color">restify</span>
+                        </a>
+                        
+                        <a href="/tags/node/" target="_blank">
+                            <span class="chip bg-color">node</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/22/hexo/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello">
+                            
+                            <span class="card-title">Hello</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/hexo/" target="_blank">
+                            <span class="chip bg-color">hexo</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/04/22/linux-user/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="user-linux">
+                            
+                            <span class="card-title">user-linux</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                linux 下用户管理
+如何添加或删除ubuntu用户和组在创建用户时，需要为新建用户指定一用户组，如果不指定其用户所属的工作组，自动会生成一个与用户名同名的工作组。创建用户user1的时候指定其所属工作组users，例：useradd –
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/技术文章/" class="post-category" target="_blank">
+                                    技术文章
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/linux/" target="_blank">
+                            <span class="chip bg-color">linux</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+</main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 2</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/categories/技术文章/page/2/" class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+    <a href="mailto:xxx@xx.xx" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=123123123" class="tooltipped" data-tooltip="QQ联系我: 123123123" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+</div>
     </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
-<script>moment.locale("zh-CN");</script>
+
+<div class="progress-bar"></div>
 
 
-    
-    
-    
-    <script src="/js/animation.js"></script>
-    
-
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
-    <script src="/js/gallery.js" defer></script>
-    
-
-    
-    
-
-<div id="outdated">
-    <h6>Your browser is out-of-date!</h6>
-    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
-            my browser now </a></p>
-    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        outdatedBrowser({
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'flex'
-        });
-    });
-</script>
-
-
-    
-    
-<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    MathJax.Hub.Config({
-        'HTML-CSS': {
-            matchFontHeight: false
-        },
-        SVG: {
-            matchFontHeight: false
-        },
-        CommonHTML: {
-            matchFontHeight: false
-        },
-        tex2jax: {
-            inlineMath: [
-                ['$','$'],
-                ['\\(','\\)']
-            ]
-        }
-    });
-});
-</script>
-
-    
-    
-
-<a id="back-to-top" title="回到顶端" href="javascript:;">
-    <i class="fas fa-chevron-up"></i>
-</a>
-<script src="/js/back-to-top.js" defer></script>
-
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
-    <script src="/js/clipboard.js" defer></script>
-    
-
-    
-    
-    
-
-
-<script src="/js/main.js" defer></script>
-
-    
-    <div class="searchbox ins-search">
-    <div class="searchbox-container ins-search-container">
-        <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
-            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
         </div>
-        <div class="searchbox-result-wrapper ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
+        <div id="searchResult"></div>
     </div>
 </div>
-<script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: '文章',
-                PAGES: '页面',
-                CATEGORIES: '分类',
-                TAGS: '标签',
-                UNTITLED: '(无标题)',
-            },
-            CONTENT_URL: '/content.json',
-        };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
 </script>
-<script src="/js/insight.js" defer></script>
-<link rel="stylesheet" href="/css/search.css">
-<link rel="stylesheet" href="/css/insight.css">
-    
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
 </body>
 </html>
