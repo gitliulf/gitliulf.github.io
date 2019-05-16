@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>标签: restify - developer</title>
+  <title>unbuntu-apt - developer</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -48,7 +48,7 @@
 
   <meta name="author" content="string">
   
-  <meta name="keywords" content="blog, hexo, mdui">
+  <meta name="keywords" content="blog, hexo, mdui,linux,ubuntu,apt">
 
   <!--iOS -->
   <meta name="apple-mobile-web-app-title" content="developer">
@@ -63,10 +63,16 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://zone.lfmax.cn">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="标签: restify - developer | developer">
+  <meta property="og:title" content="unbuntu-apt - developer | developer">
   <meta property="og:image" content="/images/favicon.png">
   
 
+  
+    <meta property="og:article:tag" content="linux">
+  
+    <meta property="og:article:tag" content="ubuntu">
+  
+    <meta property="og:article:tag" content="apt">
   
 
   
@@ -309,7 +315,7 @@
         </div>
       
       
-        <div class="mdui-collapse-item mdui-collapse-item-open">
+        <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
             <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
             <div class="mdui-list-item-content">标签</div>
@@ -465,215 +471,374 @@
     <script src="/js/lightgallery.min.js"></script>
 
     <div id="barba-wrapper">
-      <div class="barba-container"  data-namespace="archives">
-        <div class="theme-archive">
-  
-<div id="side-content" class="mdui-color-orange theme-archive__side-content">
-  <div class="mdui-grid-tile" style="overflow: visible;margin-bottom: 0;">
-    <div class="theme-archive__side-content__bg">
-      <img src="/images/random/18.png">
-    </div>
-  </div>
-  <div class="theme-archive__side-content__content">
-    <img class="mdui-img-circle theme-archive__side-content__avatar" src="/images/avatar.png">
-    <div class="theme-archive__side-content__author mdui-text-center">
-      string
-    </div>
-    <div class="theme-archive__side-content__name">
-      restify
-    </div>
-    <div class="theme-archive__side-content__length">
-      
-      3篇文章
-    </div>
-  </div>
-</div>
-<div id="contentLocation"></div>
+      <div class="barba-container"  data-namespace="post">
+        
 
-  <div class="theme-posts">
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      unbuntu-apt
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>编写时间：</span>
+        <span style="float: right">5月 16, 2019</span>
+        
+      </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        文章二维码
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZUlEQVR42u3awU6EQBAE0P3/n9ariYJVPTCL5nHaGGHmcWA61f36+NfXCw8PDw8PDw8P72G8V3wd/f/Xv3///cPy8V3t3vDw8PB28n751J5uKKG2q8z2hoeHh7efl2w3v/d8u/kz273h4eHhPY2X44+2PnsyHh4e3t/lzUre88K6fa14eHh4z+G1McEs8M2L7DdkLXh4eHgxr22A7fz9hv4eHh4e3imvHmmKm1ttgd5GG4dPwMPDw7uZlwSpUQQQlN3rJXXycvHw8PD28PKgNj8M1ocGktXx8PDw3sVbWaz9lJ8HDW3rCw8PD28/bxawtsHBrIWWHyp4eHh4+3ltoJBEsUlZvDKCcHik4eHh4W3n5UFDHlXMYoU29sXDw8Pbw8sL2TwySLaYDxzUxxIeHh7ezbxZM6wNEWbjBW37DQ8PD28Pr/2Ur5fdbWDRhrl4eHh4d/NmscJ68JqPydYxBx4eHt4WXlI6rzfJZuFFey8eHh7eE3h5y39WlLfDBMP+Hh4eHt5FvHyx5Bhoj4coXGgPKjw8PLwtvJUyN49081BjFu/i4eHh7eFFReoyuw1kV4a38PDw8Pbw8mb/euCbrzIc7cLDw8O7mdeWvHkEPNtiGxPj4eHh7ee11/roQPvpb8t6PDw8vLt5bZyaj7G2ryAfbx2ODuDh4eFdyssPg/tK5Lx0Hvb38PDw8G7gXTs4NYO1hxMeHh7e83nXjkklr7IOhfHw8PAeyWtbaCujBvmwFx4eHt5+Xtv0SvDtATB7Mh4eHt5+XhsEXHUA5KvkRwUeHh7e3bz/d+Hh4eHh4eHh4T3g+gTQ7ONfKhnGIQAAAABJRU5ErkJggg==" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=developer&title=unbuntu-apt&summary=&pics=http://zone.lfmax.cn/images/favicon.png&url=http://zone.lfmax.cn/2019/05/16/ubuntu-apt/index.html" target="_blank" class="mdui-ripple">
+                分享到QQ
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://service.weibo.com/share.php?appkey=&title=unbuntu-apt&url=http://zone.lfmax.cn//2019/05/16/ubuntu-apt/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+                分享到微博
+            </a>
+        </li>
+      
+
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+  <div class="theme-post__warpper
     
-      
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          这篇文章最后修改于
+          <span id="content-warning"></span>
+          天之前。
+          本页内容可能已经过时！
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/19.png">
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <p>debian apt常见用法</p>
+<h1 id="apt-命令"><a href="#apt-命令" class="headerlink" title="apt 命令"></a>apt 命令</h1><p>在Ubuntu下，apt-get近乎是最常用的shell命令之一了，因为他是Ubuntu通过deb安装软件的常用工具命令。</p>
+<p>下面列举常用的 apt命令</p>
+<ul>
+<li>apt-cache search package 搜索软件包</li>
+<li>apt-cache show package  获取包的相关信息，如说明、大小、版本等</li>
+<li><strong>sudo apt-get install package 安装包</strong></li>
+<li>sudo apt-get install package –reinstall   重新安装包</li>
+<li>sudo apt-get -f install   修复安装</li>
+<li><strong>sudo apt-get remove package 删除包</strong></li>
+<li>sudo apt-get remove package –purge 删除包，包括配置文件等</li>
+<li><strong>sudo apt-get update  更新源</strong></li>
+<li><strong>sudo apt-get upgrade 更新已安装的包</strong></li>
+<li>sudo apt-get dist-upgrade 升级系统</li>
+<li>apt-cache depends package 了解使用该包依赖那些包</li>
+<li>apt-cache rdepends package 查看该包被哪些包依赖</li>
+<li>sudo apt-get build-dep package 安装相关的编译环境</li>
+<li><strong>apt-get source package  下载该包的源代码</strong></li>
+<li>sudo apt-get clean &amp;&amp; sudo apt-get autoclean 清理无用的包</li>
+<li>sudo apt-get check 检查是否有损坏的依赖</li>
+</ul>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+	    刘龙飞--string <br>
+	    <a href="mailto:liulf_pc@126.com">email:liulf_pc@126.com</a><br>
+	    本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利.  <br>
+            <span>本文永久链接：<a href="http://zone.lfmax.cn/2019/05/16/ubuntu-apt/">http://zone.lfmax.cn/2019/05/16/ubuntu-apt/</a></span>
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: '打赏', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe1db;</i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/categories/技术文章/">
+                    <span>技术文章</span>
+                  </a>
+                
+              </div>
+            
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
+              </div>
+              <div class="mdui-typo">
+                
+                  <a href="/tags/linux/">
+                    <span>linux</span>
+                  </a>
+                
+                  <a href="/tags/ubuntu/">
+                    <span>ubuntu</span>
+                  </a>
+                
+                  <a href="/tags/apt/">
+                    <span>apt</span>
+                  </a>
+                
+              </div>
+            
+          </section>
+        
+
+        
           
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	app-reset-design 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/25/app-rest-desig/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		定义apiResultFull api
-
-		</a>
-		<div align="right"> 
-		4月 25, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-      
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
           
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	node-restify 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/25/node-restify/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		A Node.js web service framework optimized for building semantically correc...
-		</a>
-		<div align="right"> 
-		4月 25, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
+        
+      </article>
       
-          
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	http-method-definitions 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/25/http-method-definitions/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		介绍http中method的定义
-
-		</a>
-		<div align="right"> 
-		4月 25, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-      
-      
-        <div class="theme-end-footer">
-          <div class="mdui-text-center mdui-text-color-theme-text">
-            看起来已经没有了
-          </div>
+        <div class="mdui-color-theme theme-post__toc">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#apt-&#x547D;&#x4EE4;" data-href="#apt-&#x547D;&#x4EE4;"><span class="toc-number"></span> <span class="toc-text">1. apt &#x547D;&#x4EE4;</span></a></li></ol>
         </div>
       
+    </div>
   </div>
-  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
 
+  <div class="theme-spacer"></div>
+
+  
+    <div class="mdui-color-theme theme-post__toc-fab">
+  <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" mdui-menu="{target: '#toc-fab-menu', fixed: true}" id="toc-fab">
+    <i class="mdui-icon material-icons">&#xe242;</i>
+  </button>
+  <ul class="mdui-menu mdui-typo theme-post__toc-fab__menu" id="toc-fab-menu" style="padding: 8px;max-height: 80%">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link mdui-list-item mdui-ripple theme-post__toc__content__link" href="#apt-&#x547D;&#x4EE4;" data-href="#apt-&#x547D;&#x4EE4;"><span class="toc-number"></span> <span class="toc-text">1. apt &#x547D;&#x4EE4;</span></a></li></ol>
+  </ul>
+</div>
+
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-spacer mdui-hidden-xs"></div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      <a href="/2019/05/14/huawei-compatible/" class="theme-post__pagination__next__content mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          huawei-compatible
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog .mdui-ripple" id="donateDialog">
+      <div class="mdui-dialog-title">打赏</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/images/wechat.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>不要</button>
+      </div>
+    </div>
+  
 </div>
 <script type="text/javascript">
-  themeRuntime.scriptsMap.archives = [];
-  (function() {
-    var fabTopFlag = false;
-    var fabEl = document.getElementById('index-fab');
-    function fabShowHide() {
-      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrolled > 0 && !fabTopFlag) {
-        fabEl.classList.remove('mdui-fab-hide');
-        fabTopFlag = true;
-      } else if (bodyScrolled === 0 && fabTopFlag) {
-        fabEl.classList.add('mdui-fab-hide');
-        fabTopFlag = false;
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
       }
-    }
-    fabShowHide()
-    window.addEventListener('scroll', fabShowHide);
-    var listener = {
-      function: fabShowHide,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.archives.push(listener)
-  })();
-
-  (function() {
-    var pageTotal = 1
-    var pageNext = 2
-    themeRuntime.temp = {
-      index: 1
-    }
-    function morePosts() {
-      var screenHeight = window.innerHeight;
-      var compareHeight = document.body.clientHeight -  (document.documentElement.scrollTop || document.body.scrollTop);
-      var loadStatus = pageNext - themeRuntime.temp.index
-      if (screenHeight >= compareHeight && loadStatus === 1) {
-        if (pageNext <= pageTotal) {
-          loadProgress(false)
-          var url = window.location.href + "page/" + pageNext
-          themeRuntime.temp.index = pageNext;
-          //console.log(pageTotal, url)
-          fetch(url, {
-              method:'GET',
-              mode:'cors',
-              credentials: 'include'
-          })
-          .then(function(response) {
-            return response.text()
-          }).then(function(HTML) {
-            var fakeDom = document.createElement('html');
-            fakeDom.innerHTML = HTML
-            var morePostsHTML = fakeDom.querySelector('.theme-posts').innerHTML
-            var postsArea = document.querySelector(".theme-posts")
-            loadProgress(true)
-            postsArea.insertAdjacentHTML('beforeend', morePostsHTML)
-            pageNext++;
-          }).catch(function(error) {
-            mdui.alert(error, "错误！");
-          })
-        }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
       }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
     }
-    window.addEventListener('scroll', morePosts);
-    var listener = {
-      function: morePosts,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.archives.push(listener)
-  })();
-</script>
-<script>
-  var content_flag = false;
-  const appbar = document.querySelector('.theme-appbar')
-  const body = document.querySelector('body')
-  const title = document.querySelector('.theme-toolbar-bottom__title')
-  window.addEventListener('scroll', styleScrolled)
-  var listener = {
-    function: styleScrolled,
-    event: 'scroll',
-    el: window,
-    removed: false
-  }
-  themeRuntime.scriptsMap.archives.push(listener)
-
-  function styleScrolled() {
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    var divTop = document.querySelector('div#contentLocation').offsetTop
-    var contentLocation = divTop - scrollTop - 128;
-    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
-      body.classList.remove('theme-archive--style-change');
-      content_flag = true;
-    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
-      body.classList.add('theme-archive--style-change');
-      content_flag = false;
-    };
   }
 </script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1557986298551
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>string</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
 
 
       </div>
