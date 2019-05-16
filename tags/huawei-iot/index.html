@@ -1,696 +1,1271 @@
-
 <!DOCTYPE html>
 <html lang="zh">
-
-
-
 <head><meta name="generator" content="Hexo 3.8.0">
-  <script>
-    window.themeRuntime = {
-      root: "/",
-      scriptsMap: {},
-      init: {
-        status: false
-      },
-      commentRest: {
-        status: false
-      },
-      versions: {
-        theme: "2.0.3",
-        mdui: "0.4.0",
-        fetch: "3.0.0",
-        es6promise: "4.2.5+7f2b526d",
-        lightgallery: "1.0.1",
-        smoothscroll: "15.2.0"
-      }
-      
-    };
-    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
-  </script>
-  <!--
-        © HEXO MDUI Theme
-        https://github.com/Halyul/hexo-theme-mdui
-        -->
+    <meta charset="utf-8">
+<title>标签: huawei-iot - developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta charset="UTF-8">
-  <title>标签: huawei-iot - developer</title>
 
-  <!-- Favicons -->
-  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
-  <link rel="icon" sizes="192x192" href="/images/favicon.png">
-  <link rel="apple-touch-icon" href="/images/favicon.png">
 
-  <!-- Meta & Info -->
-  <meta http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="developer">
+<meta property="og:url" content="http://zone.lfmax.cn/tags/huawei-iot/index.html">
+<meta property="og:site_name" content="developer">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://zone.lfmax.cn/images/og_image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="developer">
+<meta name="twitter:image" content="http://zone.lfmax.cn/images/og_image.png">
 
-  <meta name="theme-color" content="#fff">
 
-  <meta name="author" content="string">
-  
-  <meta name="keywords" content="blog, hexo, mdui">
 
-  <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="developer">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="480">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- The Open Graph protocol -->
-  <meta property="og:url" content="http://zone.lfmax.cn">
-  <meta property="og:type" content="blog">
-  <meta property="og:title" content="标签: huawei-iot - developer | developer">
-  <meta property="og:image" content="/images/favicon.png">
-  
 
-  
 
-  
+<link rel="icon" href="/images/favicon.svg">
 
-  <!-- Import CSS -->
-  
-    <link rel="stylesheet" href="/css/mdui.css">
-  
 
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
 
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
 </head>
-
-
-<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
-
-  <style>
-    #spinner {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-          opacity: 1;
-      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-    }
-    main {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-      display: none;
-    }
-  </style>
-  <div id="spinner">
-    <style>
-      .spinner {
-
-      -webkit-animation: rotator 1.4s linear infinite;
-              animation: rotator 1.4s linear infinite;
-      }
-
-      @-webkit-keyframes rotator {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(270deg);
-                transform: rotate(270deg);
-      }
-      }
-
-      @keyframes rotator {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(270deg);
-                transform: rotate(270deg);
-      }
-      }
-
-      .path {
-      stroke-dasharray: 187;
-      stroke-dashoffset: 0;
-      -webkit-transform-origin: center;
-              transform-origin: center;
-      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-      }
-
-      @-webkit-keyframes colors {
-      0% {
-        stroke: #4285F4;
-      }
-      25% {
-        stroke: #DE3E35;
-      }
-      50% {
-        stroke: #F7C223;
-      }
-      75% {
-        stroke: #1B9A59;
-      }
-      100% {
-        stroke: #4285F4;
-      }
-      }
-
-      @keyframes colors {
-      0% {
-        stroke: #4285F4;
-      }
-      25% {
-        stroke: #DE3E35;
-      }
-      50% {
-        stroke: #F7C223;
-      }
-      75% {
-        stroke: #1B9A59;
-      }
-      100% {
-        stroke: #4285F4;
-      }
-      }
-
-      @-webkit-keyframes dash {
-      0% {
-        stroke-dashoffset: 187;
-      }
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-                transform: rotate(135deg);
-      }
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-                transform: rotate(450deg);
-      }
-      }
-
-      @keyframes dash {
-      0% {
-        stroke-dashoffset: 187;
-      }
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-                transform: rotate(135deg);
-      }
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-                transform: rotate(450deg);
-      }
-      }
-    </style>
-    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-    </svg>
-  </div>
-
-  <main>
-    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
-  <div class="mdui-toolbar theme-toolbar-top">
-    
-      <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--arrow">
-        <i class="mdui-icon">
-          <span></span>
-        </i>
-      </a>
-    
-  </div>
-  <div class="mdui-toolbar theme-toolbar-bottom">
-    <span class="theme-toolbar-bottom__title">developer</span>
-    
-      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
-        <i class="mdui-icon material-icons">&#xe8b6;</i>
-      </a>
-    
-  </div>
-  <div class="mdui-progress theme-appbar__progress" id="progressBar">
-    <div class="mdui-progress-indeterminate"></div>
-  </div>
-</div>
-
-    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
-  <!-- header -->
-  <div class="theme-drawer__header">
-  <div class="theme-drawer__header__layer-1">
-    <div class="mdui-toolbar theme-toolbar-top">
-      
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </a>
-      
-    </div>
-    <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">developer</span>
-    </div>
-  </div>
-  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
-    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
-    <div class="theme-drawer__header__layer-2__user__info">
-      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
-        string
-      </div>
-      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
-        用心享受
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="theme-drawer__warpper">
-    <!-- content -->
-    <div class="theme-drawer__warpper__content">
-  <ul class="mdui-list">
-    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
-      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
-      <div class="mdui-list-item-content">首页</div>
-    </a>
-    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
-      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe1db;</i>
-      <div class="mdui-list-item-content">归档</div>
-    </a>
-    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
-      
-        <div class="mdui-collapse-item ">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe3c7;</i>
-            <div class="mdui-list-item-content">分类</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
             
-              <a href="/categories/技术文章/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                技术文章
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>12</span>
-              </a>
+                <img src="/images/logo.svg" alt="developer" height="28">
             
-              <a href="/categories/认证/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                认证
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>4</span>
-              </a>
-            
-          </div>
-        </div>
-      
-      
-        <div class="mdui-collapse-item mdui-collapse-item-open">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
-            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
-            <div class="mdui-list-item-content">标签</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
-            
-              <a href="/tags/flutter/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                flutter
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                Android
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/restify/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                restify
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
-              </a>
-            
-              <a href="/tags/cmmi/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                cmmi
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
-              </a>
-            
-              <a href="/tags/hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                hexo
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>2</span>
-              </a>
-            
-              <a href="/tags/huawei-iot/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                huawei-iot
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/linux/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                linux
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>4</span>
-              </a>
-            
-              <a href="/tags/node/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                node
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
-              </a>
-            
-              <a href="/tags/ubuntu/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                ubuntu
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/apt/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                apt
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/markdown/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                markdown
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-          </div>
-        </div>
-      
-      <div class="mdui-collapse-item ">
-        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
-          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
-          <div class="mdui-list-item-content">年份</div>
-          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-        </div>
-        <div class="mdui-collapse-item-body mdui-list">
-          
-          
-            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
-              2019
             </a>
-          
         </div>
-      </div>
-    </ul>
-  </ul>
-  
-    <div class="mdui-divider"></div>
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
-      
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">Home</a>
+                
+                <a class="navbar-item" href="/archives">Archives</a>
+                
+                <a class="navbar-item" href="/categories">Categories</a>
+                
+                <a class="navbar-item" href="/tags">Tags</a>
+                
+                <a class="navbar-item" href="/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">huawei-iot</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
         
-          
-            <a href="/about" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
-          
-              
-              
-                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe84e;</i>
-              
-              
-              <div class="mdui-list-item-content">About</div>
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 935 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/14/huawei-compatible/">huawei-compatible</a>
+            
+        </h1>
+        <div class="content">
+            <p>华为iot Agent lite 认证</p>
+<h1 id="1-设备接入和删除"><a href="#1-设备接入和删除" class="headerlink" title="1. 设备接入和删除"></a><strong>1.</strong> <strong>设备接入和删除</strong></h1><h2 id="1-1-AgentLite-认证-接入和删除-001"><a href="#1-1-AgentLite-认证-接入和删除-001" class="headerlink" title="1.1 AgentLite_认证_接入和删除_001"></a>1.1 AgentLite_认证_接入和删除_001</h2><p> 测试方法：在平台上注册设备后，进行绑定操作，在平台上从离线变为在线状态</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>测试步骤2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果3的截图，离线在线状态图各一张，deviceid一致</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-2-AgentLite-认证-接入和删除-002"><a href="#1-2-AgentLite-认证-接入和删除-002" class="headerlink" title="1.2 AgentLite_认证_接入和删除_002"></a>1.2 AgentLite_认证_接入和删除_002</h2><p> 测试方法：将已在线的设备删除</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>测试步骤2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2，3的截图，平台上用deviceid查询此设备时结果为空</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-3-AgentLite-认证-接入和删除-003"><a href="#1-3-AgentLite-认证-接入和删除-003" class="headerlink" title="1.3 AgentLite_认证_接入和删除_003"></a>1.3 AgentLite_认证_接入和删除_003</h2><p>测试方法：设备在线后，下电离线后再删除</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>测试步骤2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2，3的截图，平台上用deviceid查询此设备时结果为空</td>
+</tr>
+</tbody>
+</table>
+<p># </p>
+<h1 id="2-设备数据上报"><a href="#2-设备数据上报" class="headerlink" title="2 设备数据上报"></a><strong>2</strong> <strong>设备数据上报</strong></h1><h2 id="2-1-AgentLite-认证-数据上报-001"><a href="#2-1-AgentLite-认证-数据上报-001" class="headerlink" title="2.1 AgentLite_认证_数据上报_001"></a>2.1 AgentLite_认证_数据上报_001</h2><p>测试方法：设备电池供电，上报电量</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4的截图</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-2-AgentLite-认证-数据上报-002"><a href="#2-2-AgentLite-认证-数据上报-002" class="headerlink" title="2.2 AgentLite_认证_数据上报_002"></a>2.2 AgentLite_认证_数据上报_002</h2><p>测试方法： 电池供电，低电量时，上报低电量告警</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4的截图</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-3-AgentLite-认证-数据上报-003（可选）"><a href="#2-3-AgentLite-认证-数据上报-003（可选）" class="headerlink" title="2.3 AgentLite_认证_数据上报_003（可选）"></a>2.3 AgentLite_认证_数据上报_003（可选）</h2><p>测试方法： 绑定设备成功后，电量也上报到平台，非手动触发上报</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4的截图</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-4-AgentLite-认证-数据上报-004"><a href="#2-4-AgentLite-认证-数据上报-004" class="headerlink" title="2.4 AgentLite_认证_数据上报_004"></a>2.4 AgentLite_认证_数据上报_004</h2><p>测试方法： 设备触发基本数据上报，比如温度，湿度等。</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期截图结果2的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2的截图</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-5-AgentLite-认证-数据上报-005"><a href="#2-5-AgentLite-认证-数据上报-005" class="headerlink" title="2.5 AgentLite_认证_数据上报_005"></a>2.5 AgentLite_认证_数据上报_005</h2><p>测试方法： 设备离线状态上报</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果2的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2的截图</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-初始化（可-选）"><a href="#3-初始化（可-选）" class="headerlink" title="3 初始化（可**选）**"></a><strong>3</strong> <strong>初始化（可**</strong>选）**</h1><h2 id="3-1-AgentLit-认证-初始化-001"><a href="#3-1-AgentLit-认证-初始化-001" class="headerlink" title="3.1 AgentLit_认证_初始化_001"></a>3.1 AgentLit_认证_初始化_001</h2><p>测试方法：初始化设备到出厂设置</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果截图</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-可靠性"><a href="#4-可靠性" class="headerlink" title="4 可靠性"></a><strong>4</strong> <strong>可靠性</strong></h1><h2 id="4-1-AgentLite-认证-可靠性-001"><a href="#4-1-AgentLite-认证-可靠性-001" class="headerlink" title="4.1 AgentLite_认证_可靠性_001"></a>4.1 AgentLite_认证_可靠性_001</h2><p>测试方法：电池供电，插拔传感器电池，10次</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果4截图，每次上线下线，上报数据的截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果4截图，每次上线下线，上报数据的截图</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-稳定性"><a href="#5-稳定性" class="headerlink" title="5 稳定性"></a><strong>5</strong> <strong>稳定性</strong></h1><h2 id="5-1-AgentLite-认证-稳定性-001（可选）"><a href="#5-1-AgentLite-认证-稳定性-001（可选）" class="headerlink" title="5.1 AgentLite_认证_稳定性_001（可选）"></a>5.1 AgentLite_认证_稳定性_001（可选）</h2><p>测试方法：传感器信号干扰测试</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果1截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果1截图</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-2-AgentLite-认证-稳定性-002"><a href="#5-2-AgentLite-认证-稳定性-002" class="headerlink" title="5.2 AgentLite_认证_稳定性_002"></a>5.2 AgentLite_认证_稳定性_002</h2><p>测试方法：设备运行72小时，不断电，稳定上报数据</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>应用平台（APPServer）截图</th>
+<th>预期结果2截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台截图</td>
+<td>预期结果2截图</td>
+</tr>
+</tbody>
+</table>
+<h1 id="6-固件升级与回退（可-选）"><a href="#6-固件升级与回退（可-选）" class="headerlink" title="6 固件升级与回退（可**选）**"></a><strong>6</strong> <strong>固件升级与回退（可**</strong>选）**</h1><h2 id="6-1-AgentLite-认证-升级-001"><a href="#6-1-AgentLite-认证-升级-001" class="headerlink" title="6.1 AgentLite_认证_升级_001"></a>6.1 AgentLite_认证_升级_001</h2><p>测试方法：在平台上传升级包，创建升级任务，下发升级任务给设备。</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>平台截图</th>
+<th>预期结果6，7，8，9截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-2-AgentLite-认证-回退-002"><a href="#6-2-AgentLite-认证-回退-002" class="headerlink" title="6.2 AgentLite_认证_回退_002"></a>6.2 AgentLite_认证_回退_002</h2><p>测试方法：在平台创建回退任务，下发回退任务给设备。</p>
+<p>测试数据：</p>
+<table>
+<thead>
+<tr>
+<th>平台截图</th>
+<th>预期结果6，7，8，9截图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    
+                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="Your name">
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        Your name
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Your title
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Your location</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        16
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        2
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        11
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/ppoffice">
+                
+                <i class="fab fa-github"></i>
+                
             </a>
-        
-      
-    </ul>
-  
-</div>
-
-    <div class="theme-spacer"></div>
-    <!-- footer -->
-    <div class="theme-drawer__warpper__footer">
-  <div class="mdui-typo mdui-typo-caption-opacity">
-    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
-    <br>
-    <span>
-      Copyright ©
-      <span year></span>
-      string
-    </span>
-    
-      <br>
-      <span onclick="window.open('http://www.miitbeian.gov.cn/', '_blank');">true</span>
-    
-    
-      <br>
-      <span>
-        最后更新于: 5月 16, 2019
-      </span>
-    
-    
-  </div>
-</div>
-<script type="text/javascript">
-  var copyrightNow = new Date().getFullYear();
-  var textContent = document.querySelector('span[year]')
-  
-    copyrightSince = true;
-    if (copyrightSince === copyrightNow) {
-      textContent.textContent = copyrightNow
-    } else {
-      textContent.textContent = copyrightSince + ' - ' + copyrightNow
-    }
-  
-</script>
-
-  </div>
-</div>
-
-    <div id="top"></div>
-
-    <script src="/js/lightgallery.min.js"></script>
-
-    <div id="barba-wrapper">
-      <div class="barba-container"  data-namespace="archives">
-        <div class="theme-archive">
-  
-<div id="side-content" class="mdui-color-pink theme-archive__side-content">
-  <div class="mdui-grid-tile" style="overflow: visible;margin-bottom: 0;">
-    <div class="theme-archive__side-content__bg">
-      <img src="/images/random/24.png">
-    </div>
-  </div>
-  <div class="theme-archive__side-content__content">
-    <img class="mdui-img-circle theme-archive__side-content__avatar" src="/images/avatar.png">
-    <div class="theme-archive__side-content__author mdui-text-center">
-      string
-    </div>
-    <div class="theme-archive__side-content__name">
-      huawei-iot
-    </div>
-    <div class="theme-archive__side-content__length">
-      
-      1篇文章
-    </div>
-  </div>
-</div>
-<div id="contentLocation"></div>
-
-  <div class="theme-posts">
-    
-      
-          
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	huawei-compatible 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/05/14/huawei-compatible/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		华为iot Agent lite 认证
-
-		</a>
-		<div align="right"> 
-		5月 14, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-      
-      
-        <div class="theme-end-footer">
-          <div class="mdui-text-center mdui-text-color-theme-text">
-            看起来已经没有了
-          </div>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
         </div>
-      
-  </div>
-  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
+        
+    </div>
 </div>
-<script type="text/javascript">
-  themeRuntime.scriptsMap.archives = [];
-  (function() {
-    var fabTopFlag = false;
-    var fabEl = document.getElementById('index-fab');
-    function fabShowHide() {
-      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrolled > 0 && !fabTopFlag) {
-        fabEl.classList.remove('mdui-fab-hide');
-        fabTopFlag = true;
-      } else if (bodyScrolled === 0 && fabTopFlag) {
-        fabEl.classList.add('mdui-fab-hide');
-        fabTopFlag = false;
-      }
-    }
-    fabShowHide()
-    window.addEventListener('scroll', fabShowHide);
-    var listener = {
-      function: fabShowHide,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.archives.push(listener)
-  })();
+    
+        
+    
+        
 
-  (function() {
-    var pageTotal = 1
-    var pageNext = 2
-    themeRuntime.temp = {
-      index: 1
-    }
-    function morePosts() {
-      var screenHeight = window.innerHeight;
-      var compareHeight = document.body.clientHeight -  (document.documentElement.scrollTop || document.body.scrollTop);
-      var loadStatus = pageNext - themeRuntime.temp.index
-      if (screenHeight >= compareHeight && loadStatus === 1) {
-        if (pageNext <= pageTotal) {
-          loadProgress(false)
-          var url = window.location.href + "page/" + pageNext
-          themeRuntime.temp.index = pageNext;
-          //console.log(pageTotal, url)
-          fetch(url, {
-              method:'GET',
-              mode:'cors',
-              credentials: 'include'
-          })
-          .then(function(response) {
-            return response.text()
-          }).then(function(HTML) {
-            var fakeDom = document.createElement('html');
-            fakeDom.innerHTML = HTML
-            var morePostsHTML = fakeDom.querySelector('.theme-posts').innerHTML
-            var postsArea = document.querySelector(".theme-posts")
-            loadProgress(true)
-            postsArea.insertAdjacentHTML('beforeend', morePostsHTML)
-            pageNext++;
-          }).catch(function(error) {
-            mdui.alert(error, "错误！");
-          })
-        }
-      }
-    }
-    window.addEventListener('scroll', morePosts);
-    var listener = {
-      function: morePosts,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.archives.push(listener)
-  })();
-</script>
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">github.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/技术文章/">
+            <span class="level-start">
+                <span class="level-item">技术文章</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">12</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/认证/">
+            <span class="level-start">
+                <span class="level-item">认证</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">4</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/cmmi/" style="font-size: 16.67px;">cmmi</a> <a href="/tags/flutter/" style="font-size: 10px;">flutter</a> <a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/huawei-iot/" style="font-size: 10px;">huawei-iot</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/node/" style="font-size: 16.67px;">node</a> <a href="/tags/restify/" style="font-size: 16.67px;">restify</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/markdown/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="markdown-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/markdown/" class="has-link-black-ter is-size-6">markdown-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/ubuntu-apt/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="ubuntu-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/ubuntu-apt/" class="has-link-black-ter is-size-6">ubuntu-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/huawei-compatible/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="huawei-compatible">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/huawei-compatible/" class="has-link-black-ter is-size-6">huawei-compatible</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi-compnny/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi-compnny">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:04:15.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi-compnny/" class="has-link-black-ter is-size-6">cmmi-compnny</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T02:08:57.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi3/" class="has-link-black-ter is-size-6">cmmi3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/04/">
+                <span class="level-start">
+                    <span class="level-item">四月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">10</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android/">
+                        <span class="tag">Android</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/apt/">
+                        <span class="tag">apt</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cmmi/">
+                        <span class="tag">cmmi</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/flutter/">
+                        <span class="tag">flutter</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/hexo/">
+                        <span class="tag">hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/huawei-iot/">
+                        <span class="tag">huawei-iot</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/linux/">
+                        <span class="tag">linux</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/markdown/">
+                        <span class="tag">markdown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/node/">
+                        <span class="tag">node</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/restify/">
+                        <span class="tag">restify</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ubuntu/">
+                        <span class="tag">ubuntu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/markdown/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="markdown-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/markdown/" class="has-link-black-ter is-size-6">markdown-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/ubuntu-apt/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="ubuntu-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/ubuntu-apt/" class="has-link-black-ter is-size-6">ubuntu-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/huawei-compatible/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="huawei-compatible">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/huawei-compatible/" class="has-link-black-ter is-size-6">huawei-compatible</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi-compnny/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi-compnny">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:04:15.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi-compnny/" class="has-link-black-ter is-size-6">cmmi-compnny</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T02:08:57.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi3/" class="has-link-black-ter is-size-6">cmmi3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/04/">
+                <span class="level-start">
+                    <span class="level-item">四月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">10</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android/">
+                        <span class="tag">Android</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/apt/">
+                        <span class="tag">apt</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cmmi/">
+                        <span class="tag">cmmi</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/flutter/">
+                        <span class="tag">flutter</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/hexo/">
+                        <span class="tag">hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/huawei-iot/">
+                        <span class="tag">huawei-iot</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/linux/">
+                        <span class="tag">linux</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/markdown/">
+                        <span class="tag">markdown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/node/">
+                        <span class="tag">node</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/restify/">
+                        <span class="tag">restify</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ubuntu/">
+                        <span class="tag">ubuntu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="developer" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 string&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
 <script>
-  var content_flag = false;
-  const appbar = document.querySelector('.theme-appbar')
-  const body = document.querySelector('body')
-  const title = document.querySelector('.theme-toolbar-bottom__title')
-  window.addEventListener('scroll', styleScrolled)
-  var listener = {
-    function: styleScrolled,
-    event: 'scroll',
-    el: window,
-    removed: false
-  }
-  themeRuntime.scriptsMap.archives.push(listener)
-
-  function styleScrolled() {
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    var divTop = document.querySelector('div#contentLocation').offsetTop
-    var contentLocation = divTop - scrollTop - 128;
-    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
-      body.classList.remove('theme-archive--style-change');
-      content_flag = true;
-    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
-      body.classList.add('theme-archive--style-change');
-      content_flag = false;
-    };
-  }
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
 </script>
 
 
-      </div>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-  </main>
-
-  <div id="outdated" style="z-index: 9999;">
-    <h6>你的浏览器已经过气辣！</h6>
-    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
-    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
-  </div>
-  <!-- import js -->
-
-
-  <script src="/js/outdatedbrowser.min.js"></script>
-
-
-
-  
-    <script src="/js/js.barba.min.js"></script>
-    <script type="text/javascript">
-      Barba.Utils.errorPageUrl = '/404.html';
-    </script>
-  
-
-
-<!-- theme js -->
-<script type="text/javascript">
-  (function() {
-    var appbarTopFlag = false;
-    var appbarEl = document.querySelector('.theme-appbar');
-    function appbarShadow() {
-      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      if (bodyScrolled > 0 && !appbarTopFlag) {
-        appbarEl.classList.add('theme-appbar--shadow');
-        appbarTopFlag = true;
-      } else if (bodyScrolled === 0 && appbarTopFlag) {
-        appbarEl.classList.remove('theme-appbar--shadow');
-        appbarTopFlag = false;
-      }
-    }
-    appbarShadow()
-    window.addEventListener('scroll', appbarShadow);
-  })();
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
 </script>
-
-
-
-
-
-
-<script type="text/javascript">
-  document.querySelector('body').classList.add('theme-loaded')
-</script>
-
-
-
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
 </body>
 </html>

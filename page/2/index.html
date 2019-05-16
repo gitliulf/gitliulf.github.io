@@ -1,774 +1,2117 @@
-
 <!DOCTYPE html>
 <html lang="zh">
-
-
-
 <head><meta name="generator" content="Hexo 3.8.0">
-  <script>
-    window.themeRuntime = {
-      root: "/",
-      scriptsMap: {},
-      init: {
-        status: false
-      },
-      commentRest: {
-        status: false
-      },
-      versions: {
-        theme: "2.0.3",
-        mdui: "0.4.0",
-        fetch: "3.0.0",
-        es6promise: "4.2.5+7f2b526d",
-        lightgallery: "1.0.1",
-        smoothscroll: "15.2.0"
-      }
-      
-    };
-    console.info("%cCopyright © 2018 - " + new Date().getFullYear() +" Halyul\n"+'Theme Version: ' + themeRuntime.versions.theme +'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
-  </script>
-  <!--
-        © HEXO MDUI Theme
-        https://github.com/Halyul/hexo-theme-mdui
-        -->
+    <meta charset="utf-8">
+<title>developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta charset="UTF-8">
-  <title>首页 - developer</title>
 
-  <!-- Favicons -->
-  <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
-  <link rel="icon" sizes="192x192" href="/images/favicon.png">
-  <link rel="apple-touch-icon" href="/images/favicon.png">
 
-  <!-- Meta & Info -->
-  <meta http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="developer">
+<meta property="og:url" content="http://zone.lfmax.cn/page/2/index.html">
+<meta property="og:site_name" content="developer">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://zone.lfmax.cn/images/og_image.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="developer">
+<meta name="twitter:image" content="http://zone.lfmax.cn/images/og_image.png">
 
-  <meta name="theme-color" content="#fff">
 
-  <meta name="author" content="string">
-  
-  <meta name="keywords" content="blog, hexo, mdui">
 
-  <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="developer">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="480">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- The Open Graph protocol -->
-  <meta property="og:url" content="http://zone.lfmax.cn">
-  <meta property="og:type" content="blog">
-  <meta property="og:title" content="首页 - developer | developer">
-  <meta property="og:image" content="/images/favicon.png">
-  
 
-  
 
-  
+<link rel="icon" href="/images/favicon.svg">
 
-  <!-- Import CSS -->
-  
-    <link rel="stylesheet" href="/css/mdui.css">
-  
 
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
 
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
 </head>
-
-
-<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink">
-
-  <style>
-    #spinner {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-          opacity: 1;
-      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-          transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-    }
-    main {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-      transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-      display: none;
-    }
-  </style>
-  <div id="spinner">
-    <style>
-      .spinner {
-
-      -webkit-animation: rotator 1.4s linear infinite;
-              animation: rotator 1.4s linear infinite;
-      }
-
-      @-webkit-keyframes rotator {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(270deg);
-                transform: rotate(270deg);
-      }
-      }
-
-      @keyframes rotator {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(270deg);
-                transform: rotate(270deg);
-      }
-      }
-
-      .path {
-      stroke-dasharray: 187;
-      stroke-dashoffset: 0;
-      -webkit-transform-origin: center;
-              transform-origin: center;
-      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-              animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-      }
-
-      @-webkit-keyframes colors {
-      0% {
-        stroke: #4285F4;
-      }
-      25% {
-        stroke: #DE3E35;
-      }
-      50% {
-        stroke: #F7C223;
-      }
-      75% {
-        stroke: #1B9A59;
-      }
-      100% {
-        stroke: #4285F4;
-      }
-      }
-
-      @keyframes colors {
-      0% {
-        stroke: #4285F4;
-      }
-      25% {
-        stroke: #DE3E35;
-      }
-      50% {
-        stroke: #F7C223;
-      }
-      75% {
-        stroke: #1B9A59;
-      }
-      100% {
-        stroke: #4285F4;
-      }
-      }
-
-      @-webkit-keyframes dash {
-      0% {
-        stroke-dashoffset: 187;
-      }
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-                transform: rotate(135deg);
-      }
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-                transform: rotate(450deg);
-      }
-      }
-
-      @keyframes dash {
-      0% {
-        stroke-dashoffset: 187;
-      }
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-                transform: rotate(135deg);
-      }
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-                transform: rotate(450deg);
-      }
-      }
-    </style>
-    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-    </svg>
-  </div>
-
-  <main>
-    <div class="mdui-appbar mdui-appbar-fixed mdui-color-white mdui-shadow-0 theme-appbar">
-  <div class="mdui-toolbar theme-toolbar-top">
-    
-      <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger">
-        <i class="mdui-icon">
-          <span></span>
-        </i>
-      </a>
-    
-  </div>
-  <div class="mdui-toolbar theme-toolbar-bottom">
-    <span class="theme-toolbar-bottom__title">developer</span>
-    
-      <a href="/search.html" class="mdui-textfield-icon mdui-btn mdui-btn-icon theme-toolbar-bottom__search">
-        <i class="mdui-icon material-icons">&#xe8b6;</i>
-      </a>
-    
-  </div>
-  <div class="mdui-progress theme-appbar__progress" id="progressBar">
-    <div class="mdui-progress-indeterminate"></div>
-  </div>
-</div>
-
-    <div class="mdui-drawer mdui-drawer-full-height theme-drawer" id="drawer">
-  <!-- header -->
-  <div class="theme-drawer__header">
-  <div class="theme-drawer__header__layer-1">
-    <div class="mdui-toolbar theme-toolbar-top">
-      
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer" id="drawer-back">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </a>
-      
-    </div>
-    <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">developer</span>
-    </div>
-  </div>
-  <div class="theme-drawer__header__layer-2" style="background-image: url(/images/bg.png)">
-    <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/avatar.png">
-    <div class="theme-drawer__header__layer-2__user__info">
-      <div class="theme-drawer__header__layer-2__user__info__author mdui-text-color-white-text">
-        string
-      </div>
-      <div class="theme-drawer__header__layer-2__user__info__slogan mdui-text-color-white-secondary">
-        用心享受
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="theme-drawer__warpper">
-    <!-- content -->
-    <div class="theme-drawer__warpper__content">
-  <ul class="mdui-list">
-    <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
-      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
-      <div class="mdui-list-item-content">首页</div>
-    </a>
-    <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
-      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe1db;</i>
-      <div class="mdui-list-item-content">归档</div>
-    </a>
-    <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
-      
-        <div class="mdui-collapse-item ">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe3c7;</i>
-            <div class="mdui-list-item-content">分类</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
             
-              <a href="/categories/技术文章/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                技术文章
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>12</span>
-              </a>
+                <img src="/images/logo.svg" alt="developer" height="28">
             
-              <a href="/categories/认证/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                认证
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>4</span>
-              </a>
-            
-          </div>
-        </div>
-      
-      
-        <div class="mdui-collapse-item ">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
-            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
-            <div class="mdui-list-item-content">标签</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
-            
-              <a href="/tags/flutter/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                flutter
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/Android/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                Android
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/restify/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                restify
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
-              </a>
-            
-              <a href="/tags/cmmi/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                cmmi
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
-              </a>
-            
-              <a href="/tags/hexo/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                hexo
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>2</span>
-              </a>
-            
-              <a href="/tags/huawei-iot/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                huawei-iot
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/linux/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                linux
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>4</span>
-              </a>
-            
-              <a href="/tags/node/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                node
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>3</span>
-              </a>
-            
-              <a href="/tags/ubuntu/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                ubuntu
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/apt/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                apt
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-              <a href="/tags/markdown/" class="mdui-list-item mdui-ripple mdui-ripple-white" style="display: flex">
-                markdown
-                <div style="flex-grow: 1;"></div>
-                <span class="theme-menu-badge new mdui-color-theme-accent" data-badge-caption>1</span>
-              </a>
-            
-          </div>
-        </div>
-      
-      <div class="mdui-collapse-item ">
-        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
-          <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
-          <div class="mdui-list-item-content">年份</div>
-          <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-        </div>
-        <div class="mdui-collapse-item-body mdui-list">
-          
-          
-            <a href="/archives/2019/" class="mdui-list-item mdui-ripple">
-              2019
             </a>
-          
         </div>
-      </div>
-    </ul>
-  </ul>
-  
-    <div class="mdui-divider"></div>
-    <ul class="mdui-list" mdui-collapse="{accordion: true}">
-      
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">Home</a>
+                
+                <a class="navbar-item" href="/archives">Archives</a>
+                
+                <a class="navbar-item" href="/categories">Categories</a>
+                
+                <a class="navbar-item" href="/tags">Tags</a>
+                
+                <a class="navbar-item" href="/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-content article ">
         
-          
-            <a href="/about" target="_self" class="mdui-list-item mdui-ripple mdui-ripple-white">
-          
-              
-              
-                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe84e;</i>
-              
-              
-              <div class="mdui-list-item-content">About</div>
-            </a>
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-25T03:38:28.000Z">2019-04-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    16 分钟 读完 (大约 2356 个字)
+                </span>
+                
+                
+            </div>
+        </div>
         
-      
-    </ul>
-  
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/25/http-method-definitions/">http-method-definitions</a>
+            
+        </h1>
+        <div class="content">
+            <p>介绍http中method的定义</p>
+<h1 id="Method-Definitions"><a href="#Method-Definitions" class="headerlink" title="Method Definitions"></a>Method Definitions</h1><p>The set of common methods for HTTP/1.1 is defined below. Although this set can be expanded, additional methods cannot be assumed to share the same semantics for separately extended clients and servers.</p>
+<p>The Host request-header field (section 14.23) MUST accompany all HTTP/1.1 requests.</p>
+<p>9.1 Safe and Idempotent Methods<br>9.1.1 Safe Methods<br>Implementors should be aware that the software represents the user in their interactions over the Internet, and should be careful to allow the user to be aware of any actions they might take which may have an unexpected significance to themselves or others.</p>
+<p>In particular, the convention has been established that the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval. These methods ought to be considered “safe”. This allows user agents to represent other methods, such as POST, PUT and DELETE, in a special way, so that the user is made aware of the fact that a possibly unsafe action is being requested.</p>
+<p>Naturally, it is not possible to ensure that the server does not generate side-effects as a result of performing a GET request; in fact, some dynamic resources consider that a feature. The important distinction here is that the user did not request the side-effects, so therefore cannot be held accountable for them.</p>
+<p>9.1.2 Idempotent Methods<br>Methods can also have the property of “idempotence” in that (aside from error or expiration issues) the side-effects of N &gt; 0 identical requests is the same as for a single request. The methods GET, HEAD, PUT and DELETE share this property. Also, the methods OPTIONS and TRACE SHOULD NOT have side effects, and so are inherently idempotent.</p>
+<p>However, it is possible that a sequence of several requests is non- idempotent, even if all of the methods executed in that sequence are idempotent. (A sequence is idempotent if a single execution of the entire sequence always yields a result that is not changed by a reexecution of all, or part, of that sequence.) For example, a sequence is non-idempotent if its result depends on a value that is later modified in the same sequence.</p>
+<p>A sequence that never has side effects is idempotent, by definition (provided that no concurrent operations are being executed on the same set of resources).</p>
+<p>9.2 OPTIONS<br>The OPTIONS method represents a request for information about the communication options available on the request/response chain identified by the Request-URI. This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval.</p>
+<p>Responses to this method are not cacheable.</p>
+<p>If the OPTIONS request includes an entity-body (as indicated by the presence of Content-Length or Transfer-Encoding), then the media type MUST be indicated by a Content-Type field. Although this specification does not define any use for such a body, future extensions to HTTP might use the OPTIONS body to make more detailed queries on the server. A server that does not support such an extension MAY discard the request body.</p>
+<p>If the Request-URI is an asterisk (“<em>“), the OPTIONS request is intended to apply to the server in general rather than to a specific resource. Since a server’s communication options typically depend on the resource, the “</em>“ request is only useful as a “ping” or “no-op” type of method; it does nothing beyond allowing the client to test the capabilities of the server. For example, this can be used to test a proxy for HTTP/1.1 compliance (or lack thereof).</p>
+<p>If the Request-URI is not an asterisk, the OPTIONS request applies only to the options that are available when communicating with that resource.</p>
+<p>A 200 response SHOULD include any header fields that indicate optional features implemented by the server and applicable to that resource (e.g., Allow), possibly including extensions not defined by this specification. The response body, if any, SHOULD also include information about the communication options. The format for such a</p>
+<p>body is not defined by this specification, but might be defined by future extensions to HTTP. Content negotiation MAY be used to select the appropriate response format. If no response body is included, the response MUST include a Content-Length field with a field-value of “0”.</p>
+<p>The Max-Forwards request-header field MAY be used to target a specific proxy in the request chain. When a proxy receives an OPTIONS request on an absoluteURI for which request forwarding is permitted, the proxy MUST check for a Max-Forwards field. If the Max-Forwards field-value is zero (“0”), the proxy MUST NOT forward the message; instead, the proxy SHOULD respond with its own communication options. If the Max-Forwards field-value is an integer greater than zero, the proxy MUST decrement the field-value when it forwards the request. If no Max-Forwards field is present in the request, then the forwarded request MUST NOT include a Max-Forwards field.</p>
+<p>9.3 GET<br>The GET method means retrieve whatever information (in the form of an entity) is identified by the Request-URI. If the Request-URI refers to a data-producing process, it is the produced data which shall be returned as the entity in the response and not the source text of the process, unless that text happens to be the output of the process.</p>
+<p>The semantics of the GET method change to a “conditional GET” if the request message includes an If-Modified-Since, If-Unmodified-Since, If-Match, If-None-Match, or If-Range header field. A conditional GET method requests that the entity be transferred only under the circumstances described by the conditional header field(s). The conditional GET method is intended to reduce unnecessary network usage by allowing cached entities to be refreshed without requiring multiple requests or transferring data already held by the client.</p>
+<p>The semantics of the GET method change to a “partial GET” if the request message includes a Range header field. A partial GET requests that only part of the entity be transferred, as described in section 14.35. The partial GET method is intended to reduce unnecessary network usage by allowing partially-retrieved entities to be completed without transferring data already held by the client.</p>
+<p>The response to a GET request is cacheable if and only if it meets the requirements for HTTP caching described in section 13.</p>
+<p>See section 15.1.3 for security considerations when used for forms.</p>
+<p>9.4 HEAD<br>The HEAD method is identical to GET except that the server MUST NOT return a message-body in the response. The metainformation contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request. This method can be used for obtaining metainformation about the entity implied by the request without transferring the entity-body itself. This method is often used for testing hypertext links for validity, accessibility, and recent modification.</p>
+<p>The response to a HEAD request MAY be cacheable in the sense that the information contained in the response MAY be used to update a previously cached entity from that resource. If the new field values indicate that the cached entity differs from the current entity (as would be indicated by a change in Content-Length, Content-MD5, ETag or Last-Modified), then the cache MUST treat the cache entry as stale.</p>
+<p>9.5 POST<br>The POST method is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. POST is designed to allow a uniform method to cover the following functions:</p>
+<pre><code>  - Annotation of existing resources;
+  - Posting a message to a bulletin board, newsgroup, mailing list,
+    or similar group of articles;
+  - Providing a block of data, such as the result of submitting a
+    form, to a data-handling process;
+  - Extending a database through an append operation.
+</code></pre><p>The actual function performed by the POST method is determined by the server and is usually dependent on the Request-URI. The posted entity is subordinate to that URI in the same way that a file is subordinate to a directory containing it, a news article is subordinate to a newsgroup to which it is posted, or a record is subordinate to a database.</p>
+<p>The action performed by the POST method might not result in a resource that can be identified by a URI. In this case, either 200 (OK) or 204 (No Content) is the appropriate response status, depending on whether or not the response includes an entity that describes the result.</p>
+<p>If a resource has been created on the origin server, the response SHOULD be 201 (Created) and contain an entity which describes the status of the request and refers to the new resource, and a Location header (see section 14.30).</p>
+<p>Responses to this method are not cacheable, unless the response includes appropriate Cache-Control or Expires header fields. However, the 303 (See Other) response can be used to direct the user agent to retrieve a cacheable resource.</p>
+<p>POST requests MUST obey the message transmission requirements set out in section 8.2.</p>
+<p>See section 15.1.3 for security considerations.</p>
+<p>9.6 PUT<br>The PUT method requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource, the enclosed entity SHOULD be considered as a modified version of the one residing on the origin server. If the Request-URI does not point to an existing resource, and that URI is capable of being defined as a new resource by the requesting user agent, the origin server can create the resource with that URI. If a new resource is created, the origin server MUST inform the user agent via the 201 (Created) response. If an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request. If the resource could not be created or modified with the Request-URI, an appropriate error response SHOULD be given that reflects the nature of the problem. The recipient of the entity MUST NOT ignore any Content-* (e.g. Content-Range) headers that it does not understand or implement and MUST return a 501 (Not Implemented) response in such cases.</p>
+<p>If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.</p>
+<p>The fundamental difference between the POST and PUT requests is reflected in the different meaning of the Request-URI. The URI in a POST request identifies the resource that will handle the enclosed entity. That resource might be a data-accepting process, a gateway to some other protocol, or a separate entity that accepts annotations. In contrast, the URI in a PUT request identifies the entity enclosed with the request – the user agent knows what URI is intended and the server MUST NOT attempt to apply the request to some other resource. If the server desires that the request be applied to a different URI,</p>
+<p>it MUST send a 301 (Moved Permanently) response; the user agent MAY then make its own decision regarding whether or not to redirect the request.</p>
+<p>A single resource MAY be identified by many different URIs. For example, an article might have a URI for identifying “the current version” which is separate from the URI identifying each particular version. In this case, a PUT request on a general URI might result in several other URIs being defined by the origin server.</p>
+<p>HTTP/1.1 does not define how a PUT method affects the state of an origin server.</p>
+<p>PUT requests MUST obey the message transmission requirements set out in section 8.2.</p>
+<p>Unless otherwise specified for a particular entity-header, the entity-headers in the PUT request SHOULD be applied to the resource created or modified by the PUT.</p>
+<p>9.7 DELETE<br>The DELETE method requests that the origin server delete the resource identified by the Request-URI. This method MAY be overridden by human intervention (or other means) on the origin server. The client cannot be guaranteed that the operation has been carried out, even if the status code returned from the origin server indicates that the action has been completed successfully. However, the server SHOULD NOT indicate success unless, at the time the response is given, it intends to delete the resource or move it to an inaccessible location.</p>
+<p>A successful response SHOULD be 200 (OK) if the response includes an entity describing the status, 202 (Accepted) if the action has not yet been enacted, or 204 (No Content) if the action has been enacted but the response does not include an entity.</p>
+<p>If the request passes through a cache and the Request-URI identifies one or more currently cached entities, those entries SHOULD be treated as stale. Responses to this method are not cacheable.</p>
+<p>9.8 TRACE<br>The TRACE method is used to invoke a remote, application-layer loop- back of the request message. The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response. The final recipient is either the</p>
+<p>origin server or the first proxy or gateway to receive a Max-Forwards value of zero (0) in the request (see section 14.31). A TRACE request MUST NOT include an entity.</p>
+<p>TRACE allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information. The value of the Via header field (section 14.45) is of particular interest, since it acts as a trace of the request chain. Use of the Max-Forwards header field allows the client to limit the length of the request chain, which is useful for testing a chain of proxies forwarding messages in an infinite loop.</p>
+<p>If the request is valid, the response SHOULD contain the entire request message in the entity-body, with a Content-Type of “message/http”. Responses to this method MUST NOT be cached.</p>
+<p>9.9 CONNECT<br>This specification reserves the method name CONNECT for use with a proxy that can dynamically switch to being a tunnel (e.g. SSL tunneling [44]).</p>
+
+        </div>
+        
+        
+        
+    </div>
 </div>
 
-    <div class="theme-spacer"></div>
-    <!-- footer -->
-    <div class="theme-drawer__warpper__footer">
-  <div class="mdui-typo mdui-typo-caption-opacity">
-    Powered by <a href="http://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme - <a href="//github.com/Halyul/hexo-theme-mdui" target="_blank">Halyul/MDUI</a>
-    <br>
-    <span>
-      Copyright ©
-      <span year></span>
-      string
-    </span>
+
+
+
+
+
+
+
+    <div class="card">
     
-      <br>
-      <span onclick="window.open('http://www.miitbeian.gov.cn/', '_blank');">true</span>
-    
-    
-      <br>
-      <span>
-        最后更新于: 5月 16, 2019
-      </span>
-    
-    
-  </div>
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T08:48:06.234Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 读完 (大约 121 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/22/hexo/">Hello</a>
+            
+        </h1>
+        <div class="content">
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+        </div>
+        
+        
+        
+    </div>
 </div>
-<script type="text/javascript">
-  var copyrightNow = new Date().getFullYear();
-  var textContent = document.querySelector('span[year]')
-  
-    copyrightSince = true;
-    if (copyrightSince === copyrightNow) {
-      textContent.textContent = copyrightNow
-    } else {
-      textContent.textContent = copyrightSince + ' - ' + copyrightNow
-    }
-  
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 487 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/22/linux-user/">user-linux</a>
+            
+        </h1>
+        <div class="content">
+            <p>linux 下用户管理</p>
+<h1 id="如何添加或删除ubuntu用户和组"><a href="#如何添加或删除ubuntu用户和组" class="headerlink" title="如何添加或删除ubuntu用户和组"></a><a href="https://www.cnblogs.com/adolfmc/archive/2012/11/17/2774476.html" target="_blank" rel="noopener">如何添加或删除ubuntu用户和组</a></h1><p>在创建用户时，需要为新建用户指定一用户组，如果不指定其用户所属的工作组，自动会生成一个与用户名同名的工作组。创建用户user1的时候指定其所属工作组users，例：useradd –g users user1</p>
+<h2 id="一、创建用户："><a href="#一、创建用户：" class="headerlink" title="一、创建用户："></a>一、创建用户：</h2><ol>
+<li>使用命令 useradd<br>例：useradd user1——创建用户user1<pre><code>useradd –e 12/30/2009 user2——创建user2,指定有效期2009-12-30到期
+用户的缺省UID从500向后顺序增加，500以下作为系统保留账号，可以指定UID，
+</code></pre>例：useradd –u 600 user3  </li>
+<li>使用 passwd 命令为新建用户设置密码<br>例：passwd user1<br>注意：没有设置密码的用户不能使用。</li>
+<li>命令 usermod 修改用户账户<br>例：将用户 user1的登录名改为  u1，<br>usermod –l u1 user1<br>例：将用户 user1 加入到 users组中，<br>usermod –g users user1<br>例：将用户 user1 目录改为/users/us1</li>
+<li>使用命令 userdel 删除用户账户<br>例：删除用户user2<br>userdel user2<br>例：删除用户 user3，同时删除他的工作目录<br>userdel –r user3</li>
+<li>查看用户信息<br>id命令查看一个用户的UID和GID, 例：查看user4的id<br>id user4<br>finger命令 ——可以查看用户的主目录、启动shell、用户名、地址、电话等信息<br>例：finger user4</li>
+</ol>
+<h2 id="二、用户组："><a href="#二、用户组：" class="headerlink" title="二、用户组："></a>二、用户组：</h2><ol>
+<li>命令 groupadd创建用户组<br>groupadd –g 888 users<br>创建一个组users，其GID为888</li>
+<li>命令 gpasswd为组添加用户<br>只有root和组管理员能够改变组的成员：<br>例：把 user1加入users组<br>gpasswd –a user1 users<br>例：把 user1退出users组<br>gpasswd –d user1 users</li>
+<li>命令groupmod修改组<br>groupmod –n user users       修改组名user为users</li>
+<li>groupdel删除组<br>groupdel users    删除组users</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    16 分钟 读完 (大约 2457 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/22/linux-crontab/">crontab-定时使用</a>
+            
+        </h1>
+        <div class="content">
+            <p>linux 定时器的使用</p>
+<h1 id="crontab-定时任务"><a href="#crontab-定时任务" class="headerlink" title="crontab 定时任务"></a>crontab 定时任务</h1><p>通过crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合。这个命令非常适合周期性的日志分析或数据备份等工作。</p>
+<h2 id="1-命令格式"><a href="#1-命令格式" class="headerlink" title="1. 命令格式"></a>1. 命令格式</h2><blockquote>
+<p>crontab [-u user] file crontab [-u user] [ -e | -l | -r ]</p>
+</blockquote>
+<h2 id="2-命令参数"><a href="#2-命令参数" class="headerlink" title="2. 命令参数"></a>2. 命令参数</h2><ul>
+<li>-u user：用来设定某个用户的crontab服务；</li>
+<li>file：file是命令文件的名字,表示将file做为crontab的任务列表文件并载入crontab。如果在命令行中没有指定这个文件，crontab命令将接受标准输入（键盘）上键入的命令，并将它们载入crontab。</li>
+<li>-e：编辑某个用户的crontab文件内容。如果不指定用户，则表示编辑当前用户的crontab文件。</li>
+<li>-l：显示某个用户的crontab文件内容，如果不指定用户，则表示显示当前用户的crontab文件内容。</li>
+<li>-r：从/var/spool/cron目录中删除某个用户的crontab文件，如果不指定用户，则默认删除当前用户的crontab文件。</li>
+<li>-i：在删除用户的crontab文件时给确认提示。</li>
+</ul>
+<h2 id="3-crontab的文件格式"><a href="#3-crontab的文件格式" class="headerlink" title="3. crontab的文件格式"></a>3. crontab的文件格式</h2><p>分 时 日 月 星期 要运行的命令</p>
+<ul>
+<li>第1列分钟0～59</li>
+<li>第2列小时0～23（0表示子夜）</li>
+<li>第3列日1～31</li>
+<li>第4列月1～12</li>
+<li>第5列星期0～7（0和7表示星期天）</li>
+<li>第6列要运行的命令</li>
+</ul>
+<h2 id="4-常用方法"><a href="#4-常用方法" class="headerlink" title="4. 常用方法"></a>4. 常用方法</h2><h3 id="创建一个新的crontab文件"><a href="#创建一个新的crontab文件" class="headerlink" title="创建一个新的crontab文件"></a>创建一个新的crontab文件</h3><p>向cron进程提交一个crontab文件之前，首先要设置环境变量EDITOR。cron进程根据它来确定使用哪个编辑器编辑crontab文件。9 9 %的UNIX和LINUX用户都使用vi，如果你也是这样，那么你就编辑$HOME目录下的. profile文件，在其中加入这样一行:</p>
+<pre><code>EDITOR=vi; export EDITOR
+</code></pre><p>然后保存并退出。不妨创建一个名为<user> cron的文件，其中<user>是用户名，例如， davecron。在该文件中加入如下的内容。</user></user></p>
+<pre><code># (put your own initials here)echo the date to the console every
+# 15minutes between 6pm and 6am
+0,15,30,45 18-06 * * * /bin/echo &#39;date&#39; &gt; /dev/console
+</code></pre><p>保存并退出。注意前面5个域用空格分隔。</p>
+<p>在上面的例子中，系统将每隔1 5分钟向控制台输出一次当前时间。如果系统崩溃或挂起，从最后所显示的时间就可以一眼看出系统是什么时间停止工作的。在有些系统中，用tty1来表示控制台，可以根据实际情况对上面的例子进行相应的修改。为了提交你刚刚创建的crontab文件，可以把这个新创建的文件作为cron命令的参数:</p>
+<pre><code>$ crontab davecron
+</code></pre><p>现在该文件已经提交给cron进程，它将每隔1 5分钟运行一次。同时，新创建文件的一个副本已经被放在/var/spool/cron目录中，文件名就是用户名(即dave)。</p>
+<h3 id="列出crontab文件"><a href="#列出crontab文件" class="headerlink" title="列出crontab文件"></a>列出crontab文件</h3><p>使用-l参数列出crontab文件:</p>
+<pre><code>$ crontab -l
+0,15,30,45 18-06 * * * /bin/echo `date` &gt; dev/tty1
+</code></pre><p>可以使用这种方法在$HOME目录中对crontab文件做一备份:</p>
+<pre><code>$ crontab -l &gt; $HOME/mycron
+</code></pre><p>这样，一旦不小心误删了crontab文件，可以用上一节所讲述的方法迅速恢复。</p>
+<h3 id="编辑crontab文件"><a href="#编辑crontab文件" class="headerlink" title="编辑crontab文件"></a>编辑crontab文件</h3><p>如果希望添加、删除或编辑crontab文件中的条目，而EDITOR环境变量又设置为vi，那么就可以用vi来编辑crontab文件:</p>
+<pre><code>$ crontab -e
+</code></pre><p>可以像使用vi编辑其他任何文件那样修改crontab文件并退出。如果修改了某些条目或添加了新的条目，那么在保存该文件时， cron会对其进行必要的完整性检查。如果其中的某个域出现了超出允许范围的值，它会提示你。 我们在编辑crontab文件时，没准会加入新的条目。例如，加入下面的一条：</p>
+<pre><code># DT:delete core files,at 3.30am on 1,7,14,21,26,26 days of each month
+30 3 1,7,14,21,26 * * /bin/find -name &#39;core&#39; -exec rm {} \;
+</code></pre><p>保存并退出。</p>
+<p>注解</p>
+<p>最好在crontab文件的每一个条目之上加入一条注释，这样就可以知道它的功能、运行时间，更为重要的是，知道这是哪位用户的定时作业。</p>
+<h3 id="删除crontab文件"><a href="#删除crontab文件" class="headerlink" title="删除crontab文件"></a>删除crontab文件</h3><pre><code>$crontab -r
+</code></pre><h2 id="5-使用实例"><a href="#5-使用实例" class="headerlink" title="5. 使用实例"></a>5. 使用实例</h2><h3 id="实例1：每1分钟执行一次myCommand"><a href="#实例1：每1分钟执行一次myCommand" class="headerlink" title="实例1：每1分钟执行一次myCommand"></a>实例1：每1分钟执行一次myCommand</h3><pre><code>* * * * * myCommand
+</code></pre><h3 id="实例2：每小时的第3和第15分钟执行"><a href="#实例2：每小时的第3和第15分钟执行" class="headerlink" title="实例2：每小时的第3和第15分钟执行"></a>实例2：每小时的第3和第15分钟执行</h3><pre><code>3,15 * * * * myCommand
+</code></pre><h3 id="实例3：在上午8点到11点的第3和第15分钟执行"><a href="#实例3：在上午8点到11点的第3和第15分钟执行" class="headerlink" title="实例3：在上午8点到11点的第3和第15分钟执行"></a>实例3：在上午8点到11点的第3和第15分钟执行</h3><pre><code>3,15 8-11 * * * myCommand
+</code></pre><h3 id="实例4：每隔两天的上午8点到11点的第3和第15分钟执行"><a href="#实例4：每隔两天的上午8点到11点的第3和第15分钟执行" class="headerlink" title="实例4：每隔两天的上午8点到11点的第3和第15分钟执行"></a>实例4：每隔两天的上午8点到11点的第3和第15分钟执行</h3><pre><code>3,15 8-11 */2  *  * myCommand
+</code></pre><h3 id="实例5：每周一上午8点到11点的第3和第15分钟执行"><a href="#实例5：每周一上午8点到11点的第3和第15分钟执行" class="headerlink" title="实例5：每周一上午8点到11点的第3和第15分钟执行"></a>实例5：每周一上午8点到11点的第3和第15分钟执行</h3><pre><code>3,15 8-11 * * 1 myCommand
+</code></pre><h3 id="实例6：每晚的21-30重启smb"><a href="#实例6：每晚的21-30重启smb" class="headerlink" title="实例6：每晚的21:30重启smb"></a>实例6：每晚的21:30重启smb</h3><pre><code>30 21 * * * /etc/init.d/smb restart
+</code></pre><h3 id="实例7：每月1、10、22日的4-45重启smb"><a href="#实例7：每月1、10、22日的4-45重启smb" class="headerlink" title="实例7：每月1、10、22日的4 : 45重启smb"></a>实例7：每月1、10、22日的4 : 45重启smb</h3><pre><code>45 4 1,10,22 * * /etc/init.d/smb restart
+</code></pre><h3 id="实例8：每周六、周日的1-10重启smb"><a href="#实例8：每周六、周日的1-10重启smb" class="headerlink" title="实例8：每周六、周日的1 : 10重启smb"></a>实例8：每周六、周日的1 : 10重启smb</h3><pre><code>10 1 * * 6,0 /etc/init.d/smb restart
+</code></pre><h3 id="实例9：每天18-00至23-00之间每隔30分钟重启smb"><a href="#实例9：每天18-00至23-00之间每隔30分钟重启smb" class="headerlink" title="实例9：每天18 : 00至23 : 00之间每隔30分钟重启smb"></a>实例9：每天18 : 00至23 : 00之间每隔30分钟重启smb</h3><pre><code>0,30 18-23 * * * /etc/init.d/smb restart
+</code></pre><h3 id="实例10：每星期六的晚上11-00-pm重启smb"><a href="#实例10：每星期六的晚上11-00-pm重启smb" class="headerlink" title="实例10：每星期六的晚上11 : 00 pm重启smb"></a>实例10：每星期六的晚上11 : 00 pm重启smb</h3><pre><code>0 23 * * 6 /etc/init.d/smb restart
+</code></pre><h3 id="实例11：每一小时重启smb"><a href="#实例11：每一小时重启smb" class="headerlink" title="实例11：每一小时重启smb"></a>实例11：每一小时重启smb</h3><pre><code>* */1 * * * /etc/init.d/smb restart
+</code></pre><h3 id="实例12：晚上11点到早上7点之间，每隔一小时重启smb"><a href="#实例12：晚上11点到早上7点之间，每隔一小时重启smb" class="headerlink" title="实例12：晚上11点到早上7点之间，每隔一小时重启smb"></a>实例12：晚上11点到早上7点之间，每隔一小时重启smb</h3><pre><code>0 23-7 * * * /etc/init.d/smb restart
+</code></pre><h2 id="6-使用注意事项"><a href="#6-使用注意事项" class="headerlink" title="6. 使用注意事项"></a>6. 使用注意事项</h2><h3 id="注意环境变量问题"><a href="#注意环境变量问题" class="headerlink" title="注意环境变量问题"></a>注意环境变量问题</h3><p>有时我们创建了一个crontab，但是这个任务却无法自动执行，而手动执行这个任务却没有问题，这种情况一般是由于在crontab文件中没有配置环境变量引起的。</p>
+<p>在crontab文件中定义多个调度任务时，需要特别注环境变量的设置，因为我们手动执行某个任务时，是在当前shell环境下进行的，程序当然能找到环境变量，而系统自动执行任务调度时，是不会加载任何环境变量的，因此，就需要在crontab文件中指定任务运行所需的所有环境变量，这样，系统执行任务调度时就没有问题了。</p>
+<p>不要假定cron知道所需要的特殊环境，它其实并不知道。所以你要保证在shelll脚本中提供所有必要的路径和环境变量，除了一些自动设置的全局变量。所以注意如下3点：</p>
+<ol>
+<li><p>脚本中涉及文件路径时写全局路径；</p>
+</li>
+<li><p>脚本执行要用到java或其他环境变量时，通过source命令引入环境变量，如:</p>
+<pre><code>cat start_cbp.sh
+!/bin/sh
+source /etc/profile
+export RUN_CONF=/home/d139/conf/platform/cbp/cbp_jboss.conf
+/usr/local/jboss-4.0.5/bin/run.sh -c mev &amp;
+</code></pre></li>
+<li><p>当手动执行脚本OK，但是crontab死活不执行时,很可能是环境变量惹的祸，可尝试在crontab中直接引入环境变量解决问题。如:</p>
+<pre><code>0 * * * * . /etc/profile;/bin/sh /var/www/java/audit_no_count/bin/restart_audit.sh
+</code></pre></li>
+</ol>
+<h3 id="注意清理系统用户的邮件日志"><a href="#注意清理系统用户的邮件日志" class="headerlink" title="注意清理系统用户的邮件日志"></a>注意清理系统用户的邮件日志</h3><p>每条任务调度执行完毕，系统都会将任务输出信息通过电子邮件的形式发送给当前系统用户，这样日积月累，日志信息会非常大，可能会影响系统的正常运行，因此，将每条任务进行重定向处理非常重要。 例如，可以在crontab文件中设置如下形式，忽略日志输出:</p>
+<pre><code>0 */3 * * * /usr/local/apache2/apachectl restart &gt;/dev/null 2&gt;&amp;1
+</code></pre><p>“/dev/null 2&gt;&amp;1”表示先将标准输出重定向到/dev/null，然后将标准错误重定向到标准输出，由于标准输出已经重定向到了/dev/null，因此标准错误也会重定向到/dev/null，这样日志输出问题就解决了。</p>
+<h3 id="系统级任务调度与用户级任务调度"><a href="#系统级任务调度与用户级任务调度" class="headerlink" title="系统级任务调度与用户级任务调度"></a>系统级任务调度与用户级任务调度</h3><p>系统级任务调度主要完成系统的一些维护操作，用户级任务调度主要完成用户自定义的一些任务，可以将用户级任务调度放到系统级任务调度来完成（不建议这么做），但是反过来却不行，root用户的任务调度操作可以通过”crontab –uroot –e”来设置，也可以将调度任务直接写入/etc/crontab文件，需要注意的是，如果要定义一个定时重启系统的任务，就必须将任务放到/etc/crontab文件，即使在root用户下创建一个定时重启系统的任务也是无效的。</p>
+<h3 id="其他注意事项"><a href="#其他注意事项" class="headerlink" title="其他注意事项"></a>其他注意事项</h3><p>新创建的cron job，不会马上执行，至少要过2分钟才执行。如果重启cron则马上执行。</p>
+<p>当crontab失效时，可以尝试/etc/init.d/crond restart解决问题。或者查看日志看某个job有没有执行/报错tail -f /var/log/cron。</p>
+<p>千万别乱运行crontab -r。它从Crontab目录（/var/spool/cron）中删除用户的Crontab文件。删除了该用户的所有crontab都没了。</p>
+<p>在crontab中%是有特殊含义的，表示换行的意思。如果要用的话必须进行转义%，如经常用的date ‘+%Y%m%d’在crontab里是不会执行的，应该换成date ‘+%Y%m%d’。</p>
+<p>更新系统时间时区后需要重启cron,在ubuntu中服务名为cron:</p>
+<pre><code>$service cron restart
+</code></pre><p>ubuntu下启动、停止与重启cron:</p>
+<pre><code>$sudo /etc/init.d/cron start
+$sudo /etc/init.d/cron stop
+$sudo /etc/init.d/cron restart
+</code></pre>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 559 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/22/cmmi/">cmmi简介</a>
+            
+        </h1>
+        <div class="content">
+            <p>CMMI</p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>  CMMI是英文Capability Maturity Model Integration的缩写。CMMI认证简称软件能力成熟度集成模型，是鉴定企业在开发流程化和质量管理上的国际通行标准，全球软件生产标准大都以此为基点，并都努力争取成为CMMI认证队伍中的一分子。<br>对一个软件企业来说，达到CMMI2就基本上进入了规模开发，基本具备了一个现代化软件企业的基本架构和方法，具备了承接外包项目的能力。CMMI3评估则需要对大软件集成的把握，包括整体架构的整合。一般来说，通过CMMI认证的级别越高，其越容易获得用户的信任，在国内、国际市场上的竞争力也就越强。<br>CMMI一共分为五个等级：</p>
+<h2 id="第一级：-初始级"><a href="#第一级：-初始级" class="headerlink" title="第一级： 初始级"></a>第一级： 初始级</h2><p>软件过程是无序的，有时甚至是混乱的，对过程几乎没有定义，成功取决于个人努力。管理是反应式的。</p>
+<h2 id="第二级：可管理级"><a href="#第二级：可管理级" class="headerlink" title="第二级：可管理级"></a>第二级：可管理级</h2><p>建立了基本的项目管理过程来跟踪费用、进度和功能特性。制定了必要的过程纪律，能重复早先类似应用项目取得的成功经验。</p>
+<h2 id="第三级：-已定义级"><a href="#第三级：-已定义级" class="headerlink" title="第三级： 已定义级"></a>第三级： 已定义级</h2><p>已将软件管理和工程两方面的过程文档化、标准化，并综合成该组织的标准软件过程。所有项目均使用经批准、剪裁的标准来开发和维护软件，软件产品的生产在整个软件过程是可见的。</p>
+<h2 id="第四级：量化管理级"><a href="#第四级：量化管理级" class="headerlink" title="第四级：量化管理级"></a>第四级：量化管理级</h2><p>分析对软件过程和产品质量的详细度量数据，对软件过程和产品都有定量的理解与控制。管理有一个作出结论的客观依据，管理能够在定量的范围内预测性能。</p>
+<h2 id="第五级：优化管理级"><a href="#第五级：优化管理级" class="headerlink" title="第五级：优化管理级"></a>第五级：优化管理级</h2><p>过程的量化反馈和先进的新思想、新技术促使过程持续不断改进。  </p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 小时 读完 (大约 9825 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/22/linux常用命令/">linux常用命令</a>
+            
+        </h1>
+        <div class="content">
+            <p>linux常用命令</p>
+<h1 id="linux-常用命令"><a href="#linux-常用命令" class="headerlink" title="linux 常用命令"></a>linux 常用命令</h1><p>1、ls命令</p>
+<blockquote>
+<p>   就是list的缩写，通过ls 命令不仅可以查看linux文件夹包含的文件，而且可以查看文件权限(包括目录、文件夹、文件权限)查看目录信息等等<br>    常用参数搭配：<br>    ls -a 列出目录所有文件，包含以.开始的隐藏文件<br>    ls -A 列出除.及..的其它文件       </p>
+</blockquote>
+<p>2、cd命令</p>
+<blockquote>
+<pre><code>    (changeDirectory),命令语法：cd [目录名]。说明：切换当前目录至dirName
+     实例：
+     （1）进入要目录
+     cd /
+     （2）进入&quot;家&quot;目录
+     cd ~
+     （3）进入上一次工作路径
+     cd -
+     （4）把上个命令的参数作为cd参数使用。
+     cd !$
+</code></pre></blockquote>
+<p>3、pwd命令</p>
+<blockquote>
+<pre><code>   查看当前工作目录路径
+     实例：
+     （1）查看当前路径
+     pwd
+     （2）查看软链接的实际路径
+     pwd -P
+</code></pre></blockquote>
+<p>4、mkdir命令</p>
+<blockquote>
+<pre><code>   创建文件夹
+     可用选项：
+     -m: 对新建目录设置存取权限,也可以用chmod命令设置;
+         -p: 可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那                      些尚不在的目录,即一次可以建立多个目录;
+     实例：
+     （1）当前工作目录下创建名为t的文件夹
+     mkdir t
+     （2）在tmp目录下创建路径为test/t1/t的目录，若不存在，则创建
+     mkdir -p /tmp/test/t1/t
+</code></pre></blockquote>
+<p>5、rm命令</p>
+<blockquote>
+<pre><code>   删除一个目录中的一个或多个文件或目录，如果没有使用- r选项，则rm不会删除目录。如果使用              rm 来删除文件，通常仍可以将该文件恢复原状
+     rm [选项] 文件…
+     实例：
+     （1）删除任何.log文件；删除前逐一询问确认
+     rm -i *.log
+     （2）删除test子目录及子目录中所有档案删除,并且不用一一确认
+     rm -rf test
+     （3）删除以-f开头的文件
+     rm -- -f*
+</code></pre><p>6、rmdir命令<br>       从一个目录中删除一个或多个子目录项，删除某目录时也必须具有对其父目录的写权限。<br>         注意：不能删除非空目录<br>         实例：<br>         （1）当parent子目录被删除后使它也成为空目录的话，则顺便一并删除<br>         rmdir -p parent/child/child11</p>
+</blockquote>
+<p>7、mv命令</p>
+<blockquote>
+<pre><code>  移动文件或修改文件名，根据第二参数类型（如目录，则移动文件；如为文件则重命令该文件）。      
+     当第二个参数为目录时，可刚多个文件以空格分隔作为第一参数，移动多个文件到参数2指定的目录中
+     实例：
+     （1）将文件test.log重命名为test1.txt
+     mv test.log test1.txt
+     （2）将文件log1.txt,log2.txt,log3.txt移动到根的test3目录中
+     mv llog1.txt log2.txt log3.txt /test3
+     （3）将文件file1改名为file2，如果file2已经存在，则询问是否覆盖
+     mv -i log1.txt log2.txt
+     （4）移动当前文件夹下的所有文件到上一级目录
+     mv * ../
+</code></pre></blockquote>
+<p>8、cp命令</p>
+<blockquote>
+<pre><code>  将源文件复制至目标文件，或将多个源文件复制至目标目录。
+     注意：命令行复制，如果目标文件已经存在会提示是否覆盖，而在shell脚本中，如果不加-i参数，则不会提示，而是直接覆盖！
+     -i 提示
+     -r 复制目录及目录内所有项目
+     -a 复制的文件与原文件时间一样
+     实例：
+     （1）复制a.txt到test目录下，保持原文件时间,如果原文件存在提示是否覆盖
+     cp -ai a.txt test
+     （2）为a.txt建议一个链接（快捷方式）
+     cp -s a.txt link_a.txt
+</code></pre></blockquote>
+<p>9、cat命令</p>
+<blockquote>
+<pre><code> cat主要有三大功能：
+     1.一次显示整个文件:cat filename
+     2.从键盘创建一个文件:cat &gt; filename 只能创建新文件,不能编辑已有文件.
+     3.将几个文件合并为一个文件:cat file1 file2 &gt; file
+     -b对非空输出行号
+     -n输出所有行号
+     实例：
+     （1）把 log2012.log 的文件内容加上行号后输入 log2013.log 这个文件里
+     cat -n log2012.log log2013.log
+     （2）把 log2012.log 和 log2013.log 的文件内容加上行号（空白行不加）之后将内容附加到 log.log 里
+     cat -b log2012.log log2013.log log.log
+     （3）使用here doc生成新文件
+     cat &gt;log.txt &lt;&lt;EOF
+</code></pre><p>Hello<br>World<br>PWD=$(pwd)<br>EOF<br>         ls -l log.txt<br>         cat log.txt<br>         Hello<br>         World<br>         PWD=/opt/soft/test<br>         （4）反向列示<br>         tac log.txt<br>         PWD=/opt/soft/test<br>         World<br>         Hello</p>
+</blockquote>
+<p>10、more命令</p>
+<blockquote>
+<pre><code>功能类似于cat, more会以一页一页的显示方便使用者逐页阅读，而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示
+     -&gt;&gt;命令参数：
+     +n      从笫n行开始显示
+     -n       定义屏幕大小为n行
+     +/pattern 在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示 
+     -c       从顶部清屏，然后显示
+     -d       提示“Press space to continue，’q’ to quit（按空格键继续，按q键退出）”，禁用响铃功能
+     -l        忽略Ctrl+l（换页）字符
+     -p       通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似
+     -s       把连续的多个空行显示为一行
+     -u       把文件内容中的下画线去掉
+     -&gt;&gt;常用操作命令：
+     Enter    向下n行，需要定义。默认为1行
+     Ctrl+F   向下滚动一屏
+     空格键  向下滚动一屏
+     Ctrl+B  返回上一屏
+     =       输出当前行的行号
+     ：f     输出文件名和当前行的行号
+     V      调用vi编辑器
+     !命令   调用Shell，并执行命令
+     q       退出more
+     实例：
+     （1）显示文件中从第3行起的内容
+     more +3 text.txt
+     （2）在所列出文件目录详细信息，借助管道使每次显示5行
+     ls -l | more -5
+     按空格显示下5行
+</code></pre></blockquote>
+<p>11、less命令</p>
+<blockquote>
+<p>   less 与 more 类似，但使用 less 可以随意浏览文件，而 more 仅能向前移动，却不能向后移动，而且 less 在查看之前不会加载整个文件。<br>         常用命令参数<br>         -i  忽略搜索时的大小写<br>         -N  显示每行的行号<br>         -o  &lt;文件名&gt; 将less 输出的内容在指定文件中保存起来<br>         -s  显示连续空行为一行<br>         /字符串：向下搜索“字符串”的功能<br>         ?字符串：向上搜索“字符串”的功能<br>         n：重复前一个搜索（与 / 或 ? 有关）<br>         N：反向重复前一个搜索（与 / 或 ? 有关）<br>         -x &lt;数字&gt; 将“tab”键显示为规定的数字空格<br>         b  向后翻一页<br>         d  向后翻半页<br>         h  显示帮助界面<br>         Q  退出less 命令<br>         u  向前滚动半页<br>         y  向前滚动一行<br>         空格键 滚动一行<br>         回车键 滚动一页<br>         [pagedown]： 向下翻动一页<br>         [pageup]：   向上翻动一页<br>         实例：<br>         （1）ps查看进程信息并通过less分页显示<br>         ps -aux | less -N<br>         （2）查看多个文件<br>         less 1.log 2.log<br>         可以使用n查看下一个，使用p查看前一个</p>
+</blockquote>
+<p>12、head命令</p>
+<blockquote>
+<pre><code>   head 用来显示档案的开头至标准输出中，默认head命令打印其相应文件的开头10行。
+     常用参数：
+     -n&lt;行数&gt; 显示的行数（行数为复数表示从最后向前数）
+     实例：
+     （1）显示1.log文件中前20行
+     head 1.log -n 20
+     （2）显示1.log文件前20字节
+     head -c 20 log2014.log
+     （3）显示t.log最后10行
+     head -n -10 t.log
+</code></pre></blockquote>
+<p>13、tail命令</p>
+<blockquote>
+<pre><code>   用于显示指定文件末尾内容，不指定文件时，作为输入信息进行处理。常用查看日志文件。
+     常用参数：
+     -f 循环读取（常用于查看递增的日志文件）
+     -n&lt;行数&gt; 显示行数（从后向前）
+     （1）循环读取逐渐增加的文件内容
+     ping 127.0.0.1 &gt; ping.log &amp;（后台运行：可使用jobs -l查看，也可使用fg将其移到前台运行）
+     tail -f ping.log（查看日志）
+</code></pre></blockquote>
+<p>14、which命令</p>
+<blockquote>
+<pre><code>   在linux要查找某个文件，但不知道放在哪里了，可以使用下面的一些命令来搜索：
+     which     查看可执行文件的位置。
+     whereis 查看文件的位置。
+     locate  配合数据库查看文件位置。
+     find        实际搜寻硬盘查询文件名称。
+     which是在PATH就是指定的路径中，搜索某个系统命令的位置，并返回第一个搜索结果。使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。
+     常用参数：
+     -n 　指定文件名长度，指定的长度必须大于或等于所有文件中最长的文件名。
+     实例：
+     （1）查看ls命令是否存在，执行哪个
+     which ls
+     （2）查看which
+     which which
+     （3）查看cd
+     which cd（显示不存在，因为cd是内建命令，而which查找显示是PATH中的命令）
+     查看当前PATH配置：echo $PATH；或使用env查看所有环境变量及对应值
+</code></pre></blockquote>
+<p>15、whereis命令</p>
+<blockquote>
+<pre><code>   whereis命令只能用于程序名的搜索，而且只搜索二进制文件（参数-b）、man说明文件（参数-m）和源代码文件（参数-s）。如果省略参数，则返回所有信息。whereis及locate都是基于系统内建的数据库进行搜索，因此效率很高，而find则是遍历硬盘查找文件。
+     常用参数：
+     -b   定位可执行文件。
+     -m   定位帮助文件。
+     -s   定位源代码文件。
+     -u   搜索默认路径下除可执行文件、源代码文件、帮助文件以外的其它文件。
+     实例：
+     （1）查找locate程序相关文件
+     whereis locate
+     （2）查找locate的源码文件
+     whereis -s locate
+     （3）查找lcoate的帮助文件
+     whereis -m locate
+</code></pre></blockquote>
+<p>16、locate命令</p>
+<blockquote>
+<pre><code>   locate通过搜寻系统内建文档数据库达到快速找到档案，数据库由updatedb程序来更新，updatedb是由cron daemon周期性调用的。默认情况下locate命令在搜寻数据库时比由整个由硬盘资料来搜寻资料来得快，但较差劲的是locate所找到的档案若是最近才建立或 刚更名的，可能会找不到，在内定值中，updatedb每天会跑一次，可以由修改crontab来更新设定值。(etc/crontab)。
+     locate与find命令相似，可以使用如*、?等进行正则匹配查找
+     常用参数：
+     -l num（要显示的行数）
+     -f   将特定的档案系统排除在外，如将proc排除在外
+     -r   使用正则运算式做为寻找条件
+     实例：
+     （1）查找和pwd相关的所有文件(文件名中包含pwd）
+     locate pwd
+     （2）搜索etc目录下所有以sh开头的文件
+     locate /etc/sh
+     （3）查找/var目录下，以reason结尾的文件
+     locate -r &#39;^/var.reason$&#39;（其中.表示一个字符，表示任务多个；.*表示任意多个字符）
+</code></pre></blockquote>
+<p>17、find命令</p>
+<blockquote>
+<pre><code>   用于在文件树中查找文件，并作出相应的处理
+     命令格式：
+     find pathname -options [-print -exec -ok ...]
+     命令参数：
+     pathname: find命令所查找的目录路径。例如用.来表示当前目录，用/来表示系统根目录。
+     -print： find命令将匹配的文件输出到标准输出。
+     -exec： find命令对匹配的文件执行该参数所给出的shell命令。相应命令的形式为&#39;command&#39; {  } \;，注意{   }和\；之间的空格。
+     -ok： 和-exec的作用相同，只不过以一种更为安全的模式来执行该参数所给出的shell命令，在执行每一个命令之前，都会给出提示，让用户来确定是否执行。
+     命令选项：
+     -name 按照文件名查找文件
+     -perm 按文件权限查找文件
+     -user 按文件属主查找文件
+     -group  按照文件所属的组来查找文件。
+     -type  查找某一类型的文件，诸如：
+               b - 块设备文件
+               d - 目录
+               c - 字符设备文件
+               l - 符号链接文件
+               p - 管道文件
+               f - 普通文件
+     -size n :[c] 查找文件长度为n块文件，带有c时表文件字节大小
+     -amin n   查找系统中最后N分钟访问的文件
+     -atime n  查找系统中最后n*24小时访问的文件
+     -cmin n   查找系统中最后N分钟被改变文件状态的文件
+     -ctime n  查找系统中最后n*24小时被改变文件状态的文件
+     -mmin n   查找系统中最后N分钟被改变文件数据的文件
+     -mtime n  查找系统中最后n*24小时被改变文件数据的文件
+     (用减号-来限定更改时间在距今n日以内的文件，而用加号+来限定更改时间在距今n日以前的文件。 )
+     -maxdepth n 最大查找目录深度
+     -prune选项来指出需要忽略的目录。在使用-prune选项时要当心，因为如果你同时使用了-depth选项，那么-prune选项就会被find命令忽略
+     -newer 如果希望查找更改时间比某个文件新但比另一个文件旧的所有文件，可以使用-newer选项
+     实例：
+     （1）查找48小时内修改过的文件
+     find -atime -2
+     （2）在当前目录查找 以.log结尾的文件。 &quot;. &quot;代表当前目录
+     find ./ -name &#39;*.log&#39;
+     （3）查找/opt目录下 权限为 777的文件
+     find /opt -perm 777
+     （4）查找大于1K的文件
+     find -size +1000c
+     find -size 1000c 查找等于1000字符的文件
+     -exec         参数后面跟的是command命令，它的终止是以;为结束标志的，所以这句命令后面的分号是不可缺少的，考虑到各个系统中分号会有不同的意义，所以前面加反斜杠。{}   花括号代表前面find查找出来的文件名。
+     实例：
+     （5）在当前目录中查找更改时间在10日以前的文件并删除它们(无提醒）
+     find . -type f -mtime +10 -exec rm -f {} \;
+     （6）当前目录中查找所有文件名以.log结尾、更改时间在5日以上的文件，并删除它们，只不过在删除之前先给出提示。 按y键删除文件，按n键不删除
+     find . -name &#39;*.log&#39; mtime +5 -ok -exec rm {} \;
+     （7）当前目录下查找文件名以passwd开头，内容包含&quot;pkg&quot;字符的文件
+     find . -f -name &#39;passwd*&#39; -exec grep &quot;pkg&quot; {} \;
+     （8）用exec选项执行cp命令 
+     find . -name &#39;*.log&#39; -exec cp {} test3 \;
+     -xargs find命令把匹配到的文件传递给xargs命令，而xargs命令每次只获取一部分文件而不是全部，不像-exec选项那样。这样它可以先处理最先获取的一部分文件，然后是下一批，并如此继续下去。
+     实例：
+     （9）查找当前目录下每个普通文件，然后使用xargs来判断文件类型
+     find . -type f -print | xargs file
+     （10）查找当前目录下所有以js结尾的并且其中包含&#39;editor&#39;字符的普通文件
+     find . -type f -name &quot;*.js&quot; -exec grep -lF &#39;ueditor&#39; {} \;
+     find -type f -name &#39;*.js&#39; | xargs grep -lF &#39;editor&#39;
+     （11）利用xargs执行mv命令
+     find . -name &quot;*.log&quot; | xargs -i mv {} test4
+     （12）用grep命令在当前目录下的所有普通文件中搜索hostnames这个词,并标出所在行
+     find . -name *(转义） -type f -print | xargs grep -n &#39;hostnames&#39;
+     （13）查找当前目录中以一个小写字母开头，最后是4到9加上.log结束的文件
+     find . -name &#39;[a-z]*[4-9].log&#39; -print
+     （14）在test目录查找不在test4子目录查找
+     find test -path &#39;test/test4&#39; -prune -o -print
+     （15）实例1：查找更改时间比文件log2012.log新但比文件log2017.log旧的文件
+     find -newer log2012.log ! -newer log2017.log
+     使用depth选项：
+     depth选项可以使find命令向磁带上备份文件系统时，希望首先备份所有的文件，其次再备份子目录中的文件。 
+     实例：find命令从文件系统的根目录开始，查找一个名为CON.FILE的文件。 它将首先匹配所有的文件然后再进入子目录中查找
+     find / -name &quot;CON.FILE&quot; -depth -print
+</code></pre></blockquote>
+<p>18、chmod命令</p>
+<blockquote>
+<pre><code>   用于改变linux系统文件或目录的访问权限。用它控制文件或目录的访问权限。该命令有两种用法。一种是包含字母和操作符表达式的文字设定法；另一种是包含数字的数字设定法。
+     每一文件或目录的访问权限都有三组，每组用三位表示，分别为文件属主的读、写和执行权限；与属主同组的用户的读、写和执行权限；系统中其他用户的读、写和执行权限。可使用ls -l test.txt查找
+     以文件log2012.log为例：
+     -rw-r--r-- 1 root root 296K 11-13 06:03 log2012.log
+     第一列共有10个位置，第一个字符指定了文件类型。在通常意义上，一个目录也是一个文件。如果第一个字符是横线，表示是一个非目录的文件。如果是d，表示是一个目录。从第二个字符开始到第十个共9个字符，3个字符一组，分别表示了3组用户对文件或者目录的权限。权限字符用横线代表空许可，r代表只读，w代表写，x代表可执行。
+     常用参数：
+     -c 当发生改变时，报告处理信息
+     -R 处理指定目录以及其子目录下所有文件
+     权限范围：
+     u ：目录或者文件的当前的用户
+     g ：目录或者文件的当前的群组
+     o ：除了目录或者文件的当前用户或群组之外的用户或者群组
+     a ：所有的用户及群组
+     权限代号：
+     r ：读权限，用数字4表示
+     w ：写权限，用数字2表示
+     x ：执行权限，用数字1表示
+     - ：删除权限，用数字0表示
+     s ：特殊权限
+     实例：
+     （1）增加文件t.log所有用户可执行权限
+     chmod a+x t.log
+     （2）撤销原来所有的权限，然后使拥有者具有可读权限,并输出处理信息
+     chmod u=r t.log -c
+     （3）给file的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限
+     chmod 751 t.log -c（或者：chmod u=rwx,g=rx,o=x t.log -c)
+     （4）将test目录及其子目录所有文件添加可读权限
+     chmod u+r,g+r,o+r -R text/ -c
+</code></pre></blockquote>
+<p>19、tar命令</p>
+<blockquote>
+<pre><code>   用来压缩和解压文件。tar本身不具有压缩功能，只具有打包功能，有关压缩及解压是调用其它的功能来完成。
+     弄清两个概念：打包和压缩。打包是指将一大堆文件或目录变成一个总的文件；压缩则是将一个大的文件通过一些压缩算法变成一个小文件
+     常用参数：
+     -c 建立新的压缩文件
+     -f 指定压缩文件
+     -r 添加文件到已经压缩文件包中
+     -u 添加改了和现有的文件到压缩包中
+     -x 从压缩包中抽取文件
+     -t 显示压缩文件中的内容
+     -z 支持gzip压缩
+     -j 支持bzip2压缩
+     -Z 支持compress解压文件
+     -v 显示操作过程
+     有关gzip及bzip2压缩
+     gzip实例：压缩gzip fileName .tar.gz和.tgz  解压：gunzip filename.gz或gzip -d filename.gz
+     对应：tar zcvf filename.tar.gz     tar zxvf filename.tar.gz
+     bz2实例：压缩bzip2 -z filename .tar.bz2 解压：bunzip filename.bz2或bzip -d filename.bz2
+     对应：tar jcvf filename.tar.gz         解压：tar jxvf filename.tar.bz2
+     实例：
+     （1）将文件全部打包成tar包
+     tar -cvf log.tar 1.log,2.log 或tar -cvf log.*
+     （2）将/etc下的所有文件及目录打包到指定目录，并使用gz压缩
+     tar -zcvf /tmp/etc.tar.gz /etc
+     （3）查看刚打包的文件内容（一定加z，因为是使用gzip压缩的）
+     tar -ztvf /tmp/etc.tar.gz
+     （4）要压缩打包/home, /etc ，但不要 /home/dmtsai
+     tar --exclude /home/dmtsai -zcvf myfile.tar.gz /home/* /etc
+</code></pre></blockquote>
+<p>20、chown命令</p>
+<blockquote>
+<pre><code>   chown将指定文件的拥有者改为指定的用户或组，用户可以是用户名或者用户ID；组可以是组名或者组ID；文件是以空格分开的要改变权限的文件列表，支持通配符
+     -c 显示更改的部分的信息
+     -R 处理指定目录及子目录
+     实例：
+     （1）改变拥有者和群组 并显示改变信息
+</code></pre><p>　　　　chown -c mail:mail log2012.log<br>         （2）改变文件群组<br>         chown -c :mail t.log<br>         （3）改变文件夹及子文件目录属主及属组为mail<br>         chown -cR mail: test/<br>         （4）改变文件</p>
+</blockquote>
+<p>21、df命令</p>
+<blockquote>
+<pre><code>   显示磁盘空间使用情况。获取硬盘被占用了多少空间，目前还剩下多少空间等信息，如果没有文件名被指定，则所有当前被挂载的文件系统的可用空间将被显示。默认情况下，磁盘空间将以 1KB 为单位进行显示，除非环境变量 POSIXLY_CORRECT 被指定，那样将以512字节为单位进行显示
+     -a 全部文件系统列表
+     -h 以方便阅读的方式显示信息
+     -i 显示inode信息
+     -k 区块为1024字节
+     -l 只显示本地磁盘
+     -T 列出文件系统类型
+     实例：
+     （1）显示磁盘使用情况
+     df -l
+     （2）以易读方式列出所有文件系统及其类型
+     df -haT
+</code></pre></blockquote>
+<p>22、du命令</p>
+<blockquote>
+<pre><code>   du命令也是查看使用空间的，但是与df命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看
+     命令格式：
+     du [选项] [文件]
+     常用参数：
+     -a 显示目录中所有文件大小
+     -k 以KB为单位显示文件大小
+     -m 以MB为单位显示文件大小
+     -g 以GB为单位显示文件大小
+     -h 以易读方式显示文件大小
+     -s 仅显示总计
+     -c或--total  除了显示个别目录或文件的大小外，同时也显示所有目录或文件的总和
+     实例：
+     （1）以易读方式显示文件夹内及子文件夹大小
+     du -h scf/
+     （2）以易读方式显示文件夹内所有文件大小
+     du -ah scf/
+     （3）显示几个文件或目录各自占用磁盘空间的大小，还统计它们的总和
+     du -hc test/ scf/
+     （4）输出当前目录下各个子目录所使用的空间
+     du -hc --max-depth=1 scf/
+</code></pre></blockquote>
+<p>23、ln命令</p>
+<blockquote>
+<pre><code>   功能是为文件在另外一个位置建立一个同步的链接，当在不同目录需要该问题时，就不需要为每一个目录创建同样的文件，通过ln创建的链接（link）减少磁盘占用量。
+     链接分类：软件链接及硬链接
+     软链接：
+     1.软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式
+     2.软链接可以 跨文件系统 ，硬链接不可以
+     3.软链接可以对一个不存在的文件名进行链接
+     4.软链接可以对目录进行链接
+     硬链接:
+     1.硬链接，以文件副本的形式存在。但不占用实际空间。
+     2.不允许给目录创建硬链接
+     3.硬链接只有在同一个文件系统中才能创建
+     需要注意：
+     第一：ln命令会保持每一处链接文件的同步性，也就是说，不论你改动了哪一处，其它的文件都会发生相同的变化；
+     第二：ln的链接又分软链接和硬链接两种，软链接就是ln –s 源文件 目标文件，它只会在你选定的位置上生成一个文件的镜像，不会占用磁盘空间，硬链接 ln 源文件 目标文件，没有参数-s， 它会在你选定的位置上生成一个和源文件大小相同的文件，无论是软链接还是硬链接，文件都保持同步变化。
+     第三：ln指令用在链接文件或目录，如同时指定两个以上的文件或目录，且最后的目的地是一个已经存在的目录，则会把前面指定的所有文件或目录复制到该目录中。若同时指定多个文件或目录，且最后的目的地并非是一个已存在的目录，则会出现错误信息。
+     常用参数：
+     -b 删除，覆盖以前建立的链接
+     -s 软链接（符号链接）
+     -v 显示详细处理过程
+     实例：
+     （1）给文件创建软链接，并显示操作信息
+     ln -sv source.log link.log
+     （2）给文件创建硬链接，并显示操作信息
+     ln -v source.log link1.log
+     （3）给目录创建软链接
+     ln -sv /opt/soft/test/test3 /opt/soft/test/test5
+</code></pre></blockquote>
+<p>24、date命令</p>
+<blockquote>
+<pre><code>   显示或设定系统的日期与时间
+     命令参数：
+     -d&lt;字符串&gt; 　显示字符串所指的日期与时间。字符串前后必须加上双引号。
+     -s&lt;字符串&gt; 　根据字符串来设置日期与时间。字符串前后必须加上双引号。
+     -u 　显示GMT。
+     %H 小时(00-23)
+     %I 小时(00-12)
+     %M 分钟(以00-59来表示)
+     %s 总秒数。起算时间为1970-01-01 00:00:00 UTC。
+     %S 秒(以本地的惯用法来表示)
+     %a 星期的缩写。
+     %A 星期的完整名称。
+     %d 日期(以01-31来表示)。
+     %D 日期(含年月日)。
+     %m 月份(以01-12来表示)。
+     %y 年份(以00-99来表示)。
+     %Y 年份(以四位数来表示)。
+     实例：
+     （1）显示下一天
+     date +%Y%m%d --date=&quot;+1 day&quot;  //显示下一天的日期
+     （2）-d参数使用
+     date -d &quot;nov 22&quot;  今年的 11 月 22 日是星期三
+     date -d &#39;2 weeks&#39; 2周后的日期
+     date -d &#39;next monday&#39; (下周一的日期)
+     date -d next-day +%Y%m%d（明天的日期）或者：date -d tomorrow +%Y%m%d
+     date -d last-day +%Y%m%d(昨天的日期) 或者：date -d yesterday +%Y%m%d
+     date -d last-month +%Y%m(上个月是几月)
+     date -d next-month +%Y%m(下个月是几月)
+</code></pre></blockquote>
+<p>25、cal命令</p>
+<blockquote>
+<pre><code>   可以用户显示公历（阳历）日历如只有一个参数，则表示年份(1-9999)，如有两个参数，则表示月份和年份
+     常用参数：
+     -3 显示前一月，当前月，后一月三个月的日历
+     -m 显示星期一为第一列
+     -j 显示在当前年第几天
+     -y [year]显示当前年[year]份的日历
+     实例：
+     （1）显示指定年月日期
+     cal 9 2012
+     （2）显示2013年每个月日历
+     cal -y 2013
+     （3）将星期一做为第一列,显示前中后三月
+     cal -3m
+</code></pre></blockquote>
+<p>26、grep命令</p>
+<blockquote>
+<pre><code>   强大的文本搜索命令，grep(Global Regular Expression Print)全局正则表达式搜索
+     grep的工作方式是这样的，它在一个或多个文件中搜索字符串模板。如果模板包括空格，则必须被引用，模板后的所有字符串被看作文件名。搜索的结果被送到标准输出，不影响原文件内容。
+     命令格式：
+     grep [option] pattern file|dir
+     常用参数：
+     -A n --after-context显示匹配字符后n行
+     -B n --before-context显示匹配字符前n行
+     -C n --context 显示匹配字符前后n行
+     -c --count 计算符合样式的列数
+     -i 忽略大小写
+     -l 只列出文件内容符合指定的样式的文件名称
+     -f 从文件中读取关键词
+     -n 显示匹配内容的所在文件中行数
+     -R 递归查找文件夹
+     grep的规则表达式:
+     ^  #锚定行的开始 如：&#39;^grep&#39;匹配所有以grep开头的行。   
+</code></pre></blockquote>
+<pre><code>       #锚定行的结束 如：&#39;grep&#39;匹配所有以grep结尾的行。   
+     .  #匹配一个非换行符的字符 如：&#39;gr.p&#39;匹配gr后接一个任意字符，然后是p。   
+     *  #匹配零个或多个先前字符 如：&#39;*grep&#39;匹配所有一个或多个空格后紧跟grep的行。   
+     .*   #一起用代表任意字符。  
+     []   #匹配一个指定范围内的字符，如&#39;[Gg]rep&#39;匹配Grep和grep。   
+     [^]  #匹配一个不在指定范围内的字符，如：&#39;A-FH-Zrep&#39;匹配不包含A-R和T-Z的一个字母开头，紧跟rep的行。   
+     (..)  #标记匹配字符，如&#39;(love)&#39;，love被标记为1。   
+     &lt;      #锚定单词的开始，如:&#39;&lt;grep&#39;匹配包含以grep开头的单词的行。   
+     &gt;      #锚定单词的结束，如&#39;grep&gt;&#39;匹配包含以grep结尾的单词的行。   
+     x{m}  #重复字符x，m次，如：&#39;0{5}&#39;匹配包含5个o的行。   
+     x{m,}  #重复字符x,至少m次，如：&#39;o{5,}&#39;匹配至少有5个o的行。   
+     x{m,n}  #重复字符x，至少m次，不多于n次，如：&#39;o{5,10}&#39;匹配5--10个o的行。  
+     \w    #匹配文字和数字字符，也就是[A-Za-z0-9]，如：&#39;G\w*p&#39;匹配以G后跟零个或多个文字或数字字符，然后是p。  
+     \W    #\w的反置形式，匹配一个或多个非单词字符，如点号句号等。  
+     \b    #单词锁定符，如: &#39;\bgrep\b&#39;只匹配grep。
+     实例：
+     （1）查找指定进程
+     ps -ef | grep svn
+     （2）查找指定进程个数
+     ps -ef | grep svn -c
+     （3）从文件中读取关键词
+     cat test1.txt | grep -f key.log
+     （4）从文件夹中递归查找以grep开头的行，并只列出文件
+     grep -lR &#39;^grep&#39; /tmp
+     （5）查找非x开关的行内容
+     grep &#39;^x&#39; test.txt
+     （6）显示包含ed或者at字符的内容行
+     grep -E &#39;ed|at&#39; test.txt
+</code></pre><p>27、wc命令</p>
+<blockquote>
+<pre><code>   wc(word count)功能为统计指定的文件中字节数、字数、行数，并将统计结果输出
+     命令格式：
+     wc [option] file..
+     命令参数：
+     -c 统计字节数
+     -l 统计行数
+     -m 统计字符数
+     -w 统计词数，一个字被定义为由空白、跳格或换行字符分隔的字符串
+     实例：
+     （1）查找文件的  行数 单词数 字节数 文件名
+     wc text.txt 结果：7     8     70     test.txt
+     （2）统计输出结果的行数
+     cat test.txt | wc -l
+</code></pre></blockquote>
+<p>28、ps命令</p>
+<blockquote>
+<pre><code>   ps(process status)，用来查看当前运行的进程状态，一次性查看，如果需要动态连续结果使用top
+     linux上进程有5种状态:
+     \1. 运行(正在运行或在运行队列中等待)
+     \2. 中断(休眠中, 受阻, 在等待某个条件的形成或接受到信号)
+     \3. 不可中断(收到信号不唤醒和不可运行, 进程必须等待直到有中断发生)
+     \4. 僵死(进程已终止, 但进程描述符存在, 直到父进程调用wait4()系统调用后释放)
+     \5. 停止(进程收到SIGSTOP, SIGSTP, SIGTIN, SIGTOU信号后停止运行运行)
+     ps工具标识进程的5种状态码:
+     D 不可中断 uninterruptible sleep (usually IO)
+     R 运行 runnable (on run queue)
+     S 中断 sleeping
+     T 停止 traced or stopped
+     Z 僵死 a defunct (”zombie”) process
+     命令参数：
+     -A 显示所有进程
+     a 显示所有进程
+     -a 显示同一终端下所有进程
+     c 显示进程真实名称
+     e 显示环境变量
+     f 显示进程间的关系
+     r 显示当前终端运行的进程
+     -aux 显示所有包含其它使用的进程
+     实例：
+     （1）显示当前所有进程环境变量及进程间关系
+     ps -ef
+     （2）显示当前所有进程
+     ps -A
+     （3）与grep联用查找某进程
+     ps -aux | grep apache
+     （4）找出与 cron 与 syslog 这两个服务有关的 PID 号码
+     ps aux | grep &#39;(cron|syslog)&#39;
+</code></pre></blockquote>
+<p>29、top命令</p>
+<blockquote>
+<pre><code>   显示当前系统正在执行的进程的相关信息，包括进程ID、内存占用率、CPU占用率等
+     常用参数：
+     -c 显示完整的进程命令
+     -s 保密模式
+     -p &lt;进程号&gt; 指定进程显示
+     -n &lt;次数&gt;循环显示次数
+     实例：
+     （1）
+     top - 14:06:23 up 70 days, 16:44,  2 users,  load average: 1.25, 1.32, 1.35
+     Tasks: 206 total,   1 running, 205 sleeping,   0 stopped,   0 zombie
+     Cpu(s):  5.9%us,  3.4%sy,  0.0%ni, 90.4%id,  0.0%wa,  0.0%hi,  0.2%si,  0.0%st
+     Mem:  32949016k total, 14411180k used, 18537836k free,   169884k buffers
+     Swap: 32764556k total,        0k used, 32764556k free,  3612636k cached
+   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                               
+     28894 root      22   0 1501m 405m  10m S 52.2  1.3   2534:16 java  
+     前五行是当前系统情况整体的统计信息区，
+     第一行，任务队列信息，同 uptime 命令的执行结果，具体参数说明情况如下：
+     14:06:23 — 当前系统时间
+     up 70 days, 16:44 — 系统已经运行了70天16小时44分钟（在这期间系统没有重启过的吆！）
+     2 users — 当前有2个用户登录系统
+     load average: 1.15, 1.42, 1.44 — load average后面的三个数分别是1分钟、5分钟、15分钟的负载情况。
+     load average数据是每隔5秒钟检查一次活跃的进程数，然后按特定算法计算出的数值。如果这个数除以逻辑CPU的数量，结果高于5的时候就表明系统在超负荷运转了。
+     第二行，Tasks — 任务（进程），具体信息说明如下：
+     系统现在共有206个进程，其中处于运行中的有1个，205个在休眠（sleep），stoped状态的有0个，zombie状态（僵尸）的有0个。
+     第三行，cpu状态信息，具体属性说明如下：
+     5.9%us — 用户空间占用CPU的百分比。
+     3.4% sy — 内核空间占用CPU的百分比。
+     0.0% ni — 改变过优先级的进程占用CPU的百分比
+     90.4% id — 空闲CPU百分比
+     0.0% wa — IO等待占用CPU的百分比
+     0.0% hi — 硬中断（Hardware IRQ）占用CPU的百分比
+     0.2% si — 软中断（Software Interrupts）占用CPU的百分比
+     备注：在这里CPU的使用比率和windows概念不同，需要理解linux系统用户空间和内核空间的相关知识！
+     第四行,内存状态，具体信息如下：
+     32949016k total — 物理内存总量（32GB）
+     14411180k used — 使用中的内存总量（14GB）
+     18537836k free — 空闲内存总量（18GB）
+     169884k buffers — 缓存的内存量 （169M）
+     第五行，swap交换分区信息，具体信息说明如下：
+     32764556k total — 交换区总量（32GB）
+     0k used — 使用的交换区总量（0K）
+     32764556k free — 空闲交换区总量（32GB）
+     3612636k cached — 缓冲的交换区总量（3.6GB）
+     第六行，空行。
+     第七行以下：各进程（任务）的状态监控，项目列信息说明如下：
+     PID — 进程id
+     USER — 进程所有者
+     PR — 进程优先级
+     NI — nice值。负值表示高优先级，正值表示低优先级
+     VIRT — 进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES
+     RES — 进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA
+     SHR — 共享内存大小，单位kb
+     S — 进程状态。D=不可中断的睡眠状态 R=运行 S=睡眠 T=跟踪/停止 Z=僵尸进程
+     %CPU — 上次更新到现在的CPU时间占用百分比
+     %MEM — 进程使用的物理内存百分比
+     TIME+ — 进程使用的CPU时间总计，单位1/100秒
+     COMMAND — 进程名称（命令名/命令行）
+     top交互命令
+     h 显示top交互命令帮助信息
+     c 切换显示命令名称和完整命令行
+     m 以内存使用率排序
+     P 根据CPU使用百分比大小进行排序
+     T 根据时间/累计时间进行排序
+     W 将当前设置写入~/.toprc文件中
+     o或者O 改变显示项目的顺序
+</code></pre></blockquote>
+<p>30、kill命令</p>
+<blockquote>
+<pre><code>   发送指定的信号到相应进程。不指定型号将发送SIGTERM（15）终止指定进程。如果任无法终止该程序可用“-KILL” 参数，其发送的信号为SIGKILL(9) ，将强制结束进程，使用ps命令或者jobs 命令可以查看进程号。root用户将影响用户的进程，非root用户只能影响自己的进程。
+     常用参数：
+     -l  信号，若果不加信号的编号参数，则使用“-l”参数会列出全部的信号名称
+     -a  当处理当前进程时，不限制命令名和进程号的对应关系
+     -p  指定kill 命令只打印相关进程的进程号，而不发送任何信号
+     -s  指定发送信号
+     -u  指定用户
+     实例：
+     （1）先使用ps查找进程pro1，然后用kill杀掉
+     kill -9 $(ps -ef | grep pro1)
+</code></pre></blockquote>
+<p>31、free命令</p>
+<blockquote>
+<pre><code>   显示系统内存使用情况，包括物理内存、交互区内存(swap)和内核缓冲区内存。
+     命令参数：
+     -b 以Byte显示内存使用情况
+     -k 以kb为单位显示内存使用情况
+     -m 以mb为单位显示内存使用情况
+     -g 以gb为单位显示内存使用情况
+     -s&lt;间隔秒数&gt; 持续显示内存
+     -t 显示内存使用总合
+     实例：
+     （1）显示内存使用情况
+     free
+     free -k
+     free -m
+     （2）以总和的形式显示内存的使用信息
+     free -t
+     （3）周期性查询内存使用情况
+     free -s 10
+</code></pre></blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
+        </div>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+            
+        </ul>
+    </nav>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    
+                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="Your name">
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        Your name
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Your title
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Your location</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        16
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        2
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        11
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/ppoffice">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">github.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/技术文章/">
+            <span class="level-start">
+                <span class="level-item">技术文章</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">12</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/认证/">
+            <span class="level-start">
+                <span class="level-item">认证</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">4</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/cmmi/" style="font-size: 16.67px;">cmmi</a> <a href="/tags/flutter/" style="font-size: 10px;">flutter</a> <a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/huawei-iot/" style="font-size: 10px;">huawei-iot</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/node/" style="font-size: 16.67px;">node</a> <a href="/tags/restify/" style="font-size: 16.67px;">restify</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/markdown/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="markdown-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/markdown/" class="has-link-black-ter is-size-6">markdown-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/ubuntu-apt/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="ubuntu-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/ubuntu-apt/" class="has-link-black-ter is-size-6">ubuntu-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/huawei-compatible/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="huawei-compatible">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/huawei-compatible/" class="has-link-black-ter is-size-6">huawei-compatible</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi-compnny/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi-compnny">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:04:15.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi-compnny/" class="has-link-black-ter is-size-6">cmmi-compnny</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T02:08:57.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi3/" class="has-link-black-ter is-size-6">cmmi3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/04/">
+                <span class="level-start">
+                    <span class="level-item">四月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">10</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android/">
+                        <span class="tag">Android</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/apt/">
+                        <span class="tag">apt</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cmmi/">
+                        <span class="tag">cmmi</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/flutter/">
+                        <span class="tag">flutter</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/hexo/">
+                        <span class="tag">hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/huawei-iot/">
+                        <span class="tag">huawei-iot</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/linux/">
+                        <span class="tag">linux</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/markdown/">
+                        <span class="tag">markdown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/node/">
+                        <span class="tag">node</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/restify/">
+                        <span class="tag">restify</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ubuntu/">
+                        <span class="tag">ubuntu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/markdown/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="markdown-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/markdown/" class="has-link-black-ter is-size-6">markdown-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/ubuntu-apt/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="ubuntu-apt">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T13:02:07.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/ubuntu-apt/" class="has-link-black-ter is-size-6">ubuntu-apt</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/huawei-compatible/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="huawei-compatible">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:46:06.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/huawei-compatible/" class="has-link-black-ter is-size-6">huawei-compatible</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi-compnny/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi-compnny">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:04:15.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi-compnny/" class="has-link-black-ter is-size-6">cmmi-compnny</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/cmmi3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="cmmi3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T02:08:57.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/cmmi3/" class="has-link-black-ter is-size-6">cmmi3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/认证/">认证</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/04/">
+                <span class="level-start">
+                    <span class="level-item">四月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">10</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android/">
+                        <span class="tag">Android</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/apt/">
+                        <span class="tag">apt</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cmmi/">
+                        <span class="tag">cmmi</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/flutter/">
+                        <span class="tag">flutter</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/hexo/">
+                        <span class="tag">hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/huawei-iot/">
+                        <span class="tag">huawei-iot</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/linux/">
+                        <span class="tag">linux</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/markdown/">
+                        <span class="tag">markdown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/node/">
+                        <span class="tag">node</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/restify/">
+                        <span class="tag">restify</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ubuntu/">
+                        <span class="tag">ubuntu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="developer" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 string&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
 </script>
 
-  </div>
-</div>
-
-    <div id="top"></div>
-
-    <script src="/js/lightgallery.min.js"></script>
-
-    <div id="barba-wrapper">
-      <div class="barba-container"  data-namespace="posts">
-        <div class="theme-index">
-  <div class="theme-posts">
-    
-      
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-			<span style="color: #D50000">[置顶] </span>
-		
-	 	linux常用命令 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/22/linux常用命令/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		linux常用命令
-
-		</a>
-		<div align="right"> 
-		4月 22, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
 
     
     
-      
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	app-reset-design 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/25/app-rest-desig/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		定义apiResultFull api
-
-		</a>
-		<div align="right"> 
-		4月 25, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-    
-      
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	Hello 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/22/hexo/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		Welcome to Hexo
-		</a>
-		<div align="right"> 
-		4月 22, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-    
-      
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	user-linux 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/22/linux-user/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		linux 下用户管理
-
-		</a>
-		<div align="right"> 
-		4月 22, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-    
-      
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	crontab-定时使用 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/22/linux-crontab/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		linux 定时器的使用
-
-		</a>
-		<div align="right"> 
-		4月 22, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-    
-      
-
-<div class="mdui-panel" mdui-panel>
-  <div class="mdui-panel-item mdui-panel-item-open">
-    <div class="mdui-panel-item-header">
-		
-	 	cmmi简介 
-
-    </div>
-    <div class="mdui-panel-item-body">
-		<a href="/2019/04/22/cmmi/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-		CMMI
-简介
-		</a>
-		<div align="right"> 
-		4月 22, 2019 
-		</div>
-    </div>
-  </div>
-</div>
-
-
-    
-    
-      <div class="theme-end-footer">
-        <div class="mdui-text-center mdui-text-color-theme-text">
-          看起来已经没有了
-        </div>
-      </div>
-    
-  </div>
-  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
-</div>
-<script type="text/javascript">
-  themeRuntime.scriptsMap.posts = [];
-  (function() {
-    var fabTopFlag = false;
-    var fabEl = document.getElementById('index-fab');
-    function fabShowHide() {
-      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrolled > 0 && !fabTopFlag) {
-        fabEl.classList.remove('mdui-fab-hide');
-        fabTopFlag = true;
-      } else if (bodyScrolled === 0 && fabTopFlag) {
-        fabEl.classList.add('mdui-fab-hide');
-        fabTopFlag = false;
-      }
-    }
-    fabShowHide()
-    window.addEventListener('scroll', fabShowHide);
-    var listener = {
-      function: fabShowHide,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.posts.push(listener)
-  })();
-
-  (function() {
-    var pageTotal = 2
-    var pageNext = 2
-    var pageLoad = false
-    themeRuntime.temp = {
-      index: 1
-    }
-    function morePosts() {
-      var screenHeight = window.innerHeight;
-      var compareHeight = document.body.clientHeight -  (document.documentElement.scrollTop || document.body.scrollTop);
-      var loadStatus = pageNext - themeRuntime.temp.index
-      if (screenHeight >= compareHeight - 1 && loadStatus === 1 && pageLoad === false) {
-        if (pageNext <= pageTotal) {
-          loadProgressInline(false)
-          var url = window.location.href + "page/" + pageNext + "/"
-          themeRuntime.temp.index = pageNext;
-          //console.log(pageTotal, url)
-          pageLoad = true;
-          fetch(url, {
-              method:'GET',
-              mode:'cors',
-              credentials: 'include'
-          })
-          .then(function(response) {
-            return response.text()
-          }).then(function(HTML) {
-            var fakeDom = document.createElement('html');
-            fakeDom.innerHTML = HTML
-            var morePostsHTML = fakeDom.querySelector('.theme-posts').innerHTML
-            var postsArea = document.querySelector(".theme-posts")
-            loadProgressInline(true)
-            postsArea.insertAdjacentHTML('beforeend', morePostsHTML)
-            pageNext++;
-            pageLoad = false;
-          }).catch(function(error) {
-            mdui.alert(error, "错误！");
-            pageLoad = false;
-          })
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
         }
-      }
-    }
-    function loadProgressInline(state) {
-      var progressEl = document.getElementById('progressBar')
-      if (state === true) {
-        progressEl.classList.add('theme-appbar__progress--hidden')
-      } else if (state === false) {
-        progressEl.classList.remove('theme-appbar__progress--hidden')
-      }
-    }
-    window.addEventListener('scroll', morePosts);
-    var listener = {
-      function: morePosts,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.posts.push(listener)
-  })();
+    });
+});
 </script>
 
+    
+    
 
-      </div>
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-  </main>
-
-  <div id="outdated" style="z-index: 9999;">
-    <h6>你的浏览器已经过气辣！</h6>
-    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
-    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
-  </div>
-  <!-- import js -->
-
-
-  <script src="/js/outdatedbrowser.min.js"></script>
-
-
-
-  
-    <script src="/js/js.barba.min.js"></script>
-    <script type="text/javascript">
-      Barba.Utils.errorPageUrl = '/404.html';
-    </script>
-  
-
-
-<!-- theme js -->
-<script type="text/javascript">
-  (function() {
-    var appbarTopFlag = false;
-    var appbarEl = document.querySelector('.theme-appbar');
-    function appbarShadow() {
-      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      if (bodyScrolled > 0 && !appbarTopFlag) {
-        appbarEl.classList.add('theme-appbar--shadow');
-        appbarTopFlag = true;
-      } else if (bodyScrolled === 0 && appbarTopFlag) {
-        appbarEl.classList.remove('theme-appbar--shadow');
-        appbarTopFlag = false;
-      }
-    }
-    appbarShadow()
-    window.addEventListener('scroll', appbarShadow);
-  })();
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
 </script>
-
-
-
-
-
-
-<script type="text/javascript">
-  document.querySelector('body').classList.add('theme-loaded')
-</script>
-
-
-
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
 </body>
 </html>
