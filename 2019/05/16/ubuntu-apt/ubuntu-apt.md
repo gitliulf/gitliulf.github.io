@@ -1,5 +1,5 @@
 ---
-title: unbuntu-apt 
+title: ubuntu-apt 
 date: 2019-05-16 13:02:07
 tags: 
 - linux
