@@ -151,7 +151,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 121 个字)
+                    5 分钟 读完 (大约 772 个字)
                 </span>
                 
                 
@@ -160,16 +160,276 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/04/25/app-rest-desig/">app-reset-design</a>
+                <a class="has-link-black-ter" href="/2019/04/25/android-build/">android-build</a>
             
         </h1>
         <div class="content">
-            <p>定义apiResultFull api</p>
-<h1 id="根据resetfull-API-规范定义一个自己的-api规范"><a href="#根据resetfull-API-规范定义一个自己的-api规范" class="headerlink" title="根据resetfull API 规范定义一个自己的 api规范"></a>根据resetfull API 规范定义一个自己的 api规范</h1><p>定义格式如下</p>
-<blockquote>
-<p>/app/userid/resname<br>GET    查询<br>POST   新增<br>PUT    修改<br>DELETE 删除</p>
+            <p>示例Android Build类</p>
+<h4 id="Android-Build类"><a href="#Android-Build类" class="headerlink" title="Android Build类"></a>Android Build类</h4><blockquote>
+<p>Build类提供了硬件厂商、编号、序列号、SDK版本等重要信息。<br>类名：android.os.Build</p>
 </blockquote>
-<p>所有请求使用http中请求类型表示其目的<br>url只定义资源的路径<br>包含一下几个动作类型<br>资源服务器提供登录验证<br>资源服务器提供版本支持和不同格式的请求<br>第一个版本只提供json的格式请求</p>
+<table>
+<thead>
+<tr>
+<th><strong>常量名</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BOARD</td>
+<td>底层板名称</td>
+</tr>
+<tr>
+<td>BOOTLOADER</td>
+<td>Bootloader版本号</td>
+</tr>
+<tr>
+<td>BRAND</td>
+<td>品牌</td>
+</tr>
+<tr>
+<td>CPU_ABI</td>
+<td>CPU指令集</td>
+</tr>
+<tr>
+<td>CPU_ABI2</td>
+<td>CPU第二指令集</td>
+</tr>
+<tr>
+<td>DEVICE</td>
+<td>工业设计名称</td>
+</tr>
+<tr>
+<td>DISPLAY</td>
+<td>显示给用户的构建ID字符串</td>
+</tr>
+<tr>
+<td>FINGERPRINT</td>
+<td>构建的唯一标识符</td>
+</tr>
+<tr>
+<td>HARDWARE</td>
+<td>硬件的名称 比如高通</td>
+</tr>
+<tr>
+<td>HOST</td>
+<td>主机</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>ID标签</td>
+</tr>
+<tr>
+<td>MANUFACTURER</td>
+<td>产品生产商</td>
+</tr>
+<tr>
+<td>MODEL</td>
+<td>手机型号</td>
+</tr>
+<tr>
+<td>PRODUCT</td>
+<td>产品名称</td>
+</tr>
+<tr>
+<td>RADIO</td>
+<td>无线电固件版本号</td>
+</tr>
+<tr>
+<td>SERIAL</td>
+<td>硬件序列号（如果可用）</td>
+</tr>
+<tr>
+<td>TAGS</td>
+<td>逗号分隔标签描述构建，如”调试”</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>出场时间</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>构建类型</td>
+</tr>
+<tr>
+<td>USER</td>
+<td>构建用户名称</td>
+</tr>
+</tbody>
+</table>
+<p>2.Build.VERSION类</p>
+<blockquote>
+<p>Build.VERSION类提供了开发代号、内部版本、SDK版本等信息<br>类名：android.os.Build.VEISION</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>常量名</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CODENAME</td>
+<td>当前的开发代号</td>
+</tr>
+<tr>
+<td>INCREMENTAL</td>
+<td>使用的内部值表示这个构建底层的源代码控制</td>
+</tr>
+<tr>
+<td>RELEASE</td>
+<td>用户可见版本字符串</td>
+</tr>
+<tr>
+<td>SDK_INT</td>
+<td>用户可见的SDK版本的框架</td>
+</tr>
+</tbody>
+</table>
+<p>3.Build.VERSION_CODES类</p>
+<blockquote>
+<p>android.os.Build.VERSION_CODES枚举当前已知的SDK版本代号</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>常量名</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BASE</td>
+<td>2008-10：第一个版本的android</td>
+</tr>
+<tr>
+<td>BASE_1_1</td>
+<td>2009-02：第一个安卓更新，官方称为1.1</td>
+</tr>
+<tr>
+<td>CUPCAKE</td>
+<td>2009-05：android1.5</td>
+</tr>
+<tr>
+<td>CUR_DEVELOPMENT</td>
+<td>发展过程中构建的版本，但是未正式发布</td>
+</tr>
+<tr>
+<td>DONUT</td>
+<td>2009-09：android1.6</td>
+</tr>
+<tr>
+<td>ECLAIR</td>
+<td>2009-11：android2.0</td>
+</tr>
+<tr>
+<td>ECLAIR_0_1</td>
+<td>2009-12：android2.0.1</td>
+</tr>
+<tr>
+<td>ECLAIR_MR1</td>
+<td>2010-01：android2.1</td>
+</tr>
+<tr>
+<td>FROYO</td>
+<td>2010-06：android2.2</td>
+</tr>
+<tr>
+<td>GINGERBREAD</td>
+<td>2010-11：android2.3</td>
+</tr>
+<tr>
+<td>GINGERBREAD_MR1</td>
+<td>2011-02：android2.3.3</td>
+</tr>
+<tr>
+<td>HONEYCOMB</td>
+<td>2011-02：android3.0</td>
+</tr>
+<tr>
+<td>HONEYCOMB_MR1</td>
+<td>2011-05：android3.1</td>
+</tr>
+<tr>
+<td>HONEYCOMB_MR2</td>
+<td>2011-06：android3.2</td>
+</tr>
+<tr>
+<td>ICE_CREAM_SANDWICH</td>
+<td>2011-10：android4.0</td>
+</tr>
+<tr>
+<td>ICE_CREAM_SANDWICH_MR1</td>
+<td>2011-12android4.0.3</td>
+</tr>
+<tr>
+<td>JELLY_BEAN</td>
+<td>2012-06：android4.1</td>
+</tr>
+<tr>
+<td>JELLY_BEAN_MR1</td>
+<td>android4.2</td>
+</tr>
+<tr>
+<td>JELLY_BEAN_MR2</td>
+<td>android4.3</td>
+</tr>
+<tr>
+<td>KITKAT</td>
+<td>android4.4</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="java">public void testDemo1(){
+    //Build类
+    System.out.println(&quot;Build:&quot;+Build.BOARD);
+    System.out.println(&quot;Build:&quot;+Build.BOOTLOADER);
+    System.out.println(&quot;Build:&quot;+Build.CPU_ABI);
+    System.out.println(&quot;Build:&quot;+Build.CPU_ABI2);
+    System.out.println(&quot;Build:&quot;+Build.DEVICE);
+    System.out.println(&quot;Build:&quot;+Build.DISPLAY);
+    System.out.println(&quot;Build:&quot;+Build.FINGERPRINT);
+    System.out.println(&quot;Build:&quot;+Build.HARDWARE);
+    System.out.println(&quot;Build:&quot;+Build.HOST);
+    System.out.println(&quot;Build:&quot;+Build.ID);
+    System.out.println(&quot;Build:&quot;+Build.MANUFACTURER);
+    System.out.println(&quot;Build:&quot;+Build.MODEL);
+    System.out.println(&quot;Build:&quot;+Build.PRODUCT);
+    System.out.println(&quot;Build:&quot;+Build.RADIO);
+    System.out.println(&quot;Build:&quot;+Build.SERIAL);
+    System.out.println(&quot;Build:&quot;+Build.TAGS);
+    System.out.println(&quot;Build:&quot;+Build.TIME);
+    System.out.println(&quot;Build:&quot;+Build.TYPE);
+    System.out.println(&quot;Build:&quot;+Build.USER);
+    System.out.println(&quot;Build:&quot;+Build.BOARD);
+    //Build.VERSION类
+    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.CODENAME);
+    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.INCREMENTAL);
+    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.RELEASE);
+    System.out.println(&quot;Build.VERSION:&quot;+Build.VERSION.SDK_INT);
+    //Build.VERSION_CODES类
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.BASE);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.BASE_1_1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.CUPCAKE);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.CUR_DEVELOPMENT);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ECLAIR);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ECLAIR_0_1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ECLAIR_MR1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.FROYO);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.GINGERBREAD);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.GINGERBREAD_MR1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.HONEYCOMB);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.HONEYCOMB_MR1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.HONEYCOMB_MR2);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ICE_CREAM_SANDWICH);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.JELLY_BEAN);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.JELLY_BEAN_MR1);
+    System.out.println(&quot;Build.VERSION_CODES:&quot;+Build.VERSION_CODES.JELLY_BEAN_MR2);
+}
+</code></pre>
 
         </div>
         
@@ -227,6 +487,67 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
 </code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 487 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/22/linux-user/">user-linux</a>
+            
+        </h1>
+        <div class="content">
+            <p>linux 下用户管理</p>
+<h1 id="如何添加或删除ubuntu用户和组"><a href="#如何添加或删除ubuntu用户和组" class="headerlink" title="如何添加或删除ubuntu用户和组"></a><a href="https://www.cnblogs.com/adolfmc/archive/2012/11/17/2774476.html" target="_blank" rel="noopener">如何添加或删除ubuntu用户和组</a></h1><p>在创建用户时，需要为新建用户指定一用户组，如果不指定其用户所属的工作组，自动会生成一个与用户名同名的工作组。创建用户user1的时候指定其所属工作组users，例：useradd –g users user1</p>
+<h2 id="一、创建用户："><a href="#一、创建用户：" class="headerlink" title="一、创建用户："></a>一、创建用户：</h2><ol>
+<li>使用命令 useradd<br>例：useradd user1——创建用户user1<pre><code>useradd –e 12/30/2009 user2——创建user2,指定有效期2009-12-30到期
+用户的缺省UID从500向后顺序增加，500以下作为系统保留账号，可以指定UID，
+</code></pre>例：useradd –u 600 user3  </li>
+<li>使用 passwd 命令为新建用户设置密码<br>例：passwd user1<br>注意：没有设置密码的用户不能使用。</li>
+<li>命令 usermod 修改用户账户<br>例：将用户 user1的登录名改为  u1，<br>usermod –l u1 user1<br>例：将用户 user1 加入到 users组中，<br>usermod –g users user1<br>例：将用户 user1 目录改为/users/us1</li>
+<li>使用命令 userdel 删除用户账户<br>例：删除用户user2<br>userdel user2<br>例：删除用户 user3，同时删除他的工作目录<br>userdel –r user3</li>
+<li>查看用户信息<br>id命令查看一个用户的UID和GID, 例：查看user4的id<br>id user4<br>finger命令 ——可以查看用户的主目录、启动shell、用户名、地址、电话等信息<br>例：finger user4</li>
+</ol>
+<h2 id="二、用户组："><a href="#二、用户组：" class="headerlink" title="二、用户组："></a>二、用户组：</h2><ol>
+<li>命令 groupadd创建用户组<br>groupadd –g 888 users<br>创建一个组users，其GID为888</li>
+<li>命令 gpasswd为组添加用户<br>只有root和组管理员能够改变组的成员：<br>例：把 user1加入users组<br>gpasswd –a user1 users<br>例：把 user1退出users组<br>gpasswd –d user1 users</li>
+<li>命令groupmod修改组<br>groupmod –n user users       修改组名user为users</li>
+<li>groupdel删除组<br>groupdel users    删除组users</li>
+</ol>
 
         </div>
         
@@ -362,67 +683,6 @@ export RUN_CONF=/home/d139/conf/platform/cbp/cbp_jboss.conf
 $sudo /etc/init.d/cron stop
 $sudo /etc/init.d/cron restart
 </code></pre>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-22T08:02:07.000Z">2019-04-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/技术文章/">技术文章</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 487 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/22/linux-user/">user-linux</a>
-            
-        </h1>
-        <div class="content">
-            <p>linux 下用户管理</p>
-<h1 id="如何添加或删除ubuntu用户和组"><a href="#如何添加或删除ubuntu用户和组" class="headerlink" title="如何添加或删除ubuntu用户和组"></a><a href="https://www.cnblogs.com/adolfmc/archive/2012/11/17/2774476.html" target="_blank" rel="noopener">如何添加或删除ubuntu用户和组</a></h1><p>在创建用户时，需要为新建用户指定一用户组，如果不指定其用户所属的工作组，自动会生成一个与用户名同名的工作组。创建用户user1的时候指定其所属工作组users，例：useradd –g users user1</p>
-<h2 id="一、创建用户："><a href="#一、创建用户：" class="headerlink" title="一、创建用户："></a>一、创建用户：</h2><ol>
-<li>使用命令 useradd<br>例：useradd user1——创建用户user1<pre><code>useradd –e 12/30/2009 user2——创建user2,指定有效期2009-12-30到期
-用户的缺省UID从500向后顺序增加，500以下作为系统保留账号，可以指定UID，
-</code></pre>例：useradd –u 600 user3  </li>
-<li>使用 passwd 命令为新建用户设置密码<br>例：passwd user1<br>注意：没有设置密码的用户不能使用。</li>
-<li>命令 usermod 修改用户账户<br>例：将用户 user1的登录名改为  u1，<br>usermod –l u1 user1<br>例：将用户 user1 加入到 users组中，<br>usermod –g users user1<br>例：将用户 user1 目录改为/users/us1</li>
-<li>使用命令 userdel 删除用户账户<br>例：删除用户user2<br>userdel user2<br>例：删除用户 user3，同时删除他的工作目录<br>userdel –r user3</li>
-<li>查看用户信息<br>id命令查看一个用户的UID和GID, 例：查看user4的id<br>id user4<br>finger命令 ——可以查看用户的主目录、启动shell、用户名、地址、电话等信息<br>例：finger user4</li>
-</ol>
-<h2 id="二、用户组："><a href="#二、用户组：" class="headerlink" title="二、用户组："></a>二、用户组：</h2><ol>
-<li>命令 groupadd创建用户组<br>groupadd –g 888 users<br>创建一个组users，其GID为888</li>
-<li>命令 gpasswd为组添加用户<br>只有root和组管理员能够改变组的成员：<br>例：把 user1加入users组<br>gpasswd –a user1 users<br>例：把 user1退出users组<br>gpasswd –d user1 users</li>
-<li>命令groupmod修改组<br>groupmod –n user users       修改组名user为users</li>
-<li>groupdel删除组<br>groupdel users    删除组users</li>
-</ol>
-
         </div>
         
         
