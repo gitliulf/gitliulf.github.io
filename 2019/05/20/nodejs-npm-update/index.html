@@ -4,13 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="app-reset-design, developer">
-    <meta name="description" content="定义apiResultFull api
-根据resetfull API 规范定义一个自己的 api规范定义格式如下
+    <meta name="keywords" content="npm node update, developer">
+    <meta name="description" content="npm 更新npm install -g npm
+nodejs 更新第一步：先清除npm缓存
+npm cache clean -f
 
-/app/userid/resnameGET    查询POST   新增PUT    修改DELETE 删除
+第二步：安装n模块：
+npm install -g n
 
-所有请求">
+第三步：升级node.js到最新稳定版： 
+n ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>app-reset-design | developer</title>
+    <title>npm node update | developer</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -202,13 +205,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        app-reset-design
+                        npm node update
                     </div>
                 </div>
             </div>
@@ -319,8 +322,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/restify/" target="_blank">
-                                <span class="chip bg-color">restify</span>
+                            <a href="/tags/npm/" target="_blank">
+                                <span class="chip bg-color">npm</span>
                             </a>
                         
                     </div>
@@ -343,7 +346,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-04-25
+                    2019-05-20
                 </div>
 
                 
@@ -359,12 +362,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>定义apiResultFull api</p>
-<h1 id="根据resetfull-API-规范定义一个自己的-api规范"><a href="#根据resetfull-API-规范定义一个自己的-api规范" class="headerlink" title="根据resetfull API 规范定义一个自己的 api规范"></a>根据resetfull API 规范定义一个自己的 api规范</h1><p>定义格式如下</p>
-<blockquote>
-<p>/app/userid/resname<br>GET    查询<br>POST   新增<br>PUT    修改<br>DELETE 删除</p>
-</blockquote>
-<p>所有请求使用http中请求类型表示其目的<br>url只定义资源的路径<br>包含一下几个动作类型<br>资源服务器提供登录验证<br>资源服务器提供版本支持和不同格式的请求<br>第一个版本只提供json的格式请求</p>
+                <h2 id="npm-更新"><a href="#npm-更新" class="headerlink" title="npm 更新"></a>npm 更新</h2><pre><code>npm install -g npm
+</code></pre><h2 id="nodejs-更新"><a href="#nodejs-更新" class="headerlink" title="nodejs 更新"></a>nodejs 更新</h2><p><strong>第一步：先清除npm缓存</strong></p>
+<pre><code class="shell">npm cache clean -f
+</code></pre>
+<p><strong>第二步：安装n模块：</strong></p>
+<pre><code class="shell">npm install -g n
+</code></pre>
+<p><strong>第三步：升级node.js到最新稳定版：</strong> </p>
+<pre><code class="shell">n stable
+</code></pre>
 
             </div>
             <hr>
@@ -516,8 +523,8 @@
                 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
                     <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
             </div>
-            <br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">《app-reset-design》</span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/04/25/app-rest-desig/" property="cc:attributionName" rel="cc:attributionURL">string
+            <br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">《npm node update》</span> 由
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/05/20/nodejs-npm-update/" property="cc:attributionName" rel="cc:attributionURL">string
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
                 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
@@ -557,28 +564,36 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/04/25/http-method-definitions/">
+                <a href="/2019/05/20/nodejs-npm-update/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="http-method-definitions">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="npm node update">
                         
-                        <span class="card-title">http-method-definitions</span>
+                        <span class="card-title">npm node update</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            介绍http中method的定义
-Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Although this set can be exp
+                            npm 更新npm install -g npm
+nodejs 更新第一步：先清除npm缓存
+npm cache clean -f
+
+第二步：安装n模块：
+npm install -g n
+
+第三步：升级node.js到最新稳定版： 
+n 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -591,15 +606,12 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/restify/" target="_blank">
-                        <span class="chip bg-color">restify</span>
-                    </a>
-                    
-                    <a href="/tags/node/" target="_blank">
-                        <span class="chip bg-color">node</span>
+                    <a href="/tags/npm/" target="_blank">
+                        <span class="chip bg-color">npm</span>
                     </a>
                     
                 </div>
@@ -613,24 +625,27 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/22/hexo/">
+                <a href="/2019/05/20/http2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="http2">
                         
-                        <span class="card-title">Hello</span>
+                        <span class="card-title">http2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            HTTP/2 简介By Ilya Grigorik
+Ilya is a Developer Advocate and Web Perf Guru
+By Surma
+Surma is a contributor to WebFundament
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-22
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-20
                             </span>
                         <span class="publish-author">
                             
@@ -647,8 +662,8 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/http/" target="_blank">
+                        <span class="chip bg-color">http</span>
                     </a>
                     
                 </div>
