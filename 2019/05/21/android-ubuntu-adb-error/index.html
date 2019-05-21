@@ -370,7 +370,7 @@ Bus 002 Device 002: ID 8087:80">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>o1. 終端 輸入命令： lsusb</p>
-<pre><code>Bus 002 Device 003: ID 046d:c05a Logitech, Inc. M90/M100 Optical Mouse
+<pre><code class="shell">Bus 002 Device 003: ID 046d:c05a Logitech, Inc. M90/M100 Optical Mouse
 Bus 002 Device 002: ID 8087:8000 Intel Corp.
 Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 001 Device 125: ID 0e8d:200a MediaTek Inc.
@@ -378,22 +378,26 @@ Bus 001 Device 002: ID 8087:8008 Intel Corp.
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-</code></pre><p>找到手機對應的那一行，這裡是</p>
+</code></pre>
+<p>找到手機對應的那一行，這裡是</p>
 <p>Bus 001 Device 125: ID 0e8d:200a MediaTek Inc.</p>
 <ol start="2">
 <li>然後 </li>
 </ol>
-<p>vim /etc/udev/rules.d/51-android.rules</p>
+<pre><code class="shell">vim /etc/udev/rules.d/51-android.rules
+</code></pre>
 <p>添加以下這行到文件中：</p>
 <p>SUBSYSTEM==”usb”, ATTR{idVendor}==”0e8d”, MODE=”200a”, GROUP=”plugdev”</p>
 <ol start="3">
 <li>再執行<br>chmod a+r /etc/udev/rules.d/51-android.rules</li>
-<li>再執行以下命令<pre><code>adb kill-server
+<li>再執行以下命令<pre><code class="shell">adb kill-server
 adb devices 
-</code></pre>就顯示如下的了：</li>
+</code></pre>
+就顯示如下的了：</li>
 </ol>
-<p>List of devices attached</p>
-<h2 id="0123456789ABCDEF-device"><a href="#0123456789ABCDEF-device" class="headerlink" title="0123456789ABCDEF    device"></a>0123456789ABCDEF    device</h2><p>作者：champwang<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/champwang/article/details/53584593" target="_blank" rel="noopener">https://blog.csdn.net/champwang/article/details/53584593</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+<pre><code>List of devices attached
+0123456789ABCDEF    device
+</code></pre><p>作者：champwang<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/champwang/article/details/53584593" target="_blank" rel="noopener">https://blog.csdn.net/champwang/article/details/53584593</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
 
             </div>
             <hr>
