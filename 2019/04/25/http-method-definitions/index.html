@@ -195,6 +195,19 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
 </header>
 
 
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -606,19 +619,24 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/04/25/node-restify/">
+                <a href="/2019/04/25/app-rest-desig/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="node-restify">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="app-reset-design">
                         
-                        <span class="card-title">node-restify</span>
+                        <span class="card-title">app-reset-design</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            A Node.js web service framework optimized for building semantically correct RESTful web services ready for production us
+                            定义apiResultFull api
+根据resetfull API 规范定义一个自己的 api规范定义格式如下
+
+/app/userid/resnameGET    查询POST   新增PUT    修改DELETE 删除
+
+所有请求
                         
                     </div>
                     <div class="publish-info">
@@ -644,10 +662,6 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                         <span class="chip bg-color">restify</span>
                     </a>
                     
-                    <a href="/tags/node/" target="_blank">
-                        <span class="chip bg-color">node</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -659,36 +673,19 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/25/android-build/">
+                <a href="/2019/04/25/node-restify/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="android-build">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="node-restify">
                         
-                        <span class="card-title">android-build</span>
+                        <span class="card-title">node-restify</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            示例Android Build类
-Android Build类
-Build类提供了硬件厂商、编号、序列号、SDK版本等重要信息。类名：android.os.Build
-
-
-
-
-常量名
-说明
-
-
-
-
-BOARD
-底层板名称
-
-
-BOOTLOA
+                            A Node.js web service framework optimized for building semantically correct RESTful web services ready for production us
                         
                     </div>
                     <div class="publish-info">
@@ -710,8 +707,12 @@ BOOTLOA
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android/" target="_blank">
-                        <span class="chip bg-color">Android</span>
+                    <a href="/tags/restify/" target="_blank">
+                        <span class="chip bg-color">restify</span>
+                    </a>
+                    
+                    <a href="/tags/node/" target="_blank">
+                        <span class="chip bg-color">node</span>
                     </a>
                     
                 </div>
