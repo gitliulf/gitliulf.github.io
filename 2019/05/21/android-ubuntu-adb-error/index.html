@@ -4,8 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="node-restify, developer">
-    <meta name="description" content="A Node.js web service framework optimized for building semantically correct RESTful web services ready for production us">
+    <meta name="keywords" content="ubuntu adb error, developer">
+    <meta name="description" content="o1. 終端 輸入命令： lsusb
+Bus 002 Device 003: ID 046d:c05a Logitech, Inc. M90/M100 Optical Mouse
+Bus 002 Device 002: ID 8087:80">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>node-restify | developer</title>
+    <title>ubuntu adb error | developer</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -210,13 +212,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        node-restify
+                        ubuntu adb error
                     </div>
                 </div>
             </div>
@@ -327,12 +329,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/restify/" target="_blank">
-                                <span class="chip bg-color">restify</span>
-                            </a>
-                        
-                            <a href="/tags/node/" target="_blank">
-                                <span class="chip bg-color">node</span>
+                            <a href="/tags/android/" target="_blank">
+                                <span class="chip bg-color">android</span>
                             </a>
                         
                     </div>
@@ -355,7 +353,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-04-25
+                    2019-05-21
                 </div>
 
                 
@@ -371,7 +369,31 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth.</p>
+                <p>o1. 終端 輸入命令： lsusb</p>
+<pre><code>Bus 002 Device 003: ID 046d:c05a Logitech, Inc. M90/M100 Optical Mouse
+Bus 002 Device 002: ID 8087:8000 Intel Corp.
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 125: ID 0e8d:200a MediaTek Inc.
+Bus 001 Device 002: ID 8087:8008 Intel Corp.
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+</code></pre><p>找到手機對應的那一行，這裡是</p>
+<p>Bus 001 Device 125: ID 0e8d:200a MediaTek Inc.</p>
+<ol start="2">
+<li>然後 </li>
+</ol>
+<p>vim /etc/udev/rules.d/51-android.rules</p>
+<p>添加以下這行到文件中：</p>
+<p>SUBSYSTEM==”usb”, ATTR{idVendor}==”0e8d”, MODE=”200a”, GROUP=”plugdev”</p>
+<ol start="3">
+<li>再執行<br>chmod a+r /etc/udev/rules.d/51-android.rules</li>
+<li>再執行以下命令<pre><code>adb kill-server
+adb devices 
+</code></pre>就顯示如下的了：</li>
+</ol>
+<p>List of devices attached</p>
+<h2 id="0123456789ABCDEF-device"><a href="#0123456789ABCDEF-device" class="headerlink" title="0123456789ABCDEF    device"></a>0123456789ABCDEF    device</h2><p>作者：champwang<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/champwang/article/details/53584593" target="_blank" rel="noopener">https://blog.csdn.net/champwang/article/details/53584593</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
 
             </div>
             <hr>
@@ -523,8 +545,8 @@
                 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
                     <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
             </div>
-            <br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">《node-restify》</span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/04/25/node-restify/" property="cc:attributionName" rel="cc:attributionURL">string
+            <br><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">《ubuntu adb error》</span> 由
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/05/21/android-ubuntu-adb-error/" property="cc:attributionName" rel="cc:attributionURL">liulf
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
                 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
@@ -564,28 +586,28 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/04/25/http-method-definitions/">
+                <a href="/2019/05/21/android-ubuntu-adb-error/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="http-method-definitions">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="ubuntu adb error">
                         
-                        <span class="card-title">http-method-definitions</span>
+                        <span class="card-title">ubuntu adb error</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            介绍http中method的定义
-Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Although this set can be exp
+                            解决android studio在ubuntu下不能调试设备的问题
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -598,15 +620,12 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/restify/" target="_blank">
-                        <span class="chip bg-color">restify</span>
-                    </a>
-                    
-                    <a href="/tags/node/" target="_blank">
-                        <span class="chip bg-color">node</span>
+                    <a href="/tags/android/" target="_blank">
+                        <span class="chip bg-color">android</span>
                     </a>
                     
                 </div>
@@ -620,29 +639,24 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/25/app-rest-desig/">
+                <a href="/2019/05/21/hexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="app-reset-design">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello">
                         
-                        <span class="card-title">app-reset-design</span>
+                        <span class="card-title">Hello</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            定义apiResultFull api
-根据resetfull API 规范定义一个自己的 api规范定义格式如下
-
-/app/userid/resnameGET    查询POST   新增PUT    修改DELETE 删除
-
-所有请求
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-25
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-21
                             </span>
                         <span class="publish-author">
                             
@@ -659,8 +673,8 @@ Method DefinitionsThe set of common methods for HTTP/1.1 is defined below. Altho
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/restify/" target="_blank">
-                        <span class="chip bg-color">restify</span>
+                    <a href="/tags/hexo/" target="_blank">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
