@@ -389,7 +389,9 @@ Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 <p>添加以下這行到文件中：</p>
 <p>SUBSYSTEM==”usb”, ATTR{idVendor}==”0e8d”, MODE=”200a”, GROUP=”plugdev”</p>
 <ol start="3">
-<li>再執行<br>chmod a+r /etc/udev/rules.d/51-android.rules</li>
+<li>再執行<pre><code class="shell">chmod a+r /etc/udev/rules.d/51-android.rules
+</code></pre>
+</li>
 <li>再執行以下命令<pre><code class="shell">adb kill-server
 adb devices 
 </code></pre>
@@ -643,19 +645,21 @@ adb devices
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/21/hexo/">
+                <a href="/2019/05/21/nb-mod-companies/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="nb mod companies">
                         
-                        <span class="card-title">Hello</span>
+                        <span class="card-title">nb mod companies</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            利尔达科技
+移远
+
                         
                     </div>
                     <div class="publish-info">
@@ -666,8 +670,8 @@ adb devices
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/技术文章/" class="post-category" target="_blank">
-                                    技术文章
+                            <a href="/categories/物联网/" class="post-category" target="_blank">
+                                    物联网
                                 </a>
                             
                             
@@ -677,8 +681,8 @@ adb devices
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/nb-iot/" target="_blank">
+                        <span class="chip bg-color">nb-iot</span>
                     </a>
                     
                 </div>
