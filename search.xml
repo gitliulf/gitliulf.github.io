@@ -259,31 +259,6 @@
     
     
     <entry>
-      <title>ubuntu-typora-install</title>
-      <link href="/2019/05/16/ubuntu-typora-install/"/>
-      <url>/2019/05/16/ubuntu-typora-install/</url>
-      
-        <content type="html"><![CDATA[<pre><code class="shell"># or run:# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAEwget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -# add Typora&#39;s repositorysudo add-apt-repository &#39;deb https://typora.io/linux ./&#39;sudo apt-get update# install typorasudo apt-get install typora</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术文章 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ubuntu </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>markdown-apt</title>
       <link href="/2019/05/16/markdown/"/>
       <url>/2019/05/16/markdown/</url>
@@ -303,6 +278,31 @@
             <tag> hexo </tag>
             
             <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ubuntu-typora-install</title>
+      <link href="/2019/05/16/ubuntu-typora-install/"/>
+      <url>/2019/05/16/ubuntu-typora-install/</url>
+      
+        <content type="html"><![CDATA[<pre><code class="shell"># or run:# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAEwget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -# add Typora&#39;s repositorysudo add-apt-repository &#39;deb https://typora.io/linux ./&#39;sudo apt-get update# install typorasudo apt-get install typora</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术文章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ubuntu </tag>
             
         </tags>
       
